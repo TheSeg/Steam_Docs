@@ -3,10 +3,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
+    <title>Steam WebAPI Proposals by Seg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="John 'Seg' Seggerson">
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -54,6 +54,8 @@
       <script src="./js/html5shiv.js"></script>
     <![endif]-->
 
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -66,56 +68,48 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <h3 class="muted">Project name</h3>
+        <h3 class="muted">Steam WebAPI Proposals</h3>
       </div>
 
       <hr>
 
       <div class="jumbotron">
-        <h1>Super awesome marketing speak!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <a class="btn btn-large btn-success" href="#">Sign up today</a>
+        <h1>Steam WebAPI Proposals</h1>
+        <p class="lead">A proposal from John "Seg" Seggerson for extending the <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam WebAPI</a>.</p>
+        <a class="btn btn-large btn-info " href="#">Community &amp; Game Groups</a>
+        <a class="btn btn-large btn-info " href="#">Game &amp; App Information</a>
       </div>
 
       <hr>
-
+      
       <div class="row-fluid marketing">
+        
         <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>Community &amp; Game Groups</h4>
+          <p>
+            Groups are collections of users around a game, specific interest, or external community.
+            Currently community API support is via deprecated XML support. This document puts forth
+            a new interface and methods for Steam WebAPI access for groups.
+          </p>
+          <p><a href="#">Learn more...</a></p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
 
         <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>Game &amp; App Information</h4>
+          <p>Provides group metadata including name, URL, and other basic information about the group.</p>
+          <p><a href="#">Learn more...</a></p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
       </div>
 
       <hr>
 
       <div class="footer">
-        <p>&copy; Company 2013</p>
+        <p>Proposals developed by <a href="http://segonmedia.com/">Seg</a>. The Steam, WebAPI, and all things related are owned by <a href="http://www.valvesoftware.com/" target="_blank">Valve Software</a>. Of which I (Seg) have no affliction with at all.</p>
       </div>
 
     </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
