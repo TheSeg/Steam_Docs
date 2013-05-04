@@ -1,15 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Steam WebAPI Proposals by Seg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
     <meta name="author" content="John 'Seg' Seggerson">
+    <title>Steam WebAPI Proposals by Seg</title>
+    <meta name="description" content="">
 
     <!-- Le styles -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -47,7 +46,6 @@
         margin-top: 28px;
       }
     </style>
-    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -64,9 +62,9 @@
 
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="active"><a href="./">Home</a></li>
+          <li><a href="./about.php">About</a></li>
+          <li><a href="./contact.php">Contact</a></li>
         </ul>
         <h3 class="muted">Steam WebAPI Proposals</h3>
       </div>
