@@ -15,9 +15,9 @@ include_once("./template/html_start.php");
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
+          <h2>Slate Template</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p><a class="btn" href="http://bootswatch.com/slate/">View details &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Heading</h2>
