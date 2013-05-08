@@ -6,8 +6,8 @@ include_once("./template/html_start.php");
 ?>
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>ISteamGroup</h1>
-    <p class="lead">A Steam WebAPI interface for Steam Community &amp; Game Groups.</p>
+    <h1>ISteamHub</h1>
+    <p class="lead">A Steam WebAPI interface for Steam Community Hubs.</p>
   </div>
 </header>
 
@@ -20,11 +20,11 @@ include_once("./template/html_start.php");
             <li><a href="#General">General Notes</a></li>
             <li><a href="#ResolveVanityURL">ResolveVanityURL</a></li>
             <li><a href="#ResolveGameID">ResolveGameID</a></li>
-            <li><a href="#GetGroupSummaries">GetGroupSummaries</a></li>
+            <li><a href="#GetGroupSummaries">GetSummaries</a></li>
             <li><a href="#GetAnnouncements">GetAnnouncements</a></li>
             <li><a href="#GetEvents">GetEvents</a></li>
-            <li><a href="#GetGroupStatus">GetGroupStatus</a></li>
-            <li><a href="#GetGroupMembers">GetGroupMembers</a></li>
+            <li><a href="#GetGroupStatus">GetStatus</a></li>
+            <li><a href="#GetGroupMembers">GetMembers</a></li>
             <li><a href="#GetPermissionsScheme">GetPermissionsScheme</a></li>
           </ul>
         </div>
