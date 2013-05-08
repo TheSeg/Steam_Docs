@@ -4,11 +4,11 @@
             </div>
             
             <h2>Method Description</h2>
-            <p>Provides a group’s ID number based on the vanity URL or AppID Number.</p>
-            <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method.
+            <p>Provides a group’s ID number based on a search query.</p>
+            <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamGroup</code> interface.</p>
             
             <h2>Input</h2>
-            <dl>
+            <dl class="dl-horizontal">
               <dt>vanityUrl <span class="text-info">(string)</span></dt>
               <dd>One of the following types of information:
                 <ul>
@@ -21,7 +21,7 @@
             
             <h2>Output</h2>
             
-            <dl>
+            <dl class="dl-horizontal">
               <dt>success <span class="text-info">(int)</span></dt>
               <dd>Status return number of query. Possible responses include:
                 <ul>
@@ -30,7 +30,7 @@
                 </ul>
               </dd>
             </dl>
-            <dl>
+            <dl class="dl-horizontal">
               <dt>message <span class="text-info">(string)</span></dt>
               <dd>Status return string of query. Possible responses include:
                 <ul>
@@ -39,19 +39,29 @@
                 </ul>
               </dd>
             </dl>
-            <dl>
-              <dt>groupID <span class="text-info">(int)</span></dt>
+            <dl class="dl-horizontal">
+              <dt>guid <span class="text-info">(int)</span></dt>
               <dd>Steam Group ID number of query.</dd>
             </dl>
-            <dl>
-              <dt>AppID <span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
-              <dd>If returned group is an official game group, value returns the AppID of the game.</dd>
+            <dl class="dl-horizontal">
+              <dt>appID <span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
+              <dd>
+                If queried group is an official game group, value returns the AppID of the game.
+                <br>
+                If not an official game group, value returns as 0.
+              </dd>
             </dl>
             
-            <h2>Example:</h2>
+            <h2>Examples:</h2>
             
-            <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=XXXXXXXXXXXXXX</blockquote>
+            <h3>Game Group: <span class="text-info"><a href="http://steamcommunity.com/games/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("http://steamcommunity.com/games/PuzzleAgent2/")?></blockquote>
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example00" ); ?>
+            
+            <h3>Community Group: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("ablegamers")?></blockquote>
+            
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example01" ); ?>
             
           </section>
