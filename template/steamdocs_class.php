@@ -26,6 +26,59 @@ class SteamDocs {
     return implode("\n    ",$html);
   }
   
+  public static function CreateDocExampleFormats( $currentFilePath, $rootFileName ) {
+    $files=array();
+    $content=array();
+    $html=array();
+    
+    // Check if files exist for that output, then make tab/content.
+    $files['json'] = dirname($currentFilePath)."/".$rootFileName.".js";
+    $files['xml'] = dirname($currentFilePath)."/".$rootFileName.".xml";
+    $files['vdf'] = dirname($currentFilePath)."/".$rootFileName.".vdf";
+    
+    if ( file_exists($files['json']) ) {
+      $content['json'] = file_get_contents($files['json']);
+    }
+    if ( file_exists($files['xml']) ) {
+      $content['xml'] = htmlentities(file_get_contents($files['xml'],ENT_XML1));
+    }
+    if ( file_exists($files['vdf']) ) {
+      $content['vdf'] = file_get_contents($files['vdf']);
+    }
+    
+    // 
+    
+    $html[] = '<div class="tabbable"><div class="tabbable"><div class="tabbable"><ul class="nav nav-tabs">';
+    
+    $firstTab = true;
+    foreach ( $content as $key => $value ) {
+      if ($firstTab) {
+        $tabClassActive = " active";
+        $firstTab = false;
+      } else {
+        $tabClassActive = " ";
+      }
+      $html[] = '<li class="'.$tabClassActive.'"><a href="#'.$rootFileName.'_'.$key.'" data-toggle="tab">'.strtoupper($key).'</a></li>';
+    }
+    $firtTab = true;
+    $html[] = '</div>';
+    $html[] = '<div class="tab-content">';
+    $firstTab = true;
+    foreach ( $content as $key => $value ) {
+      if ($firstTab) {
+        $tabClassActive = " active";
+        $firstTab = false;
+      } else {
+        $tabClassActive = " ";
+      }
+      $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">
+                  <pre class="prettyprint ">'.$value.'</pre>
+                </div>';
+    }
+    $html[] = "</div></div>";
+    
+    return implode("\n",$html);
+  }
   
 }
 

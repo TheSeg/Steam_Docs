@@ -52,23 +52,6 @@
             
             <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=XXXXXXXXXXXXXX</blockquote>
             
-            <div class="tabbable"> <!-- Only required for left/right tabs -->
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#ResolveVanityURL_Example00_JSON" data-toggle="tab">JSON</a></li>
-    <li><a href="#ResolveVanityURL_Example00_XML" data-toggle="tab">XML</a></li>
-    <li><a href="#ResolveVanityURL_Example00_VDF" data-toggle="tab">VDF</a></li>
-  </ul>
-  <div class="tab-content">
-    <div class="tab-pane active" id="ResolveVanityURL_Example00_JSON">
-      <pre class="prettyprint lang-js "><?php print file_get_contents(dirname(__FILE__)."/ResolveVanityURL_example00.js"); ?></pre>
-    </div>
-    <div class="tab-pane" id="ResolveVanityURL_Example00_XML">
-      <pre class="prettyprint "><?php print htmlentities(file_get_contents(dirname(__FILE__)."/ResolveVanityURL_Example00.xml"),ENT_XML1); ?></pre>
-    </div>
-    <div class="tab-pane" id="ResolveVanityURL_Example00_VDF">
-      <pre class="prettyprint"><?php print file_get_contents(dirname(__FILE__)."/ResolveVanityURL_example00.vdf"); ?></pre>
-    </div>
-</div>
-    
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example00" ); ?>
             
           </section>
