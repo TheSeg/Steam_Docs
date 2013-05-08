@@ -6,4 +6,5 @@
 
 $(document).ready(function(){
     console.log("Ready!");
+    $('.bs-docs-sidenav').affix();
 });
