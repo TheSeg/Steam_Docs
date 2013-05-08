@@ -24,4 +24,3 @@
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
 <?php include("masthead.php"); ?>
-<div class="container">

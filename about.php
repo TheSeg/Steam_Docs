@@ -4,7 +4,7 @@ $page['title'] = "Steam WebAPI Proposal &middot; About";
 $page['desc'] = "Steam WebAPI Proposal: Information about the creator and website.";
 include_once("./template/html_start.php");
 ?>
-
+<div class="container">
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Hello, world!</h1>

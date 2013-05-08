@@ -4,7 +4,7 @@ $page['title'] = "Steam WebAPI Proposals by Seg";
 $page['desc'] = "Steam WebAPI Proposals by John 'Seg' Seggerson.";
 include_once("./template/html_start.php");
 ?>
-
+<div class="container">
       <div class="jumbotron">
         <h1>Steam WebAPI Proposals</h1>
         <p class="lead">A proposal from John "Seg" Seggerson for extending the <a href="https://developer.valvesoftware.com/wiki/Steam_Web_API" target="_blank">Steam WebAPI</a>.</p>
