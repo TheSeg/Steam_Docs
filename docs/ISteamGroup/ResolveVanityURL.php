@@ -60,13 +60,13 @@
   </ul>
   <div class="tab-content">
     <div class="tab-pane active" id="ResolveVanityURL_Example00_JSON">
-      <pre class="prettyprint lang-js "><?php include("ResolveVanityURL_Example00.js"); ?></pre>
+      <pre class="prettyprint lang-js "><?php print file_get_contents(dirname(__FILE__)."/ResolveVanityURL_example00.js"); ?></pre>
     </div>
     <div class="tab-pane" id="ResolveVanityURL_Example00_XML">
-      <pre class="prettyprint "><?php htmlentities(include("ResolveVanityURL_Example00.xml"),ENT_XML1); ?></pre>
+      <pre class="prettyprint "><?php print htmlentities(file_get_contents(dirname(__FILE__)."/ResolveVanityURL_Example00.xml"),ENT_XML1); ?></pre>
     </div>
     <div class="tab-pane" id="ResolveVanityURL_Example00_VDF">
-      <pre class="prettyprint"><?php include("ResolveVanityURL_Example00.vdf"); ?></pre>
+      <pre class="prettyprint"><?php print file_get_contents(dirname(__FILE__)."/ResolveVanityURL_example00.vdf"); ?></pre>
     </div>
 </div>
     
