@@ -1,3 +1,5 @@
+    <!-- Navbar
+    ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -6,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Steam WebAPI Proposal</a>
+          <a class="brand" href="./">Steam WebAPI Proposal</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li <?php if ( $SCRIPT_NAME == "index.php" ) { echo 'class="active" '; }?>><a href="./index.php">Home</a></li>
