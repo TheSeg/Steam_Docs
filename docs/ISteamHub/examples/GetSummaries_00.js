@@ -2,8 +2,6 @@
   "response" : {
     "success" : 1,
     "message" : "success",
-    "guid" : 94590,
-    "appid" : null,
     "hubs" : [
         {
             "guid" : 103582791433132887,
@@ -12,9 +10,9 @@
             "url" : "http://steamcommunity.com/groups/ablegamers",
             "appid" : 0,
             "public" : true,
+            "inviteonly" : false,
             "datecreated" : 1335596400,
             "dateupdated" : 1368135598,
-            "inviteonly" : false,
             "headline" : "",
             "summary" : "AbleGamers enables children and adults with disabilities and veterans after war trauma to play video games. There should be no barriers to fun!",
             "memberCount" : 177,

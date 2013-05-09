@@ -3,7 +3,6 @@
 <response>
   <success>1</success>
   <message>success</message>
-  <appid>0</appid>
   <hubs>
     <hub>
       <guid>103582791433132887</guid>
@@ -18,9 +17,9 @@
       </url>
       <appid>0</appid>
       <public>true</public>
+      <inviteonly>false</inviteonly>
       <datecreated>1335596400</datecreated>
       <dateupdated>1368135598</dateupdated>
-      <inviteonly>false</inviteonly>
       <headline>
         <![CDATA[  ]]>
       </headline>
