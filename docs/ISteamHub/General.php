@@ -4,7 +4,7 @@
             </div>
             
             <h2>A New Interface</h2>
-            <p>To facilitate Community Hub functionality for WebAPI, a new interface is best to implement a suite of methods for groups. While information may work in concert with other interfaces, Hubs are robust enough to warrant a new interface.</p>
+            <p>To facilitate Community Hub functionality for WebAPI, a new interface is best to implement a suite of methods for Hubs. While information may work in concert with other interfaces, Hubs are robust enough to warrant a new interface.</p>
             
             <h2>Formally Game Groups</h2>
             <p>Hubs were previously known as "Groups". Previous functionality of groups were preserved with the addition of additional features and integration of other official game resources. <code>ISteamHub</code> is designed to make the transition from groups seamless by making both official game and community hubs use the same methods where possible.</p>
@@ -23,14 +23,14 @@
             <dl>
               <dt>Community Hubs</dt>
               <dd>
-                All other Steam Community hubs are community groups.
+                All other Steam Community hubs are community hubs.
                 <br>
-                While some groups may be official to publishers, developers, or even Valve itself, all groups not directly related to a AppID.
+                While some hubs may be official to publishers, developers, or even Valve itself, all hubs not directly tied to an AppID.
                 <br>
                 <span class="text-info">Example: <a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span>
               </dd>
             </dl>
-            <p>Both groups types are functionally the same but for a few key differences. Game Hubs have connections to their AppID and game information, including stats and store connections. Methods will behave the same between both group types unless explicitly stated.</p>
+            <p>Both  types are functionally the same but for a few key differences. Game Hubs have connections to their AppID and game information, including stats and store connections. Methods will behave the same between both types unless explicitly stated.</p>
             
             
             <h2>Definitions</h2>
@@ -40,12 +40,12 @@
             </dl>
             <dl>
               <dt>guid</dt>
-              <dd>A 64-bit integer referring to a particular group. While the user is presented with either abbreviation or full title strings, the group's key identifier is this integer.
+              <dd>A 64-bit integer referring to a particular hub. While the user is presented with either abbreviation or full title strings, the hub's key identifier is this integer.
                 <br>
-                All <code>ISteamGroup</code> methods require a guid to key from, except for methods used to obtain the guid.</dd>
+                All <code>ISteamHub</code> methods require a guid to key from, except for methods used to obtain the guid.</dd>
             </dl>
             <h2>Common Inputs</h2>
-            <p>Unless otherwise noted, All Methods will take the following input parameters, even if the method may not need them.</p>
+            <p>Unless otherwise noted, all methods will take the following input parameters, even if the method may not need them.</p>
             
             <table class="table table-condensed table-bordered table-striped table-hover">
               <thead>

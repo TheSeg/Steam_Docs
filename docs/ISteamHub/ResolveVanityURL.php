@@ -4,17 +4,17 @@
             </div>
             
             <h2>Method Description</h2>
-            <p>Provides a group’s ID number based on a search query.</p>
-            <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamGroup</code> interface.</p>
+            <p>Provides a hub’s ID number based on a search query.</p>
+            <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamHub</code> interface.</p>
             
             <h2>Input</h2>
             <dl class="dl-horizontal">
               <dt>vanityUrl <span class="text-info">(string)</span></dt>
               <dd>One of the following types of information:
                 <ul>
-                  <li>The 12 character Abbreviation name.</li>
-                  <li>The full URL of the group.</li>
-                  <li>The ID number of the group.</li>
+                  <li>The 12 character abbreviation name.</li>
+                  <li>The full URL of the hub.</li>
+                  <li>The ID number of the hub.</li>
                 </ul>
               </dd>
             </dl>
@@ -41,26 +41,26 @@
             </dl>
             <dl class="dl-horizontal">
               <dt>guid <span class="text-info">(int)</span></dt>
-              <dd>Steam Group ID number of query.</dd>
+              <dd>Steam Hub ID number of query.</dd>
             </dl>
             <dl class="dl-horizontal">
               <dt>appID <span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
               <dd>
-                If queried group is an official game group, value returns the AppID of the game.
+                If queried hub is an official game hub, value returns the AppID of the game.
                 <br>
-                If not an official game group, value returns as 0.
+                If not an official game hub, value returns as 0.
               </dd>
             </dl>
             
             <h2>Examples:</h2>
             
-            <h3>Game Group: <span class="text-info"><a href="http://steamcommunity.com/games/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span></h3>
-            <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("http://steamcommunity.com/games/PuzzleAgent2/")?></blockquote>
+            <h3>Game Hub: <span class="text-info"><a href="http://steamcommunity.com/app/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("http://steamcommunity.com/games/PuzzleAgent2/")?></blockquote>
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example00" ); ?>
             
-            <h3>Community Group: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
-            <blockquote>GET https://api.steampowered.com/ISteamGroup/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("ablegamers")?></blockquote>
+            <h3>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("ablegamers")?></blockquote>
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example01" ); ?>
             

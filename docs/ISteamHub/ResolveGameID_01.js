@@ -3,16 +3,22 @@
     "success" : 1,
     "message" : "success",
     "appid" : 94590,
-    "groups" : [
+    "hubs" : [
         {
             "guid" : 103582791432166170,
-            "abbreviation" : "",
+            "abbreviation" : "puzzleagent2",
+            "name" : "Puzzle Agent 2",
+            "url" : "http://steamcommunity.com/app/94590",
             "official" : true,
+            "public" : true,
         },
         {
-            "guid" : 0,
-            "abbreviation" : "",
+            "guid" : 103582791431201661,
+            "abbreviation" : "thepuzzleagents",
+            "name" : "The Puzzle Agents",
+            "url" : "http://steamcommunity.com/groups/thepuzzleagents",
             "official" : false,
+            "public" : true,
         }
     ]
   }
