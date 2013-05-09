@@ -9,7 +9,7 @@
             
             <h2>Input</h2>
             <dl class="dl-horizontal">
-              <dt>vanityUrl <span class="text-info">(string)</span></dt>
+              <dt>vanityUrl<br><span class="text-info">(string)</span></dt>
               <dd>One of the following types of information:
                 <ul>
                   <li>The 12 character abbreviation name.</li>
@@ -22,7 +22,7 @@
             <h2>Output</h2>
             
             <dl class="dl-horizontal">
-              <dt>success <span class="text-info">(int)</span></dt>
+              <dt>success<br><span class="text-info">(int)</span></dt>
               <dd>Status return number of query. Possible responses include:
                 <ul>
                   <li>1 = Success.</li>
@@ -31,7 +31,7 @@
               </dd>
             </dl>
             <dl class="dl-horizontal">
-              <dt>message <span class="text-info">(string)</span></dt>
+              <dt>message<br><span class="text-info">(string)</span></dt>
               <dd>Status return string of query. Possible responses include:
                 <ul>
                   <li>Success.</li>
@@ -40,11 +40,11 @@
               </dd>
             </dl>
             <dl class="dl-horizontal">
-              <dt>guid <span class="text-info">(int)</span></dt>
+              <dt>guid<br><span class="text-info">(int)</span></dt>
               <dd>Steam Hub ID number of query.</dd>
             </dl>
             <dl class="dl-horizontal">
-              <dt>appID <span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
+              <dt>appID<br><span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
               <dd>
                 If queried hub is an official game hub, value returns the AppID of the game.
                 <br>
