@@ -29,8 +29,8 @@
               <dd>Maximum number of hubs to return in a set.</dd>
             </dl>
             <dl class="dl-horizontal">
-              <dt>count<br><span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
-              <dd>Maximum number of hubs to return in a set.</dd>
+              <dt>skip<br><span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
+              <dd>Amount of entries to skip. Used in conjunction with <code>count</code>.</dd>
             </dl>
             
             <h2>Output</h2>
@@ -90,7 +90,9 @@
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveGameID_01" ); ?>
             
-            <h3>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
-            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("ablegamers")?></blockquote>
+            <h3>Official Game Hub Only</h3>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?appid=94590&amp;official_only=1</blockquote>
+            
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveGameID_02" ); ?>
             
           </section>

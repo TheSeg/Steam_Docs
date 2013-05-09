@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <appid>94590</appid>
+  <hubs>
+    <hub>
+      <guid>103582791432166170</guid>
+      <abbreviation>puzzleagent2</abbreviation>
+      <name>Puzzle Agent 2</name>
+      <url>http://steamcommunity.com/app/94590</url>
+      <official>true</official>
+      <public>true</public>
+    </hub>
+  </hubs>
+</response>
