@@ -1,8 +1,9 @@
-          <section id="GetGroupSummeries">
+          <section id="GetStatus">
             <div class="page-header">
-              <h1>::GetGroupSummeries</h1>
+              <h1>::GetStatus</h1>
             </div>
             
             <h2>Method Description</h2>
             <p>-</p>
           </section>
+          

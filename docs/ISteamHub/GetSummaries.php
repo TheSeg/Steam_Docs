@@ -1,6 +1,6 @@
-          <section id="GetGroupMembers">
+          <section id="GetSummaries">
             <div class="page-header">
-              <h1>::GetGroupMembers</h1>
+              <h1>::GetSummaries</h1>
             </div>
             
             <h2>Method Description</h2>
