@@ -32,9 +32,9 @@ class SteamDocs {
     $html=array();
     
     // Check if files exist for that output, then make tab/content.
-    $files['json'] = dirname($currentFilePath)."/".$rootFileName.".js";
-    $files['xml'] = dirname($currentFilePath)."/".$rootFileName.".xml";
-    $files['vdf'] = dirname($currentFilePath)."/".$rootFileName.".vdf";
+    $files['json'] = dirname($currentFilePath)."/examples/".$rootFileName.".js";
+    $files['xml'] = dirname($currentFilePath)."/examples/".$rootFileName.".xml";
+    $files['vdf'] = dirname($currentFilePath)."/examples/".$rootFileName.".vdf";
     
     if ( file_exists($files['json']) ) {
       $content['json'] = file_get_contents($files['json']);

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <appid>0</appid>
+  <hubs>
+    <hub>
+      <guid>103582791433132887</guid>
+      <abbreviation>
+        <![CDATA[ ablegamers ]]>
+      </abbreviation>
+      <name>
+        <![CDATA[ AbleGamers ]]>
+      </name>
+      <url>
+        <![CDATA[ http://steamcommunity.com/app/94590 ]]>
+      </url>
+      <appid>0</appid>
+      <public>true</public>
+      <datecreated>1335596400</datecreated>
+      <dateupdated>1368135598</dateupdated>
+      <inviteonly>false</inviteonly>
+      <headline>
+        <![CDATA[  ]]>
+      </headline>
+      <summary>
+        <![CDATA[ AbleGamers enables children and adults with disabilities and veterans after war trauma to play video games. There should be no barriers to fun! ]]>
+      </summary>
+      <memberCount>177</memberCount>
+      <language></language>
+      <locCountryCode>
+        <![CDATA[ US ]]>
+      </locCountryCode>
+      <locStateCode>
+        <![CDATA[  ]]>
+      </locStateCode>
+      <playerofweek>0</playerofweek>
+      <avatar>
+        <avatarIcon>
+          <![CDATA[ http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg ]]>
+        </avatarIcon>
+        <avatarMedium>
+          <![CDATA[ http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg ]]>
+        </avatarMedium>
+        <avatarFull>
+          <![CDATA[ http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg ]]>
+        </avatarFull>
+        <gamelogo>
+          <![CDATA[  ]]>
+        </gamelogo>
+        <gamebanner>
+          <![CDATA[  ]]>
+        </gamebanner>
+      </avatar>
+      <associatedGames>
+      </associatedGames>
+      <websites>
+        <site url="http://www.ablegamers.com/">AbleGamers.com</site>
+        <site url="http://twitter.com/ablegamers">AbleGamers on Twitter</site>
+        <site url="http://facebook.com/ablegamers">AbleGamers on Facebook</site>
+      </websites>
+    </hub>
+  </hubs>
+</response>
