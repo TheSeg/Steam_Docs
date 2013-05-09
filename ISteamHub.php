@@ -1,7 +1,7 @@
 <?php
 include_once("./template/init.php");
-$page['title'] = "Steam WebAPI Proposal &middot; ISteamGroup";
-$page['desc'] = "Steam WebAPI Proposal: ISteamGroup, a interface for Steam Community &amp; Game Groups.";
+$page['title'] = "Steam WebAPI Proposal &middot; ISteamHub";
+$page['desc'] = "ISteamHub, an interface for Steam Hubs.";
 include_once("./template/html_start.php");
 ?>
 <header class="jumbotron subhead" id="overview">
@@ -34,15 +34,15 @@ include_once("./template/html_start.php");
           
           <?php
           
-            include("./docs/ISteamGroup/General.php");
-            include("./docs/ISteamGroup/ResolveVanityURL.php");
-            include("./docs/ISteamGroup/ResolveGameID.php");
-            include("./docs/ISteamGroup/GetGroupSummeries.php");
-            include("./docs/ISteamGroup/GetAnnouncements.php");
-            include("./docs/ISteamGroup/GetEvents.php");
-            include("./docs/ISteamGroup/GetGroupStatus.php");
-            include("./docs/ISteamGroup/GetGroupMembers.php");
-            include("./docs/ISteamGroup/GetPermissionsScheme.php");
+            include("./docs/ISteamHub/General.php");
+            include("./docs/ISteamHub/ResolveVanityURL.php");
+            include("./docs/ISteamHub/ResolveGameID.php");
+            include("./docs/ISteamHub/GetGroupSummeries.php");
+            include("./docs/ISteamHub/GetAnnouncements.php");
+            include("./docs/ISteamHub/GetEvents.php");
+            include("./docs/ISteamHub/GetGroupStatus.php");
+            include("./docs/ISteamHub/GetGroupMembers.php");
+            include("./docs/ISteamHub/GetPermissionsScheme.php");
           
           ?>
           

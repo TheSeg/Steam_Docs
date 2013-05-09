@@ -11,7 +11,7 @@ include_once("./template/html_start.php");
         <div class="container-fluid">
           <div class="row-fluid">
             <div class="span">
-              <a class="btn btn-large btn-info " href="#">Community &amp; Game Groups</a>
+              <a class="btn btn-large btn-info " href="./ISteamHub.php">Community Hubs ( ISteamHub )</a>
               
               <a class="btn btn-large btn-info " href="#">Game &amp; App Information</a>
             </div>
@@ -24,13 +24,13 @@ include_once("./template/html_start.php");
       <div class="row-fluid marketing">
         
         <div class="span6">
-          <h4>Community &amp; Game Groups</h4>
+          <h4>Community Hubs</h4>
           <p>
-            Groups are collections of users around a game, specific interest, or external community.
-            Currently community API support is via deprecated XML support. This document puts forth
-            a new interface and methods for Steam WebAPI access for groups.
+            Hubs are collections of users around a game, specific interest, or external community.
+            Currently community API support is via deprecated XML support of groups. This document puts forth
+            a new interface and methods for Steam WebAPI access for hubs.
           </p>
-          <p><a href="#">Learn more...</a></p>
+          <p><a href="./ISteamHub.php">Learn more...</a></p>
 
         </div>
 

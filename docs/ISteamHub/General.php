@@ -4,32 +4,33 @@
             </div>
             
             <h2>A New Interface</h2>
-            <p>To facilitate Group functionality for WebAPI, a new interface is best to implement a suite of methods for groups. While information may work in concert with other interfaces, Groups themselves are robust enough to warrant a new interface.</p>
+            <p>To facilitate Community Hub functionality for WebAPI, a new interface is best to implement a suite of methods for groups. While information may work in concert with other interfaces, Hubs are robust enough to warrant a new interface.</p>
             
-            <h2>Official Game Groups vs. Community Groups</h2>
-            <p>Steam Community groups fall into two types:</p>
+            <h2>Formally Game Groups</h2>
+            <p>Hubs were previously known as "Groups". Previous functionality of groups were preserved with the addition of additional features and integration of other official game resources. <code>ISteamHub</code> is designed to make the transition from groups seamless by making both official game and community hubs use the same methods where possible.</p>
+            
+            <h2>Official Game Hubs vs. Community Hubs</h2>
+            <p>Steam Community Hubs fall into two types:</p>
             
             <dl>
-              <dt>Official Game Groups</dt>
+              <dt>Official Game Hubs</dt>
               <dd>
-                Groups created by the developer or publisher of a officially released title and directly associated to an AppID.
+                A Hub for an officially released title and directly associated to an AppID.
                 <br>
-                <span class="text-info">Example: <a href="http://steamcommunity.com/games/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span>
-                <br>
-                <a href="http://steamcommunity.com/actions/GroupList?sortby=SortByName&amp;filter=ogg" target="_blank">List of Official Game Groups</a>
+                <span class="text-info">Example: <a href="http://steamcommunity.com/app/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span>
               </dd>
             </dl>
             <dl>
-              <dt>Community Groups</dt>
+              <dt>Community Hubs</dt>
               <dd>
-                All other Steam Community groups are community groups.
+                All other Steam Community hubs are community groups.
                 <br>
                 While some groups may be official to publishers, developers, or even Valve itself, all groups not directly related to a AppID.
                 <br>
                 <span class="text-info">Example: <a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span>
               </dd>
             </dl>
-            <p>Both groups types are functionally the same but for a few key differences. Game Groups have connections to their AppID and game information, including stats and store connections. Methods will behave the same between both group types unless explicitly stated.</p>
+            <p>Both groups types are functionally the same but for a few key differences. Game Hubs have connections to their AppID and game information, including stats and store connections. Methods will behave the same between both group types unless explicitly stated.</p>
             
             
             <h2>Definitions</h2>

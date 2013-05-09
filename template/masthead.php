@@ -14,18 +14,18 @@
               <li <?php if ( $SCRIPT_NAME == "index.php" ) { echo 'class="active" '; }?>><a href="./index.php">Home</a></li>
               <li <?php if ( $SCRIPT_NAME == "about.php" ) { echo 'class="active" '; }?>><a href="./about.php">About</a></li>
               <li class="dropdown <?php if ( $SCRIPT_NAME == "isteamgroup.php" ) { echo 'active '; }?>">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ISteamGroup <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ISteamHub <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="./ISteamGroup.php">Overview</a></li>
+                  <li><a href="./ISteamHub.php">Overview</a></li>
                   <li class="divider"></li>
                   <li class="nav-header">Methods</li>
-                  <li><a href="./ISteamGroup.php#ResolveVanityURL">ResolveVanityURL</a></li>
-                  <li><a href="./ISteamGroup.php#GetGroupSummaries">GetGroupSummaries</a></li>
-                  <li><a href="./ISteamGroup.php#GetAnnouncements">GetAnnouncements</a></li>
-                  <li><a href="./ISteamGroup.php#GetEvents">GetEvents</a></li>
-                  <li><a href="./ISteamGroup.php#GetGroupStatus">GetGroupStatus</a></li>
-                  <li><a href="./ISteamGroup.php#GetGroupMembers">GetGroupMembers</a></li>
-                  <li><a href="./ISteamGroup.php#GetPermissionsScheme">GetPermissionsScheme</a></li>
+                  <li><a href="./ISteamHub.php#ResolveVanityURL">ResolveVanityURL</a></li>
+                  <li><a href="./ISteamHub.php#GetGroupSummaries">GetGroupSummaries</a></li>
+                  <li><a href="./ISteamHub.php#GetAnnouncements">GetAnnouncements</a></li>
+                  <li><a href="./ISteamHub.php#GetEvents">GetEvents</a></li>
+                  <li><a href="./ISteamHub.php#GetGroupStatus">GetGroupStatus</a></li>
+                  <li><a href="./ISteamHub.php#GetGroupMembers">GetGroupMembers</a></li>
+                  <li><a href="./ISteamHub.php#GetPermissionsScheme">GetPermissionsScheme</a></li>
                 </ul>
               </li>
             </ul>
