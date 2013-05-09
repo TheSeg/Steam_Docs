@@ -20,7 +20,19 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/prettify/run_prettify.js"></script>
     <script src="./js/steamdocs.js"></script>
-  </head>
+    <?php if ( strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.com" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.org" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.net" ) { ?>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-6339343-3', 'segonmedia.com');
+      ga('send', 'pageview');
+    </script>
+    <?php } else { ?>
+    <!-- Google Analytics Disabled -->
+    <?php } ?>
+</head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
 <?php include("masthead.php"); ?>
