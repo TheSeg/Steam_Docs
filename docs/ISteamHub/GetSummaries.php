@@ -9,18 +9,31 @@
             
             <h2>Inputs</h2>
             
+            <div class="alert alert-info">
+              <strong>Info:</strong> Method will take <em>either</em> of the following inputs.
+            </div>
+            
             <dl class="dl-horizontal">
               <dt>guid<br><span class="text-info">(string)</span></dt>
-              <dd>Group IDs to query, separated by commas.</dd>
+              <dd>Hub IDs to query, separated by commas.</dd>
             </dl>
             <dl class="dl-horizontal">
-              <dt>?</dt>
-              <dd>?</dd>
+              <dt>appid<br><span class="text-info">(string)</span></dt>
+              <dd>AppIDs to query, separated by commas.<br>This can be used to obtain only official game hubs.</dd>
             </dl>
             
             <h2>Outputs</h2>
             
             <h3>Examples</h3>
             
+            <h3>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/GetSummaries/v0001/?guids=103582791433132887</blockquote>
+            
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "GetSummaries_00" ); ?>
+            
+            <h3>Game Hub: <span class="text-info"><a href="http://steamcommunity.com/app/94590" target="_blank">Puzzle Agent 2</a></span></h3>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/GetSummaries/v0001/?appid=94590</blockquote>
+            
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "GetSummaries_01" ); ?>
             
           </section>
