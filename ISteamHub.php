@@ -37,7 +37,7 @@ include_once("./template/html_start.php");
             include("./docs/ISteamHub/General.php");
             include("./docs/ISteamHub/ResolveVanityURL.php");
             include("./docs/ISteamHub/ResolveGameID.php");
-            include("./docs/ISteamHub/GetSummeries.php");
+            include("./docs/ISteamHub/GetSummaries.php");
             include("./docs/ISteamHub/GetAnnouncements.php");
             include("./docs/ISteamHub/GetEvents.php");
             include("./docs/ISteamHub/GetStatus.php");
