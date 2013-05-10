@@ -107,6 +107,10 @@ class SteamDocs {
     return '<div class="well well-small">All <a href="#General_CommonOutputs">Common Outputs</a> are used for this method.</div>';
   }
   
+  public static function seeRoles() {
+    return '<div class="well well-small alert alert-info">See <a href="#General_MemberRoleValues">Member Role Values</a> for member roll return values.</div>';
+  }
+  
 }
 
 ?>

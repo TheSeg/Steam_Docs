@@ -110,4 +110,35 @@
               </tbody>
             </table>
           
+          <h2 id="General_MemberRoleValues">Member Role Values</h2>
+            <p>Some methods return the role of a member in a hub. These roles and return values are outlined below.</p>
+            
+            <table class="table table-condensed table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Value</th>
+                  <th>Roll</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>Member</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Moderator</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Officer</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Owner</td>
+                </tr>
+              </tbody>
+            </table>
+
+          
           </section>

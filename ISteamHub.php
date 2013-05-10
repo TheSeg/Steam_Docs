@@ -25,7 +25,7 @@ include_once("./template/html_start.php");
             <li><a href="#GetEvents">GetEvents</a></li>
             <li><a href="#GetStatus">GetStatus</a></li>
             <li><a href="#GetMembers">GetMembers</a></li>
-            <li><a href="#GetPermissionsScheme">GetPermissionsScheme</a></li>
+            <li><a href="#GetPermissions">GetPermissions</a></li>
           </ul>
         </div>
         
@@ -42,7 +42,7 @@ include_once("./template/html_start.php");
             include("./docs/ISteamHub/GetEvents.php");
             include("./docs/ISteamHub/GetStatus.php");
             include("./docs/ISteamHub/GetMembers.php");
-            include("./docs/ISteamHub/GetPermissionsScheme.php");
+            include("./docs/ISteamHub/GetPermissions.php");
           
           ?>
           

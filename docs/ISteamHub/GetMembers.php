@@ -52,35 +52,7 @@
               <dt>role<br><?php print SteamDocs::param("int"); ?></dt>
               <dd>The roll of the member in the hub.</dd>
             </dl>
-            
-            <div class="well well-small">
-            <table class="table table-condensed table-bordered table-striped table-hover">
-              <thead>
-                <tr>
-                  <th>Value</th>
-                  <th>Roll</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>0</td>
-                  <td>Member</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Moderator</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Officer</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Owner</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
+            <?php print SteamDocs::seeRoles(); ?>
             
             </div>
             
