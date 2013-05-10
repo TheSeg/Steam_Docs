@@ -8,5 +8,6 @@
         "membersInChat" : 0,
         "membersInGame" : 0,
         "membersOnline" : 0,
+        "playerofweek" : 0,
     }
 }

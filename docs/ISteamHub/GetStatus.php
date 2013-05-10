@@ -61,6 +61,15 @@
               </dd>
             </dl>
             
+            <dl class="dl-horizontal">
+              <dt>playerofweek<br><?php print SteamDocs::param("int"); ?></dt>
+              <dd>
+                The Steam ID number of the current player of the week (if defined).
+                <br>
+                Returns 0 if there is no player of the week defined.
+              </dd>
+            </dl>
+            
             <h3>Examples</h3>
             
             <h4>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/SegTestGroup" target="_blank">Seg Test Group</a></span></h4>
