@@ -80,6 +80,14 @@ class SteamDocs {
     return implode("\n",$html);
   }
   
+  public static function param($type,$optional=false) {
+    $returnHTML = array();
+    $returnHTML[] = '<span class="text-info">('.strtolower($type).')</span>';
+    if ( $optional ) {
+      $returnHTML[] = ' <span class="text-warning">[optional]</span>';
+    }
+    return implode("",$returnHTML);
+  }
 }
 
 ?>
