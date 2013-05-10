@@ -229,6 +229,8 @@
             
             </div>
             
+            <h3>Examples</h3>
+            
             <h4>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/SegTestGroup" target="_blank">Seg Test Group</a></span></h4>
             <blockquote>GET https://api.steampowered.com/ISteamHub/GetEvents/v0001/?guid=4178173</blockquote>
             
