@@ -44,7 +44,7 @@
                 <br>
                 All <code>ISteamHub</code> methods require a guid to key from, except for methods used to obtain the guid.</dd>
             </dl>
-            <h2>Common Inputs</h2>
+            <h2 id="General_CommonInputs">Common Inputs</h2>
             <p>Unless otherwise noted, all methods will take the following input parameters, even if the method may not need them.</p>
             
             <table class="table table-condensed table-bordered table-striped table-hover">
@@ -77,4 +77,37 @@
                 </tr>
               </tbody>
             </table>
+            
+          <h2 id="General_CommonOutpouts">Common Outputs</h2>
+          <p>Unless otherwise noted, all methods will return the following parameters. For methods that return an array of results, these fields will be included at the top-most level of a return, before the array of results.</p>
+          
+          <table class="table table-condensed table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Key Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>success</td>
+                  <td>int</td>
+                  <td>Status return number of query. Possible responses include:
+                    <ul>
+                      <li>1 = Success.</li>
+                      <li>42 = No match found.</li>
+                  </td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>message</td>
+                  <td>string</td>
+                  <td>Human readable string describing <code>success</code> description.</td>
+                  <td>Success</td>
+                </tr>
+              </tbody>
+            </table>
+          
           </section>
