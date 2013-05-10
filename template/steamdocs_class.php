@@ -83,11 +83,11 @@ class SteamDocs {
   public static function param($type,$optional=false) {
     $returnHTML = array();
     $returnHTML[] = '<span class="text-info">('.strtolower($type).')</span>';
-    if ( strlen($type) > 12 ) {
-      // This is put in when the type is too long and horriable wrapping occurs.
-      $returnHTML[] = '<br>';
-    }
     if ( $optional ) {
+      if ( strlen($type) > 12 ) {
+        // This is put in when the type is too long and horriable wrapping occurs.
+        $returnHTML[] = '<br>';
+      }
       $returnHTML[] = ' <span class="text-warning">[optional]</span>';
     }
     return implode("",$returnHTML);
