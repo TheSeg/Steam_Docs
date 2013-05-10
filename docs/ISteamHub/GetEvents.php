@@ -7,15 +7,91 @@
             <p>Hubs are able to create Events for their members to participate. These events range from gameplay, Steam Chat events, and other events outside of Steam Community.</p>
             
             <h3>Event Types</h3>
-            <p>_______</p>
+            <p>Events are classified into the following types outlined below. For the sake of API consistency, these types will have a integer assigned to the type. This allows for expansion and easy casing of types.</p>
+            <p>I am also proposing retitling these types to be more professional and useful as descriptions.</p>
+            
+            <table class="table table-condensed table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Value</th>
+                  <th>Short String</th>
+                  <th>Official Long String</th>
+                  <th>Proposed Long String</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan="4">
+                    <i class="icon-asterisk icon-white"></i> Denotes new string.
+                  </td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>ChatEvent</td>
+                  <td>Chat</td>
+                  <td>Chat</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>GameEvent</td>
+                  <td>Play a Game</td>
+                  <td>Play a Game</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>OtherEvent</td>
+                  <td>A lil somethin somethin</td>
+                  <td>A lil somethin' somethin' <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>PartyEvent</td>
+                  <td>Party!</td>
+                  <td>Party!</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>MeetingEvent</td>
+                  <td>Important Meeting</td>
+                  <td>Important Meeting</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>SpecialCauseEvent</td>
+                  <td>Special cause (charity ball?)</td>
+                  <td>Charity Event <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>MusicAndArtsEvent</td>
+                  <td>Music or Art type thing</td>
+                  <td>Music &amp; Arts Event <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>SportsEvent</td>
+                  <td>Sporting endeavor</td>
+                  <td>Sports Event <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>TripEvent</td>
+                  <td>Out of town excursion</td>
+                  <td>Group Field Trip <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+                <tr class="success">
+                  <td>9</td>
+                  <td>OnlineEvent</td>
+                  <td><small>N/A</small></td>
+                  <td>Online Streaming Event <i class="icon-asterisk icon-white"></i></td>
+                </tr>
+              </tbody>
+            </table>
             
             <h2>Inputs</h2>
-            
-            <?php print SteamDocs::seeInputs(); ?>
-            
-            <div class="well alert alert-info">
-              Method will take <em>either</em> <code>guid</code> <em>or</em> <code>appid</code> parameters.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid(); ?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int",false); ?></dt>
@@ -32,7 +108,7 @@
             
             <dl class="dl-horizontal">
               <dt>maxLength<br><?php print SteamDocs::param("int",true); ?></dt>
-              <dd>Maximum character length of <code>contents</code> field.<br>System will make a best guess to end content without cutting a word.</dd>
+              <dd>Maximum character length of <span class="label label-inverse">contents</span> field.<br>System will make a best guess to end content without cutting a word.</dd>
             </dl>
             
             <dl class="dl-horizontal">
@@ -53,7 +129,7 @@
             <dl class="dl-horizontal">
               <dt>skip<br><?php print SteamDocs::param("int",true); ?></dt>
               <dd>
-                Number of announcements to skip within the bounds of other query variables. Used in conjunction with <code>count</code>.
+                Number of announcements to skip within the bounds of other query variables. Used in conjunction with <span class="label label-inverse">count</span>.
               </dd>
             </dl>
             
@@ -72,12 +148,12 @@
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Hub ID of the query returned if <code>guid</code> input was defined and successful.</dd>
+              <dd>Hub ID of the query returned if <span class="label label-inverse">guid</span> input was defined and successful.</dd>
             </dl>
             
             <dl class="dl-horizontal">
               <dt>appid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>App ID of the query returned if <code>appid</code> input was defined and successful.</dd>
+              <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
             </dl>
             
             <div class="well">
@@ -112,71 +188,12 @@
               <dd>The event type. Consult the table below for what the integers represent.</dd>
             </dl>
             
-            <div class="well well-small">
-            <table class="table table-condensed table-bordered table-striped table-hover">
-              <thead>
-                <tr>
-                  <th>Value</th>
-                  <th>Short String</th>
-                  <th>Official Long String</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>0</td>
-                  <td>ChatEvent</td>
-                  <td>Chat</td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>GameEvent</td>
-                  <td>Play a Game</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>OtherEvent</td>
-                  <td>A lil somethin somethin</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>PartyEvent</td>
-                  <td>Party!</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>MeetingEvent</td>
-                  <td>Important Meeting</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>SpecialCauseEvent</td>
-                  <td>Special cause (charity ball?)</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>MusicAndArtsEvent</td>
-                  <td>Music or Art type thing</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>SportsEvent</td>
-                  <td>Sporting endeavor</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>TripEvent</td>
-                  <td>Out of town excursion</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-            
             <dl class="dl-horizontal">
               <dt>eventAppID<br><?php print SteamDocs::param("int",true); ?></dt>
               <dd>
                 App ID number of the game attached to the event item.
                 <br>
-                Valid only when <code>eventtype</code> is 2.
+                Valid only when <span class="label label-inverse">eventtype</span> is <span class="badge badge-inverse">2</span>.
               </dd>
             </dl>
             
@@ -185,7 +202,7 @@
               <dd>
                 IP address attached to the event item.
                 <br>
-                Valid only when <code>eventtype</code> is 2 and <code>eventAppID</code> is defined.
+                Valid only when <span class="label label-inverse">eventtype</span> is <span class="badge badge-inverse">2</span> and <span class="label label-inverse">eventAppID</span> is defined.
               </dd>
             </dl>
             
@@ -194,7 +211,7 @@
               <dd>
                 Password used to enter the game server attached to the event item.
                 <br>
-                Valid only when <code>eventtype</code> is 2 and <code>eventAppID</code> is defined.
+                Valid only when <span class="label label-inverse">eventtype</span> is <span class="badge badge-inverse">2</span> and <span class="label label-inverse">eventAppID</span> is defined.
               </dd>
             </dl>
             
@@ -203,7 +220,11 @@
               <dd>
                 Steam launch URL attached to the event item.
                 <br>
-                Valid only when <code>eventtype</code> is 2 and <code>eventIP</code> is defined.
+                Valid only in the following conditions:
+                <ul>
+                  <li><span class="label label-inverse">eventtype</span> is <span class="badge badge-inverse">2</span> and <span class="label label-inverse">eventIP</span> is defined.</li>
+                  <li><span class="label label-inverse">eventtype</span> is <span class="badge badge-inverse">9</span>.</li>
+                </ul>
               </dd>
             </dl>
             

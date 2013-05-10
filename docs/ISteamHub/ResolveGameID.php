@@ -8,6 +8,8 @@
             <p>Unlike <code>ISteamHub::ResolveVanityURL</code>, this method searches for hubs related to an AppID. This allows searches for either an official game hub of the app, or returns community based hubs that have included the target game by association.</p>
             
             <h2>Input</h2>
+            <?php print SteamDocs::seeInputs(); ?>
+            
             <dl class="dl-horizontal">
               <dt>appid<br><span class="text-info">(int)</span></dt>
               <dd>The steam AppID number of the game to search against.</dd>
@@ -34,25 +36,9 @@
             </dl>
             
             <h2>Output</h2>
+            <?php print SteamDocs::seeOutputs(); ?>
             
-            <dl class="dl-horizontal">
-              <dt>success<br><span class="text-info">(int)</span></dt>
-              <dd>Status return number of query. Possible responses include:
-                <ul>
-                  <li>1 = Success.</li>
-                  <li>42 = No match found.</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>message<br><span class="text-info">(string)</span></dt>
-              <dd>Status return string of query. Possible responses include:
-                <ul>
-                  <li>Success.</li>
-                  <li>No match found.</li>
-                </ul>
-              </dd>
-            </dl>
+            <div class="well well-small">
             <dl class="dl-horizontal">
               <dt>hubs<br><span class="text-info">(array)</span></dt>
               <dd>Array of results.</dd>
@@ -81,7 +67,7 @@
               <dt>public<br><span class="text-info">(bool)</span></dt>
               <dd>If TRUE, hub is public. FALSE if otherwise.</dd>
             </dl>
-            
+            </div>
             
             <h2>Examples</h2>
             

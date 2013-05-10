@@ -7,11 +7,7 @@
             <p>Returns all the member IDs associated with the hub.</p>
             
             <h2>Inputs</h2>
-            <?php print SteamDocs::seeInputs(); ?>
-            
-            <div class="well alert alert-info">
-              Method will take <em>either</em> <code>guid</code> <em>or</em> <code>appid</code> parameters.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid(); ?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int",false); ?></dt>
@@ -28,12 +24,12 @@
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Hub ID of the query returned if <code>guid</code> input was defined and successful.</dd>
+              <dd>Hub ID of the query returned if <span class="label label-inverse">guid</span> input was defined and successful.</dd>
             </dl>
             
             <dl class="dl-horizontal">
               <dt>appid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>App ID of the query returned if <code>appid</code> input was defined and successful.</dd>
+              <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
             </dl>
             
             <div class="well well-small">
@@ -50,9 +46,9 @@
             
             <dl class="dl-horizontal">
               <dt>role<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>The roll of the member in the hub.</dd>
+              <dd>The roll of the member in the hub.<br><?php print SteamDocs::seeRoles(); ?></dd>
             </dl>
-            <?php print SteamDocs::seeRoles(); ?>
+            
             
             </div>
             

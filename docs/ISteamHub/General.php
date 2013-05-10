@@ -61,19 +61,19 @@
                   <td>key</td>
                   <td>string</td>
                   <td>WebAPI Application Key.</td>
-                  <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                  <td><span class="badge badge-inverse">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></td>
                 </tr>
                 <tr>
                   <td>format</td>
                   <td>string</td>
                   <td>Requested form of output. XML, VDF, or JSON (default)</td>
-                  <td>json</td>
+                  <td><span class="badge badge-inverse">json</span></td>
                 </tr>
                 <tr>
                   <td>language</td>
                   <td>string</td>
                   <td><a href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank">ISO 639-1</a> language code.</td>
-                  <td>en</td>
+                  <td><span class="badge badge-inverse">en</span></td>
                 </tr>
               </tbody>
             </table>
@@ -99,13 +99,13 @@
                       <li>1 = Success.</li>
                       <li>42 = No match found.</li>
                   </td>
-                  <td>1</td>
+                  <td><span class="badge badge-inverse">1</span></td>
                 </tr>
                 <tr>
                   <td>message</td>
                   <td>string</td>
                   <td>Human readable string describing <code>success</code> description.</td>
-                  <td>Success</td>
+                  <td><span class="badge badge-inverse">Success</span></td>
                 </tr>
               </tbody>
             </table>
@@ -122,19 +122,23 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>0</td>
+                  <td><span class="badge badge-inverse">0</span></td>
+                  <td>Public (Non-member)</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-inverse">1</span></td>
                   <td>Member</td>
                 </tr>
                 <tr>
-                  <td>1</td>
+                  <td><span class="badge badge-inverse">2</span></td>
                   <td>Moderator</td>
                 </tr>
                 <tr>
-                  <td>2</td>
+                  <td><span class="badge badge-inverse">3</span></td>
                   <td>Officer</td>
                 </tr>
                 <tr>
-                  <td>3</td>
+                  <td><span class="badge badge-inverse">4</span></td>
                   <td>Owner</td>
                 </tr>
               </tbody>

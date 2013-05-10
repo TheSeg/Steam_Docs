@@ -7,11 +7,7 @@
             <p>Returns the permissions a queried group has for members and the public.</p>
             
             <h2>Inputs</h2>
-            <?php print SteamDocs::seeInputs(); ?>
-            
-            <div class="well alert alert-info">
-              Method will take <em>either</em> <span class="label label-inverse">guid</span> <em>or</em> <span class="label label-inverse">appid</span> parameters.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid(); ?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int",false); ?></dt>

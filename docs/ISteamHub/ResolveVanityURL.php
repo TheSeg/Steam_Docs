@@ -8,6 +8,8 @@
             <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamHub</code> interface.</p>
             
             <h2>Input</h2>
+            <?php print SteamDocs::seeInputs(); ?>
+            
             <dl class="dl-horizontal">
               <dt>vanityUrl<br><span class="text-info">(string)</span></dt>
               <dd>One of the following types of information:
@@ -20,25 +22,8 @@
             </dl>
             
             <h2>Output</h2>
+            <?php print SteamDocs::seeOutputs(); ?>
             
-            <dl class="dl-horizontal">
-              <dt>success<br><span class="text-info">(int)</span></dt>
-              <dd>Status return number of query. Possible responses include:
-                <ul>
-                  <li>1 = Success.</li>
-                  <li>42 = No match found.</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>message<br><span class="text-info">(string)</span></dt>
-              <dd>Status return string of query. Possible responses include:
-                <ul>
-                  <li>Success.</li>
-                  <li>No match found.</li>
-                </ul>
-              </dd>
-            </dl>
             <dl class="dl-horizontal">
               <dt>guid<br><span class="text-info">(int)</span></dt>
               <dd>Steam Hub ID number of query.</dd>

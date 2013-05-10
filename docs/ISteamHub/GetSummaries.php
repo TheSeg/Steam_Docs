@@ -8,10 +8,7 @@
             <p>This method provides the majority of metadata about a particular group including title, icons, description, and other information. If data about a hub is not served by another method, that data lives in <code>ISteamHub::GetSummaries</code>.</p>
             
             <h2>Inputs</h2>
-            
-            <div class="alert alert-info">
-              <strong>Info:</strong> Method will take <em>either</em> of the following inputs.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid();?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><span class="text-info">(string)</span></dt>
@@ -23,32 +20,9 @@
             </dl>
             
             <h2>Outputs</h2>
+            <?php print SteamDocs::seeOutputs(); ?>
             
-            <h3>Status Returns</h3>
-            
-            <dl class="dl-horizontal">
-              <dt>success<br><span class="text-info">(int)</span></dt>
-              <dd>
-                Status return number of query. Possible responses include:
-                <ul>
-                  <li>1 = Success.</li>
-                  <li>42 = No match found.</li>
-                </ul>
-              </dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>message<br><span class="text-info">(string)</span></dt>
-              <dd>
-                Status return string of query. Possible responses include:
-                <ul>
-                  <li>1 = Success.</li>
-                  <li>42 = No match found.</li>
-                </ul>
-              </dd>
-            </dl>
-            
-            <h3>Content Returns</h3>
-            
+            <div class="well well-small">
             <dl class="dl-horizontal">
               <dt>hubs<br><span class="text-info">(array)</span></dt>
               <dd>Array of returns matching query.</dd>
@@ -258,6 +232,8 @@
                 The hub provided name of the attached website.
               </dd>
             </dl>
+            </div>
+            
             </div>
             
             <h3>Examples</h3>

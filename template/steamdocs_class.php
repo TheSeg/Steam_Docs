@@ -111,6 +111,10 @@ class SteamDocs {
     return '<div class="well well-small alert alert-info">See <a href="#General_MemberRoleValues">Member Role Values</a> for member roll return values.</div>';
   }
   
+  public static function useGuidAppid() {
+    return '<div class="well alert alert-info">Method will take <em>either</em> <span class="label label-inverse">guid</span> <em>or</em> <span class="label label-inverse">appid</span> parameters.</div>';
+  }
+  
 }
 
 ?>

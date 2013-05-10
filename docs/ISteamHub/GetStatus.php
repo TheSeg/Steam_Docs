@@ -8,11 +8,7 @@
             
             
             <h2>Inputs</h2>
-            <?php print SteamDocs::seeInputs(); ?>
-            
-            <div class="well alert alert-info">
-              Method will take <em>either</em> <code>guid</code> <em>or</em> <code>appid</code> parameters.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid(); ?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int",false); ?></dt>
@@ -29,12 +25,12 @@
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Hub ID of the query returned if <code>guid</code> input was defined and successful.</dd>
+              <dd>Hub ID of the query returned if <span class="label label-inverse">guid</span> input was defined and successful.</dd>
             </dl>
             
             <dl class="dl-horizontal">
               <dt>appid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>App ID of the query returned if <code>appid</code> input was defined and successful.</dd>
+              <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
             </dl>
             
             <dl class="dl-horizontal">
@@ -66,7 +62,7 @@
               <dd>
                 The Steam ID number of the current player of the week (if defined).
                 <br>
-                Returns 0 if there is no player of the week defined.
+                Returns <span class="badge badge-inverse">0</span> if there is no player of the week defined.
               </dd>
             </dl>
             

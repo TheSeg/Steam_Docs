@@ -18,12 +18,7 @@
             <p>The method allows pagination of announcements in a given search query. Using the provided search variables, a request can limit by time and/or number of count returns. Queries can also skip a number of announcements if <code>count</code> is a part of the query.</p>
             
             <h2>Inputs</h2>
-            
-            <?php print SteamDocs::seeInputs(); ?>
-            
-            <div class="well alert alert-info">
-              <strong>Info:</strong> Method will take <em>either</em> <code>guid</code> <em>or</em> <code>appid</code> parameters.
-            </div>
+            <?php print SteamDocs::seeInputs().SteamDocs::useGuidAppid(); ?>
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int",false); ?></dt>
@@ -40,7 +35,7 @@
             
             <dl class="dl-horizontal">
               <dt>maxLength<br><?php print SteamDocs::param("int",true); ?></dt>
-              <dd>Maximum character length of <code>contents</code> field.<br>System will make a best guess to end content without cutting a word.</dd>
+              <dd>Maximum character length of <span class="label label-inverse">contents</span> field.<br>System will make a best guess to end content without cutting a word.</dd>
             </dl>
             
             <dl class="dl-horizontal">
@@ -61,7 +56,7 @@
             <dl class="dl-horizontal">
               <dt>skip<br><?php print SteamDocs::param("int",true); ?></dt>
               <dd>
-                Number of announcements to skip within the bounds of other query variables. Used in conjunction with <code>count</code>.
+                Number of announcements to skip within the bounds of other query variables. Used in conjunction with <span class="label label-inverse">count</span>.
               </dd>
             </dl>
             
@@ -80,12 +75,12 @@
             
             <dl class="dl-horizontal">
               <dt>guid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Hub ID of the query returned if <code>guid</code> input was defined and successful.</dd>
+              <dd>Hub ID of the query returned if <span class="label label-inverse">guid</span> input was defined and successful.</dd>
             </dl>
             
             <dl class="dl-horizontal">
               <dt>appid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>App ID of the query returned if <code>appid</code> input was defined and successful.</dd>
+              <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
             </dl>
             
             <div class="well">
@@ -117,7 +112,7 @@
             
             <dl class="dl-horizontal">
               <dt>contents<br><?php print SteamDocs::param("string"); ?></dt>
-              <dd>HTML string of announcement contents.<br>Returns full contents unless <code>maxlength</code> is defined.</dd>
+              <dd>HTML string of announcement contents.<br>Returns full contents unless <span class="label label-inverse">maxlength</span> is defined.</dd>
             </dl>
             
             <dl class="dl-horizontal">
