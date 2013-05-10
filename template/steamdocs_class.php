@@ -72,7 +72,7 @@ class SteamDocs {
         $tabClassActive = " ";
       }
       $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">
-                  <pre class="prettyprint ">'.$value.'</pre>
+                  <pre class="prettyprint pre-scrollable">'.$value.'</pre>
                 </div>';
     }
     $html[] = "</div></div>";
