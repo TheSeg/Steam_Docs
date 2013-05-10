@@ -262,12 +262,12 @@
             
             <h3>Examples</h3>
             
-            <h3>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
+            <h4>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h4>
             <blockquote>GET https://api.steampowered.com/ISteamHub/GetSummaries/v0001/?guids=103582791433132887</blockquote>
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "GetSummaries_00" ); ?>
             
-            <h3>Game Hub: <span class="text-info"><a href="http://steamcommunity.com/app/94590" target="_blank">Puzzle Agent 2</a></span></h3>
+            <h4>Game Hub: <span class="text-info"><a href="http://steamcommunity.com/app/94590" target="_blank">Puzzle Agent 2</a></span></h4>
             <blockquote>GET https://api.steampowered.com/ISteamHub/GetSummaries/v0001/?appid=94590</blockquote>
             
             <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "GetSummaries_01" ); ?>
