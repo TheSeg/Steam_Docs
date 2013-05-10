@@ -71,6 +71,12 @@ class SteamDocs {
       } else {
         $tabClassActive = " ";
       }
+      
+      // Post-processing of value, if needed.
+      if ( $key == "json" ) {
+        $value = htmlentities( $value , ENT_XML1 );
+      }
+      
       $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">
                   <pre class="prettyprint pre-scrollable">'.$value.'</pre>
                 </div>';
