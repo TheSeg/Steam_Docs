@@ -78,7 +78,7 @@
               </tbody>
             </table>
             
-          <h2 id="General_CommonOutpouts">Common Outputs</h2>
+          <h2 id="General_CommonOutputs">Common Outputs</h2>
           <p>Unless otherwise noted, all methods will return the following parameters. For methods that return an array of results, these fields will be included at the top-most level of a return, before the array of results.</p>
           
           <table class="table table-condensed table-bordered table-striped table-hover">

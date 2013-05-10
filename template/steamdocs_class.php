@@ -92,6 +92,15 @@ class SteamDocs {
     }
     return implode("",$returnHTML);
   }
+  
+  public static function seeInputs() {
+    return '<div class="well well-small">All <a href="#General_CommonInputs">Common Inputs</a> are used for this method. Some may not effect response.</div>';
+  }
+  
+  public static function seeOutputs() {
+    return '<div class="well well-small">All <a href="#General_CommonOutputs">Common Outputs</a> are used for this method.</div>';
+  }
+  
 }
 
 ?>
