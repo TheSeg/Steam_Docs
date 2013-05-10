@@ -130,12 +130,6 @@
               <dd>Number of comments made for this particular post.</dd>
             </dl>
             
-            <?php
-            //date_default_timezone_set('UTC');
-            //04:15PM on July 01, 2011
-            print mktime(19,8,0,6,28,2011);
-            ?>
-            
             </div>
             
             <h3>Examples</h3>
