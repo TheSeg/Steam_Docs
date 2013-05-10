@@ -13,7 +13,7 @@ include_once("./template/html_start.php");
             <div class="span">
               <a class="btn btn-large btn-info " href="./ISteamHub.php">Community Hubs ( ISteamHub )</a>
               
-              <a class="btn btn-large btn-info " href="#">Game &amp; App Information</a>
+              <a class="btn btn-large btn-info disabled">Game &amp; App Information</a>
             </div>
           </div>
         </div>

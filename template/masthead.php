@@ -20,12 +20,13 @@
                   <li class="divider"></li>
                   <li class="nav-header">Methods</li>
                   <li><a href="./ISteamHub.php#ResolveVanityURL">ResolveVanityURL</a></li>
-                  <li><a href="./ISteamHub.php#GetGroupSummaries">GetGroupSummaries</a></li>
+                  <li><a href="./ISteamHub.php#ResolveGameID">ResolveGameID</a></li>
+                  <li><a href="./ISteamHub.php#GetSummaries">GetSummaries</a></li>
                   <li><a href="./ISteamHub.php#GetAnnouncements">GetAnnouncements</a></li>
                   <li><a href="./ISteamHub.php#GetEvents">GetEvents</a></li>
-                  <li><a href="./ISteamHub.php#GetGroupStatus">GetGroupStatus</a></li>
-                  <li><a href="./ISteamHub.php#GetGroupMembers">GetGroupMembers</a></li>
-                  <li><a href="./ISteamHub.php#GetPermissionsScheme">GetPermissionsScheme</a></li>
+                  <li><a href="./ISteamHub.php#GetStatus">GetStatus</a></li>
+                  <li><a href="./ISteamHub.php#GetMembers">GetMembers</a></li>
+                  <li><a href="./ISteamHub.php#GetPermissions">GetPermissions</a></li>
                 </ul>
               </li>
             </ul>
