@@ -3,91 +3,91 @@
   "creatorBuild" : "8283",
   "files" : {
     "\/js\/prettify\/lang-lisp.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lisp-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-yaml.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-yaml.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-yaml-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-yaml.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/run_prettify.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/run_prettify.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/run_prettify-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/run_prettify.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/examples\/GetEvents_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetEvents_00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetEvents_00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetEvents_00.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-pascal.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-pascal.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-pascal-ck.js",
-      "fileType" : 64
-    },
-    "\/js\/prettify\/lang-css.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-css.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-css-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-pascal.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-tex.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-tex.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-tex-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-tex.min.js",
+      "fileType" : 64
+    },
+    "\/js\/prettify\/lang-css.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-css.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-css.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/examples\/GetPermissions_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetPermissions_00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetPermissions_00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetPermissions_00.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetAnnouncements.php" : {
@@ -99,20 +99,9 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/docs\/ISteamHub\/examples\/GetMembers_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetMembers_00.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetMembers_00-ck.js",
-      "fileType" : 64
-    },
     "\/css\/steamdocs.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/steamdocs.css",
@@ -120,14 +109,14 @@
       "fileType" : 16
     },
     "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example00.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetStatus.php" : {
@@ -139,6 +128,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/docs\/ISteamHub\/examples\/GetMembers_00.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetMembers_00.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetMembers_00.min.js",
+      "fileType" : 64
+    },
     "\/docs\/ISteamHub\/ResolveVanityURL.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -148,30 +148,30 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/prettify\/lang-lua.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-lua.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lua-ck.js",
-      "fileType" : 64
-    },
     "\/js\/prettify\/lang-basic.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-basic.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-basic-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-basic.min.js",
+      "fileType" : 64
+    },
+    "\/js\/prettify\/lang-lua.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-lua.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lua.min.js",
       "fileType" : 64
     },
     "\/css\/bootstrap-responsive.css" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -189,69 +189,69 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/lang-apollo.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-apollo.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-apollo-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-apollo.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/examples\/GetStatus_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetStatus_00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetStatus_00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetStatus_00.min.js",
       "fileType" : 64
     },
     "\/js\/bootstrap.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/bootstrap.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/bootstrap.min-ck.js",
+      "outputAbbreviatedPath" : "\/js\/bootstrap.min.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-dart.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-dart.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-dart-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-dart.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-n.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-n.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-n-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-n.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-ml.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-ml.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-ml-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-ml.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetEvents.php" : {
@@ -264,7 +264,7 @@
       "fileType" : 2048
     },
     "\/css\/bootstrap-responsive.min.css" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -281,48 +281,48 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/prettify\/lang-go.js" : {
+    "\/js\/steamdocs.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/js\/steamdocs.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/steamdocs.min.js",
+      "fileType" : 64
+    },
+    "\/js\/prettify\/lang-go.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-go.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-go-ck.js",
-      "fileType" : 64
-    },
-    "\/js\/steamdocs.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/steamdocs.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/steamdocs-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-go.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-vb.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-vb.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vb-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vb.min.js",
       "fileType" : 64
     },
     "\/js\/html5shiv.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/html5shiv.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/html5shiv-ck.js",
+      "outputAbbreviatedPath" : "\/js\/html5shiv.min.js",
       "fileType" : 64
     },
     "\/img\/glyphicons-halflings-white.png" : {
@@ -346,7 +346,7 @@
       "fileType" : 2048
     },
     "\/css\/bootstrap.css" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -364,36 +364,36 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/lang-matlab.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-matlab.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-matlab-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-matlab.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-vhdl.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-vhdl.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vhdl-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vhdl.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-mumps.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-mumps.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-mumps-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-mumps.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetMembers.php" : {
@@ -406,57 +406,57 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/prettify.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/prettify.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/prettify-ck.js",
-      "fileType" : 64
-    },
-    "\/docs\/ISteamHub\/examples\/ResolveGameID_01.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_01.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_01-ck.js",
-      "fileType" : 64
-    },
-    "\/docs\/ISteamHub\/examples\/ResolveGameID_02.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_02.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_02-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/prettify.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-sql.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-sql.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-sql-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-sql.min.js",
       "fileType" : 64
     },
-    "\/ISteamHub.php" : {
+    "\/docs\/ISteamHub\/examples\/ResolveGameID_01.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_01.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_01.min.js",
+      "fileType" : 64
+    },
+    "\/docs\/ISteamHub\/ResolveGameID.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/ISteamHub.php",
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/ResolveGameID.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
+    },
+    "\/docs\/ISteamHub\/examples\/ResolveGameID_02.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_02.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveGameID_02.min.js",
+      "fileType" : 64
     },
     "\/index.php" : {
       "ignoreWasSetByUser" : 0,
@@ -468,44 +468,44 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/lang-clj.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-clj.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-clj-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-clj.min.js",
       "fileType" : 64
     },
     "\/js\/bootstrap.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/bootstrap.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/bootstrap-ck.js",
+      "outputAbbreviatedPath" : "\/js\/bootstrap.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/examples\/GetSummaries_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetSummaries_00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetSummaries_00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetSummaries_00.min.js",
       "fileType" : 64
     },
-    "\/docs\/ISteamHub\/ResolveGameID.php" : {
+    "\/ISteamHub.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/ResolveGameID.php",
+      "inputAbbreviatedPath" : "\/ISteamHub.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -519,7 +519,7 @@
       "fileType" : 2048
     },
     "\/css\/bootstrap.min.css" : {
-      "ignoreWasSetByUser" : 0,
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
@@ -528,47 +528,71 @@
       "fileType" : 16
     },
     "\/js\/prettify\/lang-proto.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-proto.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-proto-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-proto.min.js",
+      "fileType" : 64
+    },
+    "\/js\/steamdocs.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/steamdocs.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/steamdocs.min.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-erlang.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-erlang.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-erlang-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-erlang.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-xq.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-xq.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-xq-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-xq.min.js",
       "fileType" : 64
     },
-    "\/js\/prettify\/lang-rd.js" : {
+    "\/css\/steamdocs.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/steamdocs.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/steamdocs.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
+    "\/js\/prettify\/lang-rd.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-rd.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-rd-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-rd.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetSummaries.php" : {
@@ -580,48 +604,48 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01-ck.js",
-      "fileType" : 64
-    },
     "\/docs\/ISteamHub\/examples\/GetAnnouncements_00.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetAnnouncements_00.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetAnnouncements_00-ck.js",
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetAnnouncements_00.min.js",
+      "fileType" : 64
+    },
+    "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/ResolveVanityURL_Example01.min.js",
       "fileType" : 64
     },
     "\/js\/jquery.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/jquery.min.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.min-ck.js",
+      "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-hs.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-hs.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-hs-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-hs.min.js",
       "fileType" : 64
     },
     "\/docs\/ISteamHub\/GetPermissions.php" : {
@@ -634,26 +658,46 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/lang-scala.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-scala.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-scala-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-scala.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-r.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-r.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-r-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-r.min.js",
       "fileType" : 64
+    },
+    "\/js\/prettify\/lang-wiki.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.min.js",
+      "fileType" : 64
+    },
+    "\/template\/html_start.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/template\/html_start.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/img\/glyphicons-halflings.png" : {
       "ignoreWasSetByUser" : 0,
@@ -666,26 +710,6 @@
       "initialSize" : 12799,
       "fileType" : 8192
     },
-    "\/template\/html_start.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/template\/html_start.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/prettify\/lang-wiki.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-wiki-ck.js",
-      "fileType" : 64
-    },
     "\/js\/prettify\/prettify.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -696,14 +720,14 @@
       "fileType" : 16
     },
     "\/js\/prettify\/lang-tcl.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-tcl.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-tcl-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-tcl.min.js",
       "fileType" : 64
     },
     "\/about.php" : {
@@ -716,14 +740,14 @@
       "fileType" : 2048
     },
     "\/js\/prettify\/lang-llvm.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/js\/prettify\/lang-llvm.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-llvm-ck.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-llvm.min.js",
       "fileType" : 64
     }
   },
@@ -747,7 +771,7 @@
     "lessAutoOutputPathStyle" : 2,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
     "coffeeMinifyOutput" : 1,
-    "javascriptOutputSuffix" : "-ck",
+    "javascriptOutputSuffix" : ".min",
     "jadeOutputStyle" : 0,
     "coffeeAutoOutputPathStyle" : 0,
     "autoSyncProjectSettingsFile" : 1,
@@ -767,7 +791,7 @@
     "kitAutoOutputPathRelativePath" : "",
     "lessAutoOutputPathReplace2" : "css",
     "jadeAutoOutputPathReplace2" : "",
-    "shouldRunBless" : 0,
+    "shouldRunBless" : 1,
     "stylusAutoOutputPathStyle" : 2,
     "coffeeCheckOutputStyle" : 0,
     "slimOutputStyle" : 1,
@@ -812,7 +836,7 @@
       "es5" : 0,
       "dojo" : 0,
       "strict" : 0,
-      "devel" : 0,
+      "devel" : 1,
       "onecase" : 0,
       "wsh" : 0,
       "nonstandard" : 0,
