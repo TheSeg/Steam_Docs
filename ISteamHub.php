@@ -6,7 +6,7 @@ include_once("./template/html_start.php");
 ?>
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>ISteamHub</h1>
+    <h1><i class="icon-group"></i> ISteamHub</h1>
     <p class="lead">A Steam WebAPI interface for Steam Community Hubs.</p>
   </div>
 </header>
