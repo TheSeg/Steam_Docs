@@ -1,7 +1,7 @@
 <?php
 include_once("./template/init.php");
 $page['title'] = "Steam WebAPI Proposal by Seg";
-$page['desc'] = "Steam WebAPI Proposal by John 'Seg' Seggerson.";
+$page['desc'] = "A proposal for updating and expanding the Steam WebAPI. Authored by John 'Seg' Seggerson.";
 include_once("./template/html_start.php");
 ?>
 
