@@ -16,10 +16,19 @@ class SteamDocs {
     
     if ( !empty($pd['title']) ) {
       $html[] = '<title>'.$pd['title'].'</title>';
+      $html[] = '<meta name="og:title" content="'.$pd['title'].'">';
     }
     if ( !empty($pd['desc']) ) {
       $html[] = '<meta name="description" content="'.$pd['desc'].'">';
+      $html[] = '<meta name="og:description" content="'.$pd['desc'].'">';
     }
+    
+    $html[] = '<meta name="fb:app_id" content="250811168365558">';
+    $html[] = '<meta property="og:type" content="website" />';
+    $html[] = '<meta property="og:site_name" content="Steam WebAPI Proposals by Seg" />';
+    $html[] = '<meta property="twitter:site" content="Steam WebAPI Proposals by Seg" />';
+    $html[] = '<link rel="publisher" href="https://plus.google.com/113283982336373378707/" />';
+    $html[] = '<meta name="twitter:card" content="summary" />';
     
     $html[] = "";
     

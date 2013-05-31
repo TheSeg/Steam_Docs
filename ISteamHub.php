@@ -1,7 +1,7 @@
 <?php
 include_once("./template/init.php");
 $page['title'] = "Steam WebAPI Proposal &middot; ISteamHub";
-$page['desc'] = "ISteamHub, an interface for Steam Hubs.";
+$page['desc'] = "ISteamHub, a proposal interface for Steam Community Hubs.";
 include_once("./template/html_start.php");
 ?>
 <header class="jumbotron subhead" id="overview">
