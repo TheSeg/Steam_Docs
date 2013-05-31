@@ -26,7 +26,7 @@ class SteamDocs {
     $html[] = '<meta name="fb:app_id" content="250811168365558">';
     $html[] = '<meta property="og:type" content="website" />';
     $html[] = '<meta property="og:site_name" content="Steam WebAPI Proposals by Seg" />';
-    $html[] = '<meta name="twitter:creator:id" content="TheSeg" />';
+    $html[] = '<meta name="twitter:creator:id" content="@TheSeg" />';
     $html[] = '<link rel="publisher" href="https://plus.google.com/113283982336373378707/" />';
     $html[] = '<meta name="twitter:card" content="summary" />';
     
