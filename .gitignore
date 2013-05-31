@@ -1,4 +1,5 @@
-
+// OS Ignores
 .DS_Store
 
+// CodeKit Ignore
 codekit-config.json
