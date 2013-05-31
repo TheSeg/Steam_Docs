@@ -310,15 +310,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/less\/responsive.less" : {
+    "\/less\/font-awesome\/core.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/less\/responsive.less",
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/font-awesome\/core.less",
       "outputStyle" : 2,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/bootstrap-responsive.min.css",
+      "outputAbbreviatedPath" : "\/less\/css\/core.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -347,15 +347,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/less\/font-awesome\/core.less" : {
+    "\/less\/responsive.less" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/font-awesome\/core.less",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/less\/responsive.less",
       "outputStyle" : 2,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/less\/css\/core.css",
+      "outputAbbreviatedPath" : "\/css\/bootstrap-responsive.min.css",
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
@@ -428,17 +428,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/js\/jquery.min.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
-      "fileType" : 64
-    },
     "\/less\/close.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -451,6 +440,17 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/js\/jquery.min.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.min.min.js",
+      "fileType" : 64
     },
     "\/template\/init.php" : {
       "ignoreWasSetByUser" : 0,
@@ -533,15 +533,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/js\/prettify\/lang-lisp.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/js\/src\/steamdocs.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.js",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/js\/src\/steamdocs.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.min.js",
+      "outputAbbreviatedPath" : "\/js\/steamdocs.min.js",
       "fileType" : 64
     },
     "\/less\/font-awesome\/font-awesome.less" : {
@@ -557,18 +557,16 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/less\/tables.less" : {
-      "ignoreWasSetByUser" : 0,
+    "\/js\/prettify\/lang-lisp.js" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/tables.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/tables.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-lisp.min.js",
+      "fileType" : 64
     },
     "\/js\/html5shiv.js" : {
       "ignoreWasSetByUser" : 1,
@@ -603,6 +601,19 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/less\/tables.less" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/less\/tables.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/tables.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
+    },
     "\/js\/prettify\/lang-llvm.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -612,17 +623,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/prettify\/lang-llvm.min.js",
-      "fileType" : 64
-    },
-    "\/js\/src\/steamdocs.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/js\/src\/steamdocs.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/steamdocs.min.js",
       "fileType" : 64
     },
     "\/js\/prettify\/lang-tex.js" : {
@@ -900,15 +900,6 @@
       "outputAbbreviatedPath" : "\/docs\/ISteamHub\/examples\/GetMembers_00.min.js",
       "fileType" : 64
     },
-    "\/docs\/ISteamHub\/GetStatus.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/GetStatus.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/prettify\/lang-hs.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -919,6 +910,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/prettify\/lang-hs.min.js",
       "fileType" : 64
+    },
+    "\/docs\/ISteamHub\/GetStatus.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/docs\/ISteamHub\/GetStatus.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/less\/grid.less" : {
       "ignoreWasSetByUser" : 0,
@@ -1229,18 +1229,16 @@
       "outputAbbreviatedPath" : "\/js\/prettify\/lang-clj.min.js",
       "fileType" : 64
     },
-    "\/less\/modals.less" : {
-      "ignoreWasSetByUser" : 0,
+    "\/js\/prettify\/lang-vb.js" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/less\/modals.less",
-      "outputStyle" : 2,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/modals.css",
-      "strictImports" : 0,
-      "fileType" : 1,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-vb.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vb.min.js",
+      "fileType" : 64
     },
     "\/less\/breadcrumbs.less" : {
       "ignoreWasSetByUser" : 0,
@@ -1255,16 +1253,18 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/js\/prettify\/lang-wiki.js" : {
-      "ignoreWasSetByUser" : 1,
+    "\/less\/modals.less" : {
+      "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/less\/modals.less",
+      "outputStyle" : 2,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/modals.css",
+      "strictImports" : 0,
+      "fileType" : 1,
+      "debugStyle" : 0
     },
     "\/js\/src\/jquery.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1290,15 +1290,15 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/js\/prettify\/lang-vb.js" : {
+    "\/js\/prettify\/lang-wiki.js" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/prettify\/lang-vb.js",
+      "inputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/prettify\/lang-vb.min.js",
+      "outputAbbreviatedPath" : "\/js\/prettify\/lang-wiki.min.js",
       "fileType" : 64
     },
     "\/js\/steamdocs.min.js" : {
@@ -1402,15 +1402,6 @@
       "outputAbbreviatedPath" : "\/js\/bootstrap.min.min.js",
       "fileType" : 64
     },
-    "\/css\/steamdocs.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/steamdocs.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
     "\/less\/button-groups.less" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1423,6 +1414,15 @@
       "strictImports" : 0,
       "fileType" : 1,
       "debugStyle" : 0
+    },
+    "\/css\/steamdocs.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/steamdocs.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [
