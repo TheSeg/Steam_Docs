@@ -9,6 +9,7 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="./js/prettify/prettify.css" rel="stylesheet">
+    <link href="./css/bootswatch.min.css" rel="stylesheet">
     <link href="./css/steamdocs.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -19,7 +20,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/prettify/run_prettify.js"></script>
-    <script src="./js/steamdocs.js"></script>
+    <script src="./js/steamdocs.min.js"></script>
     <?php if ( strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.com" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.org" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.net" ) { ?>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
