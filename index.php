@@ -14,8 +14,8 @@ include_once("./template/html_start.php");
 
   <div class="row-fluid">
   
-    <div class="span4 offset1">
-      <h3><i class="icon-group"></i> Community Hubs</h3>
+    <div class="span5 offset1">
+      <h3><a href="./ISteamHub.php"><i class="icon-group"></i> Community Hubs</a></h3>
       <p>
         Hubs are collections of users around a game, specific interest, or external community.
         Currently community API support is via deprecated XML support of groups. This document puts forth
@@ -25,8 +25,8 @@ include_once("./template/html_start.php");
 
     </div>
 
-    <div class="span4 offset2">
-      <h3><i class="icon-gamepad"></i> Game &amp; App Information</h3>
+    <div class="span5 offset1">
+      <h3><a href="./ISteamApps.php"><i class="icon-gamepad"></i> Game &amp; App Information</a></h3>
       <p>Provides group metadata including name, URL, and other basic information about the group.</p>
       <p><a class="btn btn-large btn-info" href="./ISteamApps.php"><i class="icon-gamepad"></i> ISteamApps</a></p>
     </div>
