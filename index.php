@@ -28,7 +28,7 @@ include_once("./template/html_start.php");
     <div class="span4 offset2">
       <h3><i class="icon-gamepad"></i> Game &amp; App Information</h3>
       <p>Provides group metadata including name, URL, and other basic information about the group.</p>
-      <p><a class="btn btn-large btn-info disabled"><i class="icon-gamepad"></i> Game &amp; App Information</a></p>
+      <p><a class="btn btn-large btn-info" href="./ISteamApps.php"><i class="icon-gamepad"></i> ISteamApps</a></p>
     </div>
   
   </div>
