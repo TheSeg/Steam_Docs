@@ -6,7 +6,7 @@ include_once("./template/html_start.php");
 ?>
 
 <div class="jumbotron">
-  <h1>About</h1>
+  <h1><i class="icon-info-sign"></i> About</h1>
   <p class="lead">Because <a href="http://theseg.github.io/" target="_blank">Seg</a> wants a better Steam WebAPI.</p>
 </div>
 
