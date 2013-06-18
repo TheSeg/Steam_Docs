@@ -5,22 +5,19 @@
 */
 
 $(document).ready(function(){
-    console.log("Ready!");
-    //$('.bs-docs-sidenav').affix();
-    
+    var mastheadHeight = $("#masthead").height();
+    var navHeight = $("#navigation").height()/2.5;
     $('.nav-pills a, .toTop').click(function(){
         var scrollTo = 0;
-        if ( $.attr(this, 'href') === "#introduction") {
-            scrollTo = ($( "#navigation" ).offset().top)-30;
-        } else if ( $.attr(this, 'href') === "#top") {
+        var topThing = $( $.attr(this, 'href') ).offset().top;
+        if ( $.attr(this, 'href') === "#top") {
             scrollTo = 0;
         } else {
-            scrollTo = (($( $.attr(this, 'href') ).offset().top)-70);
+            scrollTo = (($( $.attr(this, 'href') ).offset().top)-(mastheadHeight+navHeight));
         }
         $('html, body').animate({
             scrollTop: scrollTo
         }, 500);
         return false;
     });
-    
 });

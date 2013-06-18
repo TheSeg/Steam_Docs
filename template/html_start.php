@@ -19,6 +19,7 @@
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.smooth-scroll.min.js"></script>
     <script src="./js/bootswatch.min.js"></script>
     <script src="./js/prettify/run_prettify.js"></script>
     <script src="./js/steamdocs.min.js"></script>
@@ -36,6 +37,6 @@
     <?php } ?>
 </head>
 
-<body id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+<body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="100">
 <div id='fb-root'></div>
 <?php include("masthead.php"); ?>
