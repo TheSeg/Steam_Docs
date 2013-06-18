@@ -3,37 +3,14 @@
    Supplemental CSS
 */
 
+/* Top level HTML styles
+-------------------------------------------------- */
 body {
   position: relative;
-  padding-top: 40px;
 }
-  .sidebar-nav {
-    padding: 9px 0;
-  }
-
-  @media (max-width: 980px) {
-    /* Enable use of floated navbar text */
-    .navbar-text.pull-right {
-      float: none;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-  }
-
-  /* Custom container */
-  .container-narrow {
-    margin: 0 auto;
-    max-width: 700px;
-  }
-  .container-narrow > hr {
-    margin: 30px 0;
-  }
-/* Supporting marketing content */
-.marketing {
-  margin: 60px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+section {
+	margin-top: 40px;
+	padding-top: 20px;
 }
 
 /* Jumbotrons
@@ -43,6 +20,7 @@ body {
 ------------------------- */
 .jumbotron {
   position: relative;
+  margin-top:50px;
   padding: 40px 0;
   color: #fff;
   text-align: center;
@@ -95,36 +73,71 @@ th {
 
 /* Sidenav for Docs
 -------------------------------------------------- */
-
 #navigation {
-  padding-top:57px;
-  margin-top:0px;
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-top:2px;
+  margin-bottom:0px;
 }
 
 /* Footer
 -------------------------------------------------- */
-
 .footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 70px;
   border-top: 1px solid #e5e5e5;
   background-color: #f5f5f5;
-}
-.footer p {
-  margin-bottom: 0;
-  color: #777;
-}
-.footer a {
-  color: #000;
+  p {
+    margin-bottom: 0;
+    color: #777;
+  }
+  a {
+    color: #000;
+  }
 }
 .footer-links {
   margin: 10px 0;
+  li {
+    display: inline;
+    padding: 0 2px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
+
+/* Media Width Declares */
+@media (max-width:979px) {
+  /* Fix for Jumbotron */
+  .jumbotron {
+    margin-top:0px;
+  }
 }
-.footer-links li:first-child {
-  padding-left: 0;
+
+@media (min-width: 980px) {
+  .subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    .nav {
+      width: 938px;
+      margin: 0 auto;
+      padding: 0 1px;
+    }
+  }
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .subnav-fixed .nav {
+    width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
+  }
 }
