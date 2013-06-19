@@ -19,7 +19,7 @@ include_once("./template/html_start.php");
     <ul class="nav nav-pills">
       <li><a href="#top"><i class="icon-collapse-top"></i></a></li>
       <li><a href="#General">General Notes</a></li>
-      <li><a href="#GetAppData">GetAppData</a></li>
+      <li><a href="#GetAppData">::GetAppData</a></li>
     </ul>
   </div>
   </section>
