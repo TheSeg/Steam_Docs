@@ -124,6 +124,21 @@ class SteamDocs {
     return '<div class="well alert alert-info">Method will take <em>either</em> <span class="label label-inverse">guid</span> <em>or</em> <span class="label label-inverse">appid</span> parameters.</div>';
   }
   
+  public static function placehoderBlock($width,$height,$text=null,$theme="SteamDocs") {
+    
+    if ( $text == "" ) {
+      $text = $width."x".$height;
+    }
+    
+    $html = array();
+    $html[] = '<div class="row-fluid">';
+    $html[] = '<div class="span10 offset2">';
+    $html[] = '<img data-src="holder.js/'.$width.'x'.$height.'/'.$theme.'/text:'.$text.'">';
+    $html[] = '</div>';
+    $html[] = '</div>';
+    
+    return implode("\n",$html);
+  }
 }
 
 ?>

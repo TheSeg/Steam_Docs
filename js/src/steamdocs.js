@@ -3,6 +3,8 @@
     
     
 */
+Holder.add_theme("dark", {background:"#000", foreground:"#aaa", size:11, font: "Monaco"});
+Holder.add_theme("SteamDocs", {background:"#333", foreground:"#aaa", size:11, font: "Monaco"});
 
 $(document).ready(function(){
     var mastheadHeight = $("#masthead").height();
