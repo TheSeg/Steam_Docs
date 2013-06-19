@@ -3,7 +3,7 @@
         "success": 1,
         "message": "success",
         "language": "en",
-        "appids": "94590",
+        "appids": 94590,
         "apps": {
             "94590": {
                 "title": "Puzzle Agent 2",
@@ -39,16 +39,16 @@
                 },
                 "system_req": {
                     "windows": {
-                        "minimum": null,
-                        "recommended": null
+                        "minimum": "MINIM",
+                        "recommended": "REC"
                     },
                     "mac": {
-                        "minimum": null,
-                        "recommended": null
+                        "minimum": "MINIM",
+                        "recommended": "REC"
                     },
                     "linux": {
-                        "minimum": null,
-                        "recommended": null
+                        "minimum": "MINIM",
+                        "recommended": "REC"
                     }
                 },
                 "genres": [

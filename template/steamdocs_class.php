@@ -5,7 +5,7 @@ include_once("KVReader.php");
 class SteamDocs {
   
   /**
-    *
+    * GetHeadData
     *
     * @param pd - The Page Data array as set on the page.
     * @return HTML String return of inputs.
@@ -148,6 +148,52 @@ class SteamDocs {
     
     return implode("\n",$html);
   }
+  
+  /**
+    *
+  */
+  public static function htmlText($input) {
+    return htmlentities($input,ENT_QUOTES,"UTF-8");
+  }
+  
+  /**
+    *
+    * convertToJSON
+    * 
+    * @param Std $input
+    *             The input string
+    * @return string
+    *             A formatted JSON string based on $input.
+  */
+  public static function convertToJSON($input) {
+    return json_encode($input,JSON_PRETTY_PRINT);
+  }
+  
+  /**
+    *
+    * convertToVDF
+    * 
+    * Converts the input structure to the Valve Definition Format.
+    * 
+    * @param Std $input
+    *             The input string
+    * @return string
+    *             A formatted VDF string based on $input.
+  */
+  public static function convertToVDF($input) {
+    $KVReader = new KVReader();
+    return $KVReader->write($input);
+  }
+  
+  public static function convertToAll($input) {
+    $JSON = self::convertToJSON($input);
+    $VDF = self::convertToVDF($input);
+    
+    return array("json" => $JSON , "vdf" => $VDF );
+    
+  }
+  
+  
 }
 
 ?>
