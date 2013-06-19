@@ -66,7 +66,7 @@
                             <dd>Released for Mac OS X operating systems.</dd>
                           </dl>
                           <dl class="dl-horizontal">
-                            <dt>windows<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dt>linux<br><?php print SteamDocs::param("bool"); ?></dt>
                             <dd>Released for Linux operating systems.</dd>
                           </dl>
                           <dl class="dl-horizontal">
@@ -136,42 +136,42 @@
                             <dd>URL of "header" image of title.<br>460px X 215px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(460,215); ?>
+                          <?php print SteamDocs::placeholderBlock(460,215); ?>
                           
                           <dl class="dl-horizontal">
                             <dt>header_292<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of "header" image of title.<br>292px X 136px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(292,136); ?>
+                          <?php print SteamDocs::placeholderBlock(292,136); ?>
                           
                           <dl class="dl-horizontal">
                             <dt>capsule<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of "capsule" image of title.<br>616px X 353px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(616,252); ?>
+                          <?php print SteamDocs::placeholderBlock(616,252); ?>
                           
                           <dl class="dl-horizontal">
                             <dt>capsule_467<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of "capsule" image of title.<br>467px X 181px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(467,181); ?>
+                          <?php print SteamDocs::placeholderBlock(467,181); ?>
                           
                           <dl class="dl-horizontal">
                             <dt>capsule_184<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of "capsule" image of title.<br>184px X 69px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(184,69); ?>
+                          <?php print SteamDocs::placeholderBlock(184,69); ?>
                           
                           <dl class="dl-horizontal">
                             <dt>capsule_120<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of "capsule" image of title.<br>120px X 45px</dd>
                           </dl>
                           
-                          <?php print SteamDocs::placehoderBlock(120,45); ?>
+                          <?php print SteamDocs::placeholderBlock(120,45); ?>
                         
                         </div>
                       </div>

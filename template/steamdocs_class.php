@@ -1,5 +1,7 @@
 <?php
 
+include_once("KVReader.php");
+
 class SteamDocs {
   
   /**
@@ -124,7 +126,14 @@ class SteamDocs {
     return '<div class="well alert alert-info">Method will take <em>either</em> <span class="label label-inverse">guid</span> <em>or</em> <span class="label label-inverse">appid</span> parameters.</div>';
   }
   
-  public static function placehoderBlock($width,$height,$text=null,$theme="SteamDocs") {
+  /**
+    *
+    * placeholderBlock
+    *
+    *
+  */
+  
+  public static function placeholderBlock($width,$height,$text=null,$theme="SteamDocs") {
     
     if ( $text == "" ) {
       $text = $width."x".$height;
