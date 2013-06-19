@@ -20,8 +20,8 @@
             <?php print SteamDocs::seeOutputs(); ?>
             
             <dl class="dl-horizontal">
-              <dt>appid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
+              <dt>appids<br><?php print SteamDocs::param("int"); ?></dt>
+              <dd>App ID of the query returned if <span class="label label-inverse">appids</span> input was defined and successful.</dd>
             </dl>
             
                 <dl class="dl-horizontal">
@@ -47,7 +47,7 @@
                           <li>mac : <?php print SteamDocs::param("bool"); ?></li>
                           <li>linux : <?php print SteamDocs::param("bool"); ?></li>
                           <li>steamplay : <?php print SteamDocs::param("bool"); ?>
-                            <ul><li>Denotes if title is under SteamPlay license.</li></ul>
+                            <ul><li>Denotes if title is under <a href="https://support.steampowered.com/kb_article.php?ref=9439-QHKN-1308">SteamPlay</a> license.</li></ul>
                           </li>
                         </ul>
                       </dd>
@@ -68,8 +68,15 @@
                         
                         <dl class="dl-horizontal">
                           <dt>early_access<br><?php print SteamDocs::param("bool"); ?></dt>
-                          <dd><code>TRUE</code> if title is an Early Access title.<br>Once the title is past the 'Early Access' stage, this field will be set to <code>FALSE</code>.</dd>
+                          <dd><code>TRUE</code> if title is an <a href="http://store.steampowered.com/earlyaccessfaq">Early Access</a> title.<br>Once the title is past the 'Early Access' stage, this field will be set to <code>FALSE</code>.</dd>
                         </dl>
+                        
+                        <dl class="dl-horizontal">
+                          <dt>greenlit<br><?php print SteamDocs::param("bool"); ?></dt>
+                          <dd><code>TRUE</code> if title was accepted under the <a href="http://steamcommunity.com/greenlight/">Greenlight</a> approval process.</dd>
+                        </dl>
+                        
+                        <div class="alert offset">The following fields apply to Apps that are released to the public, but have a separate and on-going Beta AppID. Games under this category include: Team Fortress 2</div>
                         
                         <dl class="dl-horizontal">
                           <dt>beta_appid<br><?php print SteamDocs::param("int, NULL"); ?></dt>
@@ -79,11 +86,6 @@
                         <dl class="dl-horizontal">
                           <dt>gold_appid<br><?php print SteamDocs::param("int"); ?></dt>
                           <dd>If title has a different AppID for beta, AppID number for <em>released</em> AppID.<br>If there is no Beta AppID, it will return the given AppID.</dd>
-                        </dl>
-                        
-                        <dl class="dl-horizontal">
-                          <dt>greenlit<br><?php print SteamDocs::param("bool"); ?></dt>
-                          <dd>Title was accepted as a Greenlight title.</dd>
                         </dl>
                         
                       </div>
@@ -239,11 +241,43 @@
                       <dd>Name of the title's publisher.</dd>
                     </dl>
                     
-                    
+                    <div class="well">
                     <dl class="dl-horizontal">
                       <dt>genres<br><?php print SteamDocs::param("array"); ?></dt>
                       <dd>An array of strings listing the genres the title is attached to.</dd>
                     </dl>
+
+                    <div class="row">
+                      <div class="span7 offset1">
+                        <div class="alert alert-info">Available genres include (and not limited to):</div>
+                        <ul class="list_col offset1">
+                          <li>Free to Play</li>
+                          <li>Action</li>
+                          <li>Adventure</li>
+                          <li>Strategy</li>
+                          <li>RPG</li>
+                          <li>Indie</li>
+                          <li>Massively Multiplayer</li>
+                          <li>Platformer</li>
+                          <li>Casual</li>
+                          <li>Simulation</li>
+                          <li>Racing</li>
+                          <li>Sports</li>
+                          <li>Accounting</li>
+                          <li>Animation &amp; Modeling</li>
+                          <li>Audio Production</li>
+                          <li>Design &amp; Illustration</li>
+                          <li>Education</li>
+                          <li>Photo Editing</li>
+                          <li>Software Training</li>
+                          <li>Utilities</li>
+                          <li>Video Production</li>
+                          <li>Web Publishing</li>
+                          <li>Early Access</li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>
                     
                     <div class="well">
                     <dl class="dl-horizontal">
@@ -314,19 +348,24 @@
                       <dd>List of (mostly) in-game features the title includes.</dd>
                     </dl>
                       
-                      <div class="alert alert-info">Each field is (bool) and defaults to <code>FALSE</code>.</div>
-                      
                       <div class="row">
                         <div class="span8 offset1">
                           
+                          <div class="alert alert-info">Each field defaults to <code>FALSE</code>. New features may be included as features expand.</div>
+                          
                           <dl class="dl-horizontal">
                             <dt>singlePlayer<br><?php print SteamDocs::param("bool"); ?></dt>
-                            <dd>Single Player campaign.</dd>
+                            <dd>Title contains single player mode.</dd>
                           </dl>
                           
                           <dl class="dl-horizontal">
-                            <dt>cards<br><?php print SteamDocs::param("bool"); ?></dt>
-                            <dd>Distributes Steam Trading Cards.</dd>
+                            <dt>coop<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title supports Co-Op mode.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>coop_local<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title supports Local Co-Op mode.</dd>
                           </dl>
                           
                           <dl class="dl-horizontal">
@@ -340,8 +379,18 @@
                           </dl>
                           
                           <dl class="dl-horizontal">
+                            <dt>controller<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title has full controller support.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
                             <dt>achievements<br><?php print SteamDocs::param("bool"); ?></dt>
                             <dd>Title supports Steam Achievements.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>leaderboards<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title supports Steam Leaderboards.</dd>
                           </dl>
                           
                           <dl class="dl-horizontal">
@@ -361,17 +410,22 @@
                           
                           <dl class="dl-horizontal">
                             <dt>big_picture<br><?php print SteamDocs::param("bool"); ?></dt>
-                            <dd>Title supports Steam Big Picture.</dd>
+                            <dd>Title supports <a href="http://store.steampowered.com/bigpicture">Steam Big Picture</a>.</dd>
                           </dl>
                           
                           <dl class="dl-horizontal">
                             <dt>workshop<br><?php print SteamDocs::param("bool"); ?></dt>
-                            <dd>Title supports Steam Workshop.</dd>
+                            <dd>Title supports <a href="http://steamcommunity.com/workshop/">Steam Workshop</a>.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>cards<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title distributes <a href="http://steamcommunity.com/tradingcards/">Steam Trading Cards</a>.</dd>
                           </dl>
                           
                           <dl class="dl-horizontal">
                             <dt>vac<br><?php print SteamDocs::param("bool"); ?></dt>
-                            <dd>Title supports Valve Anti-Cheat.</dd>
+                            <dd>Title supports <a href="https://support.steampowered.com/kb_article.php?ref=7849-Radz-6869">Valve Anti-Cheat System (VAC)</a>.</dd>
                           </dl>
                           
                         </div>
@@ -413,15 +467,110 @@
                     
                     <div class="well">
                     <dl class="dl-horizontal">
+                      <dt>ratings<br><?php print SteamDocs::param("array"); ?></dt>
+                      <dd>Array of content ratings title has assigned.</dd>
+                    </dl>
+                      
+                      <div class="row">
+                        <div class="span8 offset1">
+                          
+                          <div class="alert alert-info">All titles contain each ratings board field, but default to <code>UNRATED</code> status.</div>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>esrb<br><?php print SteamDocs::param("array"); ?></dt>
+                            <dd>Rating for the <abbr title="Electronic Software Ratings Board"><a href="http://www.esrb.org/">ESRB</a></abbr>
+                          </dl>
+                          
+                            <div class="row-fluid">
+                              <div class="span11 offset1">
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>class<br><?php print SteamDocs::param("string"); ?></dt>
+                                  <dd>Class rating for the title.</dd>
+                                </dl>
+                                
+                                <div class="row-fluid">
+                                  <div class="span10 offset2">
+                                    <ul class="list_col2">
+                                      <li><code>UNRATED</code> &mdash; Unrated <span class="label">(Default)</span></li>
+                                      <li><code>RP</code> &mdash; Rating Pending</li>
+                                      <li><code>AO</code> &mdash; Adults Only</li>
+                                      <li><code>M</code> &mdash; Mature</li>
+                                      <li><code>T</code> &mdash; Teen</li>
+                                      <li><code>E10</code> &mdash; Everyone 10+</li>
+                                      <li><code>E</code> &mdash; Everyone</li>
+                                      <li><code>EC</code> &mdash; Early Childhood</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>desc<br><?php print SteamDocs::param("array"); ?></dt>
+                                  <dd>Content descriptors associated to the title.</dd>
+                                </dl>
+                                
+                                <div class="row-fluid">
+                                  <div class="span10 offset2">
+                                    <div class="alert alert-info">Each string is included as a separate entry in the array as applied. Default is no entries in the array.</div>
+                                    <ul class="list_col2">
+                                      <li><code>"Alcohol Reference"</code></li>
+                                      <li><code>"Animated Blood"</code></li>
+                                      <li><code>"Blood"</code></li>
+                                      <li><code>"Blood and Gore"</code></li>
+                                      <li><code>"Cartoon Violence"</code></li>
+                                      <li><code>"Comic Mischief"</code></li>
+                                      <li><code>"Crude Humor"</code></li>
+                                      <li><code>"Drug Reference"</code></li>
+                                      <li><code>"Fantasy Violence"</code></li>
+                                      <li><code>"Intense Violence"</code></li>
+                                      <li><code>"Language"</code></li>
+                                      <li><code>"Lyrics"</code></li>
+                                      <li><code>"Mature Humor"</code></li>
+                                      <li><code>"Nudity"</code></li>
+                                      <li><code>"Partial Nudity"</code></li>
+                                      <li><code>"Real Gambling"</code></li>
+                                      <li><code>"Sexual Content"</code></li>
+                                      <li><code>"Sexual Themes"</code></li>
+                                      <li><code>"Sexual Violence"</code></li>
+                                      <li><code>"Simulated Gambling"</code></li>
+                                      <li><code>"Strong Language"</code></li>
+                                      <li><code>"Strong Lyrics"</code></li>
+                                      <li><code>"Strong Sexual Content"</code></li>
+                                      <li><code>"Suggestive Themes"</code></li>
+                                      <li><code>"Tobacco Reference"</code></li>
+                                      <li><code>"Use of Alcohol"</code></li>
+                                      <li><code>"Use of Drugs"</code></li>
+                                      <li><code>"Use of Tobacco"</code></li>
+                                      <li><code>"Violence"</code></li>
+                                      <li><code>"Violent References"</code></li>
+                                      <li><code>"Shares Info"</code></li>
+                                      <li><code>"Shares Location"</code></li>
+                                      <li><code>"Users Interact"</code></li>
+                                      <li><code>"Online Interactions"</code></li>
+                                      <li><code>"Music Downloads"</code></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                
+                               
+                              </div>
+                            </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="well">
+                    <dl class="dl-horizontal">
                       <dt>screenshots<br><?php print SteamDocs::param("array"); ?></dt>
                       <dd>All official screenshots displayed on the title's store page.</dd>
                     </dl>
                       
-                      <div class="alert alert-info">The following fields are per entry in the array.</div>
-                      
                       <div class='row'>
                         <div class="span8 offset1">
                           
+                          <div class="alert alert-info">The following fields are per entry in the array.</div>
+                      
                           <dl class="dl-horizontal">
                             <dt>thumb<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>URL of the thumbnail image.</dd>
