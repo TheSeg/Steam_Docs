@@ -193,6 +193,13 @@ class SteamDocs {
     
   }
   
+  public static function saveAll($input,$filename) {
+    file_put_contents($filename.".js", $input['json']);
+    file_put_contents($filename.".vdf", $input['vdf']);
+    
+    return true;
+  }
+  
   
 }
 

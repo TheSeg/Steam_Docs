@@ -110,8 +110,7 @@ $arr = array(
 
 
 $all = SteamDocs::convertToAll($arr);
+$saveAll = SteamDocs::saveAll($all,"GetAppMedia_00");
 
-file_put_contents("GetAppMedia_00.js", $all['json']);
-file_put_contents("GetAppMedia_00.vdf", $all['vdf']);
 
 ?>

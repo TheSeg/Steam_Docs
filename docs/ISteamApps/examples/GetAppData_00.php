@@ -105,9 +105,7 @@ $arr = array(
 
 
 $all = SteamDocs::convertToAll($arr);
-
-file_put_contents("GetAppData_00.js", $all['json']);
-file_put_contents("GetAppData_00.vdf", $all['vdf']);
+$saveAll = SteamDocs::saveAll($all,"GetAppData_00");
 
 if ( false ) {
   header("Content-type: text/plain;");
