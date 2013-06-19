@@ -93,6 +93,7 @@ class KVReader {
                 
                 $str .= $indent . "}\n";
             } else {
+                if ( $value === false ) { $value = 0; }
                 $str .= $indent . '"' . $key . '"' . chr(9) . '"' . $value . "\"\n";
             }
         }
