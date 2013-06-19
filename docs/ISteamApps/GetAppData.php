@@ -99,7 +99,7 @@
                         </dl>
                         
                         <dl class="dl-horizontal">
-                          <dt>greenlit<br><?php print SteamDocs::param("bool"); ?></dt>
+                          <dt>greenlight<br><?php print SteamDocs::param("bool"); ?></dt>
                           <dd><code>TRUE</code> if title was accepted under the <a href="http://steamcommunity.com/greenlight/">Greenlight</a> approval process.</dd>
                         </dl>
                         
@@ -132,24 +132,46 @@
                         <div class="span11 offset1">
                         
                           <dl class="dl-horizontal">
-                            <dt>banner_small<br><?php print SteamDocs::param("string"); ?></dt>
-                            <dd>URL of 'small' banner image of title.</dd>
+                            <dt>header<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "header" image of title.<br>460px X 215px</dd>
                           </dl>
-                        
+                          
+                          <?php print SteamDocs::placehoderBlock(460,215); ?>
+                          
                           <dl class="dl-horizontal">
-                            <dt>banner_large<br><?php print SteamDocs::param("string"); ?></dt>
-                            <dd>URL of 'large' banner image of title.</dd>
+                            <dt>header_292<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "header" image of title.<br>292px X 136px</dd>
                           </dl>
-                        
+                          
+                          <?php print SteamDocs::placehoderBlock(292,136); ?>
+                          
                           <dl class="dl-horizontal">
-                            <dt>icon_small<br><?php print SteamDocs::param("string"); ?></dt>
-                            <dd>URL of 'small' icon image of title.</dd>
+                            <dt>capsule<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "capsule" image of title.<br>616px X 353px</dd>
                           </dl>
-                        
+                          
+                          <?php print SteamDocs::placehoderBlock(616,252); ?>
+                          
                           <dl class="dl-horizontal">
-                            <dt>icon_large<br><?php print SteamDocs::param("string"); ?></dt>
-                            <dd>URL of 'large' icon image of title.</dd>
+                            <dt>capsule_467<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "capsule" image of title.<br>467px X 181px</dd>
                           </dl>
+                          
+                          <?php print SteamDocs::placehoderBlock(467,181); ?>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>capsule_184<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "capsule" image of title.<br>184px X 69px</dd>
+                          </dl>
+                          
+                          <?php print SteamDocs::placehoderBlock(184,69); ?>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>capsule_120<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>URL of "capsule" image of title.<br>120px X 45px</dd>
+                          </dl>
+                          
+                          <?php print SteamDocs::placehoderBlock(120,45); ?>
                         
                         </div>
                       </div>

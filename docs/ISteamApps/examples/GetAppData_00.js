@@ -2,27 +2,33 @@
     "response" : {
         "success" : 1,
         "message" : "success",
-        "language" : "en-us",
+        "language" : "en",
+        "appids" : "94590",
         "apps" : {
             "94590" : {
                 "title":"Puzzle Agent 2",
+                "developer_name":"Telltale Games",
+                "publisher_name":"Telltale Games",
                 "platforms":{
-                    "win":true,
+                    "windows":true,
                     "mac":true,
                     "linux":false,
-                    "steamPlay":true
+                    "steamplay":true
                 },
                 "attributes":{
                     "free_to_play":false,
                     "early_access":false,
+                    "greenlight":false,
                     "beta_appid":null,
                     "gold_appid":94590
                 },
                 "images":{
-                    "icon_url_small":null,
-                    "icon_url_org":null,
-                    "banner_url_small":null,
-                    "banner_url_org":null
+                    "header":"http://cdn2.steampowered.com/v/gfx/apps/94590/header.jpg",
+                    "header_292":"http://cdn2.steampowered.com/v/gfx/apps/94590/header_292x136.jpg",
+                    "capsule_120":"http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_sm_120.jpg",
+                    "capsule_184":"http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_184x69.jpg",
+                    "capsule_467":"http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_467x181.jpg",
+                    "capsule_616":"http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_616x353.jpg"
                 },
                 "strings":{
                     "short_desc":"-----",
@@ -45,8 +51,6 @@
                         "recomended":"-------"
                     }
                 },
-                "developer_name":"Telltale Games",
-                "publisher_name":"Telltale Games",
                 "genres":[
                     "puzzle",
                     "thing"
