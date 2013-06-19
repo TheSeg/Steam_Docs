@@ -6,7 +6,7 @@
 
 $(document).ready(function(){
     var mastheadHeight = $("#masthead").height();
-    var navHeight = $("#navigation").height()/2.5;
+    var navHeight = $("#navigation").height();
     $('.nav-pills a, .toTop').click(function(){
         var scrollTo = 0;
         var topThing = $( $.attr(this, 'href') ).offset().top;
