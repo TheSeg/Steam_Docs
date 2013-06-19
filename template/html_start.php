@@ -21,6 +21,7 @@
     <script src="./js/jquery.smooth-scroll.min.js"></script>
     <script src="./js/bootswatch.min.js"></script>
     <script src="./js/prettify/run_prettify.js"></script>
+    <script src="./js/holder.min.js"></script>
     <script src="./js/steamdocs.min.js"></script>
     <?php if ( strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.com" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.org" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.net" ) { ?>
     <script>
