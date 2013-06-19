@@ -439,6 +439,11 @@
                           </dl>
                           
                           <dl class="dl-horizontal">
+                            <dt>controller_partial<br><?php print SteamDocs::param("bool"); ?></dt>
+                            <dd>Title has partial controller support.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
                             <dt>achievements<br><?php print SteamDocs::param("bool"); ?></dt>
                             <dd>Title supports Steam Achievements.</dd>
                           </dl>
@@ -514,6 +519,11 @@
                           <dl class="dl-horizontal">
                             <dt>store_page<br><?php print SteamDocs::param("string"); ?></dt>
                             <dd>The Steam Store page of the title.</dd>
+                          </dl>
+                          
+                          <dl class="dl-horizontal">
+                            <dt>forums<br><?php print SteamDocs::param("string"); ?></dt>
+                            <dd>The Steam Forums of the title.</dd>
                           </dl>
                           
                         </div>
