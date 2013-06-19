@@ -556,6 +556,108 @@
                               </div>
                             </div>
                             
+                          <dl class="dl-horizontal">
+                            <dt>pegi<br><?php print SteamDocs::param("array"); ?></dt>
+                            <dd>Ratings information for <abbr title="Pan European Game Information"><a href="http://www.pegi.info/">PEGI</a></abbr>
+                          </dl>
+                          
+                            <div class="row-fluid">
+                              <div class="span11 offset1">
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>class<br><?php print SteamDocs::param("string"); ?></dt>
+                                  <dd>Class rating for the title.</dd>
+                                </dl>
+                                
+                                <div class="row-fluid">
+                                  <div class="span10 offset2">
+                                    <ul class="list_col2">
+                                      <li><code>UNRATED</code> &mdash; Unrated <span class="label">(Default)</span></li>
+                                      <li><code>RP</code> &mdash; Rating Pending</li>
+                                      <li><code>18</code> &mdash; Ages 18+</li>
+                                      <li><code>16</code> &mdash; Ages 16+</li>
+                                      <li><code>12</code> &mdash; Ages 12+</li>
+                                      <li><code>7</code> &mdash; Ages 7+ (6+ in Portugal)</li>
+                                      <li><code>3</code> &mdash; Ages 3+ (4+ in Portugal)</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>desc<br><?php print SteamDocs::param("array"); ?></dt>
+                                  <dd>Content descriptors associated to the title.</dd>
+                                </dl>
+                                
+                                <div class="row-fluid">
+                                  <div class="span10 offset2">
+                                    <div class="alert alert-info">Each string is included as a separate entry in the array as applied. Default is no entries in the array. Always in English regardless of <span class="label">lang</span> input.</div>
+                                    <ul class="list_col2">
+                                      <li><code>"Bad Language"</code></li>
+                                      <li><code>"Discrimination"</code></li>
+                                      <li><code>"Drugs"</code></li>
+                                      <li><code>"Fear"</code></li>
+                                      <li><code>"Gambling"</code></li>
+                                      <li><code>"Sex"</code></li>
+                                      <li><code>"Violence"</code></li>
+                                      <li><code>"Online Gameplay"</code></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>desc_string<br><?php print SteamDocs::param("string"); ?></dt>
+                                  <dd>
+                                    Content descriptors and other descriptors associated to the title as a normalized string.<br>
+                                    If <span class="label">lang</span> parameter is supported by PEGI, output provides the string in that input language. Otherwise defaults to English. Applies to: French, German, Finnish, Swedish, Icelandic, Hebrew, Arabic, Lithuanian, Dutch, &amp; Slovene.
+                                  </dd>
+                                </dl>
+                                
+                               
+                              </div>
+                            </div>
+                            
+                            
+                          <dl class="dl-horizontal">
+                            <dt>acb<br><?php print SteamDocs::param("array"); ?></dt>
+                            <dd>Ratings information for <abbr title="Australian Classification Board"><a href="http://www.classification.gov.au/">ACB</a></abbr> (Formally <abbr title="Office of Film and Literature Classification">OFLC</abbr>)
+                          </dl>
+                          
+                            <div class="row-fluid">
+                              <div class="span11 offset1">
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>class<br><?php print SteamDocs::param("string"); ?></dt>
+                                  <dd>Class rating for the title.</dd>
+                                </dl>
+                                
+                                <div class="row-fluid">
+                                  <div class="span10 offset2">
+                                    <ul class="list_col2">
+                                      <li><code>UNRATED</code> &mdash; Unrated <span class="label">(Default)</span></li>
+                                      <li><code>RC</code> &mdash; Refused Classification</li>
+                                      <li><code>RP</code> &mdash; Rating Pending</li>
+                                      <li><code>X</code> &mdash; Restricted (X18+)</li>
+                                      <li><code>R</code> &mdash; Restricted (R18+)</li>
+                                      <li><code>MA</code> &mdash; Mature Accompanied (MA15+)</li>
+                                      <li><code>M</code> &mdash; Mature</li>
+                                      <li><code>PG</code> &mdash; Parental Guidance</li>
+                                      <li><code>G</code> &mdash; General</li>
+                                      <li><code>E</code> &mdash; Exempt</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                
+                                <dl class="dl-horizontal">
+                                  <dt>desc_string<br><?php print SteamDocs::param("string"); ?></dt>
+                                  <dd>
+                                    Content descriptors and other descriptors associated to the title as a normalized string.
+                                  </dd>
+                                </dl>
+                                
+                               
+                              </div>
+                            </div>
+                            
                         </div>
                       </div>
                     </div>

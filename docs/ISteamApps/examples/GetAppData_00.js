@@ -78,20 +78,7 @@
                     "offical":"http://www.telltalegames.com/puzzleagent",
                     "update_history":"",
                     "official_game_hub":""
-                },
-                "screenshots":[
-                    {
-                        "url_thumb":"",
-                        "url_small":"",
-                        "url_org":""
-                    }
-                ],
-                "trailers":[
-                    {
-                        "html_embed":"",
-                        "youtube_code":""
-                    }
-                ]
+                }
             }
         }
     }

@@ -20,6 +20,7 @@ include_once("./template/html_start.php");
       <li><a href="#top"><i class="icon-collapse-top"></i></a></li>
       <li><a href="#General">General Notes</a></li>
       <li><a href="#GetAppData">::GetAppData</a></li>
+      <li><a href="#GetAppMedia">::GetAppMedia</a></li>
     </ul>
   </div>
   </section>
@@ -28,6 +29,7 @@ include_once("./template/html_start.php");
   
     include("./docs/ISteamApps/General.php");
     include("./docs/ISteamApps/GetAppData.php");
+    include("./docs/ISteamApps/GetAppMedia.php");
   
   ?>
   
