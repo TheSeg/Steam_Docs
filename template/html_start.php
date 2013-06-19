@@ -10,7 +10,6 @@
     <link href="./css/responsive.css" rel="stylesheet">
     <link href="./css/font-awesome.css" rel="stylesheet">
     <link href="./js/prettify/prettify.css" rel="stylesheet">
-    <link href="./css/steamdocs.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
