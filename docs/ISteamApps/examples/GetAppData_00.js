@@ -39,16 +39,16 @@
                 },
                 "system_req": {
                     "windows": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": null,
+                        "recommended": null
                     },
                     "mac": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": null,
+                        "recommended": null
                     },
                     "linux": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": null,
+                        "recommended": null
                     }
                 },
                 "genres": [
