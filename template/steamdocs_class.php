@@ -153,7 +153,9 @@ class SteamDocs {
     *
   */
   public static function htmlText($input) {
-    return htmlentities($input,ENT_QUOTES,"UTF-8");
+    $returnString = htmlentities($input,ENT_QUOTES,"UTF-8");
+    $returnString = str_replace("\t","",$returnString);
+    return $returnString;
   }
   
   /**
