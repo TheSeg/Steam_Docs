@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/proposal_steam_webapi_logo.png" />
     <meta name="author" content="John 'Seg' Seggerson">
 <?php echo SteamDocs::GetHeadData($page); ?>
 
