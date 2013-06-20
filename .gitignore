@@ -1,6 +1,6 @@
 // OS Ignores
 .DS_Store
-.Thumbs.db
+Thumbs.db
 
 // CodeKit Ignore
 codekit-config.json
