@@ -6,13 +6,10 @@
 	"appid"	"0"
 	"status"
 	{
-		"0"
-		{
-			"memberCount"	"0"
-			"membersInChat"	"0"
-			"membersInGame"	"0"
-			"membersOnline"	"0"
-			"playerofweek"	"0"
-		}
+		"memberCount"	"0"
+		"membersInChat"	"0"
+		"membersInGame"	"0"
+		"membersOnline"	"0"
+		"playerofweek"	"1"
 	}
 }
