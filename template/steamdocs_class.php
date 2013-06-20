@@ -31,10 +31,10 @@ class SteamDocs {
     $html[] = '<meta name="twitter:creator" content="@TheSeg">';
     $html[] = '<link rel="publisher" href="https://plus.google.com/113283982336373378707/">';
     $html[] = '<meta name="twitter:card" content="summary_large_image">';
-    $html[] = '<meta property="og:image" content="img/proposal_steam_webapi_logo.png" >'
-    $html[] = '<meta name="twitter:image" content="img/proposal_steam_webapi_logo.png" >'
-    $html[] = '<meta property="og:image:width" content="512" >'
-    $html[] = '<meta property="og:image:height" content="512" >'
+    $html[] = '<meta property="og:image" content="img/proposal_steam_webapi_logo.png" >';
+    $html[] = '<meta name="twitter:image" content="img/proposal_steam_webapi_logo.png" >';
+    $html[] = '<meta property="og:image:width" content="512" >';
+    $html[] = '<meta property="og:image:height" content="512" >';
     
     $html[] = "";
     
