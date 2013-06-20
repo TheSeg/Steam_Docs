@@ -35,10 +35,10 @@
                       
                       <div class="row-fluid">
                         <div class="span11 offset1">
-                          <div class="well">
                           
                           <div class="alert alert-info">All titles contain each ratings board field, but default to <code>UNRATED</code> status.</div>
                           
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>acb<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Australian Classification Board"><a href="http://www.classification.gov.au/">ACB</a></abbr>, formally <abbr title="Office of Film and Literature Classification">OFLC</abbr> (Australia &amp; New Zealand).
@@ -84,7 +84,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>bbfc<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="British Board of Film Classification"><a href="http://www.bbfc.co.uk/">BBFC</a></abbr> (United Kingdom).
@@ -132,7 +134,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>cero<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Computer Entertainment Rating Organization"><a href="http://www.cero.gr.jp/">CERO</a></abbr> (Japan).
@@ -195,7 +199,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>csrr<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Computer Software Rating Regulation"><a href="http://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=J0030086">CSRR</a></abbr> (Taiwan).
@@ -240,7 +246,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>dejus<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Department of Justice, Rating, Titles and Qualification"><a href="http://www.mj.gov.br/classificacao">DEJUS</a></abbr> (Brazil).
@@ -286,7 +294,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>esrb<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Rating for the <abbr title="Electronic Software Ratings Board"><a href="http://www.esrb.org/">ESRB</a></abbr> (North America).
@@ -373,7 +383,9 @@
                                
                               </div>
                             </div>
-                            
+                          </div>
+                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>fpb<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Film and Publication Board"><a href="http://www.fpb.org.za/">FPB</a></abbr> (South Africa).
@@ -419,8 +431,9 @@
                                
                               </div>
                             </div>
+                          </div>
                           
-                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>grb<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Game Rating Board"><a href="http://www.fpb.org.za/">GRB</a></abbr> (South Korea).
@@ -478,8 +491,9 @@
                                
                               </div>
                             </div>
+                          </div>
                           
-                          
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>pegi<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Pan European Game Information"><a href="http://www.pegi.info/">PEGI</a></abbr>. (Select countries in Europe &amp; others)
@@ -539,8 +553,9 @@
                                
                               </div>
                             </div>
+                          </div>
                             
-                            
+                          <div class="well">
                           <dl class="dl-horizontal">
                             <dt>usk<br><?php print SteamDocs::param("array"); ?></dt>
                             <dd>Ratings information for <abbr title="Unterhaltungssoftware SelbstKontrolle"><a href="http://www.usk.de/">USK</a></abbr> (Germany).
@@ -585,11 +600,11 @@
                                
                               </div>
                             </div>
+                          </div>
                             
                             
                         </div>
                       </div>
-                    </div>
             
             
             <h2>Examples</h2>
