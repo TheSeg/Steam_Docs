@@ -9,7 +9,7 @@ Holder.add_theme("SteamDocs", {background:"#333", foreground:"#aaa", size:11, fo
 $(document).ready(function(){
     var mastheadHeight = $("#masthead").height();
     var navHeight = $("#navigation").height();
-    $('.nav-pills a, .toTop').click(function(){
+    $('.nav-pills a, .toTop, .enableScroll').click(function(){
         var scrollTo = 0;
         var topThing = $( $.attr(this, 'href') ).offset().top;
         if ( $.attr(this, 'href') === "#top") {

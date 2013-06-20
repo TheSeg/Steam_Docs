@@ -119,7 +119,7 @@ class SteamDocs {
   }
   
   public static function seeRoles() {
-    return '<div class="well well-small alert alert-info">See <a href="#General_MemberRoleValues">Member Role Values</a> for member roll return values.</div>';
+    return '<div class="well well-small alert alert-info">See <a class="enableScroll" href="#General_MemberRoleValues">Member Role Values</a> for member roll return values.</div>';
   }
   
   public static function useGuidAppid() {

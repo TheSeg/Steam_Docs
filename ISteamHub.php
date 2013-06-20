@@ -18,7 +18,7 @@ include_once("./template/html_start.php");
   <div class="subnav">
     <ul class="nav nav-pills">
       <li><a href="#top"><i class="icon-collapse-top"></i></a></li>
-      <li><a href="#General">General Notes</a></li>
+      <li><a href="#General">Notes</a></li>
       <li><a href="#ResolveVanityURL">::ResolveVanityURL</a></li>
       <li><a href="#ResolveGameID">::ResolveGameID</a></li>
       <li><a href="#GetSummaries">::GetSummaries</a></li>
