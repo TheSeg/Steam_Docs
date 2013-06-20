@@ -1,0 +1,96 @@
+"response"
+{
+	"success"	"1"
+	"message"	"success"
+	"language"	"en"
+	"appid"	"3830"
+	"title"	"Psychonauts"
+	"ratings"
+	{
+		"acb"
+		{
+			"class"	"M"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"bbfc"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"cero"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"csrr"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"dejus"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"esrb"
+		{
+			"class"	"T"
+			"desc"
+			{
+				"0"	"Cartoon Violence"
+				"1"	"Crude Humor"
+				"2"	"Language"
+			}
+			"desc_string"	"Cartoon Violence, Crude Humor, Language"
+		}
+		"fpb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"grb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"pegi"
+		{
+			"class"	"12"
+			"desc"
+			{
+				"0"	"Bad Language"
+				"1"	"Violence"
+			}
+			"desc_string"	"Bad Language, Violence"
+		}
+		"usk"
+		{
+			"class"	"12"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+	}
+}
