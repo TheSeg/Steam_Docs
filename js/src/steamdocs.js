@@ -4,7 +4,7 @@
     
 */
 Holder.add_theme("dark", {background:"#000", foreground:"#aaa", size:11, font: "Monaco"});
-Holder.add_theme("SteamDocs", {background:"#333", foreground:"#aaa", size:11, font: "Monaco"});
+Holder.add_theme("SteamDocs", {background:"#333", foreground:"#aaa", size:11, font: "Menlo, Monaco, Consolas, \"Courier New\", monospace"});
 
 $(document).ready(function(){
     var mastheadHeight = $("#masthead").height();
