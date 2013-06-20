@@ -14,7 +14,7 @@ $arr = array(
         "title" => "Puzzle Agent 2 Released!",
         "url" => "http://steamcommunity.com/games/PuzzleAgent2/announcements/detail/1406463823132647708",
         "author" => 76561197985607672,
-        "contents" => "You can now return back to Scoggins with Nelson! The game is now released on Windows and Mac (via SteamPlay).<br><br><a href=\"http://store.steampowered.com/app/94590\">Buy Puzzle Agent 2</a> and get a free copy of Puzzle Agent 1 to play. Already own it? You can gift it to any one of your Steam friends!<br><br>Enjoy Puzzle Agent 2 and your trip back to Scoggins!",
+        "contents" => SteamDocs::htmlText("You can now return back to Scoggins with Nelson! The game is now released on Windows and Mac (via SteamPlay).<br><br><a href=\"http://store.steampowered.com/app/94590\">Buy Puzzle Agent 2</a> and get a free copy of Puzzle Agent 1 to play. Already own it? You can gift it to any one of your Steam friends!<br><br>Enjoy Puzzle Agent 2 and your trip back to Scoggins!"),
         "datetime" => 1309562100,
         "comments" => 0,
       ],
