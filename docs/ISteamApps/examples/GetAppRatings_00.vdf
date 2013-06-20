@@ -1,0 +1,91 @@
+"response"
+{
+	"success"	"1"
+	"message"	"success"
+	"language"	"en"
+	"appid"	"94590"
+	"title"	"Puzzle Agent 2"
+	"ratings"
+	{
+		"cero"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"esrb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"pegi"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"acb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"usk"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"fpb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"bbfc"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"grb"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"csrr"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+		"dejus"
+		{
+			"class"	"UNRATED"
+			"desc"
+			{
+			}
+			"desc_string"	""
+		}
+	}
+}
