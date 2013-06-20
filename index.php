@@ -21,14 +21,14 @@ include_once("./template/html_start.php");
         Currently community API support is via deprecated XML support of groups. This document puts forth
         a new interface and methods for Steam WebAPI access for hubs.
       </p>
-      <p><a class="btn btn-large btn-info" href="./ISteamHub.php"><i class="icon-group"></i> ISteamHub</a></p>
+      <p><a class="btn btn-large btn-inverse" href="./ISteamHub.php"><i class="icon-group"></i> ISteamHub</a></p>
 
     </div>
 
     <div class="span5 offset1">
       <h3><a href="./ISteamApps.php"><i class="icon-gamepad"></i> Game &amp; App Information</a></h3>
       <p>Provides group metadata including name, URL, and other basic information about the group.</p>
-      <p><a class="btn btn-large btn-info" href="./ISteamApps.php"><i class="icon-gamepad"></i> ISteamApps</a></p>
+      <p><a class="btn btn-large btn-inverse" href="./ISteamApps.php"><i class="icon-gamepad"></i> ISteamApps</a></p>
     </div>
   
   </div>
