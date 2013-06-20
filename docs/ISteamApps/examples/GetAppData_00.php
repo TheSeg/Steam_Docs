@@ -44,16 +44,36 @@ $arr = array(
         ),
         'system_req' => array(
           'windows' => array( 
-            'minimum' => SteamDocs::htmlText("MINIM"),
-            'recommended' => SteamDocs::htmlText("REC"),
+            'minimum' => SteamDocs::htmlText("<ul>
+								<ul>
+									<li><strong>OS:</strong> XP Service Pack 3 / Vista / Windows 7
+									<li><strong>Processor:</strong> 1.8 GHz Pentium 4 or equivalent (Rec: 2.0GHz Pentium 4 or equivalent)
+									<li><strong>Memory:</strong> 2 GB RAM (Rec: 3GB RAM)
+									<li><strong>Hard Disk Space:</strong> 500 Mb Space Free	
+									<li><strong>Video Card:</strong> ATI or NVidia card w/ 256 MB RAM (Rec: ATI or NVidia card w/ 512 MB RAM)
+									<li><strong>DirectX&reg;:</strong> Direct X 9.0c
+									<li><strong>Sound:</strong> Direct X 9.0 sound device	
+								 </ul>
+															</ul>"),
+            'recommended' => null,
           ),
           'mac' => array( 
-            'minimum' => SteamDocs::htmlText("MINIM"),
-            'recommended' => SteamDocs::htmlText("REC"),
+            'minimum' => SteamDocs::htmlText("<ul>
+								<ul>
+									<li><strong>OS:</strong> OS X version Snow Leopard 10.6.3, or later.
+									<li><strong>Processor:</strong> 2.3 GHz Intel or equivalent
+									<li><strong>Memory:</strong> 4 GB RAM
+									<li><strong>Hard Disk Space:</strong> 500 MB Space Free
+									<li><strong>Video Card:</strong> 512 MB NVidia or ATI graphics card
+									<li><strong>Additional:</strong> Not recommended for MAC Minis or early-generation MacBooks
+								 </ul>
+															</ul>
+"),
+            'recommended' => null,
           ),
           'linux' => array( 
-            'minimum' => SteamDocs::htmlText("MINIM"),
-            'recommended' => SteamDocs::htmlText("REC"),
+            'minimum' => null,
+            'recommended' => null,
           ),
         ),
         'genres' => array(

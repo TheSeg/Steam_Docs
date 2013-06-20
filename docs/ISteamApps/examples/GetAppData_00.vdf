@@ -48,18 +48,38 @@
 			{
 				"windows"
 				{
-					"minimum"	"MINIM"
-					"recommended"	"REC"
+					"minimum"	"&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; XP Service Pack 3 / Vista / Windows 7
+&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; 1.8 GHz Pentium 4 or equivalent (Rec: 2.0GHz Pentium 4 or equivalent)
+&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 2 GB RAM (Rec: 3GB RAM)
+&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;/strong&gt; 500 Mb Space Free
+&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; ATI or NVidia card w/ 256 MB RAM (Rec: ATI or NVidia card w/ 512 MB RAM)
+&lt;li&gt;&lt;strong&gt;DirectX&amp;reg;:&lt;/strong&gt; Direct X 9.0c
+&lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; Direct X 9.0 sound device
+ &lt;/ul&gt;
+&lt;/ul&gt;"
+					"recommended"	""
 				}
 				"mac"
 				{
-					"minimum"	"MINIM"
-					"recommended"	"REC"
+					"minimum"	"&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; OS X version Snow Leopard 10.6.3, or later.
+&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; 2.3 GHz Intel or equivalent
+&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 4 GB RAM
+&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;/strong&gt; 500 MB Space Free
+&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; 512 MB NVidia or ATI graphics card
+&lt;li&gt;&lt;strong&gt;Additional:&lt;/strong&gt; Not recommended for MAC Minis or early-generation MacBooks
+ &lt;/ul&gt;
+&lt;/ul&gt;
+"
+					"recommended"	""
 				}
 				"linux"
 				{
-					"minimum"	"MINIM"
-					"recommended"	"REC"
+					"minimum"	""
+					"recommended"	""
 				}
 			}
 			"genres"

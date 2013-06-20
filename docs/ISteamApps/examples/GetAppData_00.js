@@ -39,16 +39,16 @@
                 },
                 "system_req": {
                     "windows": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": "&lt;ul&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;OS:&lt;\/strong&gt; XP Service Pack 3 \/ Vista \/ Windows 7\n&lt;li&gt;&lt;strong&gt;Processor:&lt;\/strong&gt; 1.8 GHz Pentium 4 or equivalent (Rec: 2.0GHz Pentium 4 or equivalent)\n&lt;li&gt;&lt;strong&gt;Memory:&lt;\/strong&gt; 2 GB RAM (Rec: 3GB RAM)\n&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;\/strong&gt; 500 Mb Space Free\n&lt;li&gt;&lt;strong&gt;Video Card:&lt;\/strong&gt; ATI or NVidia card w\/ 256 MB RAM (Rec: ATI or NVidia card w\/ 512 MB RAM)\n&lt;li&gt;&lt;strong&gt;DirectX&amp;reg;:&lt;\/strong&gt; Direct X 9.0c\n&lt;li&gt;&lt;strong&gt;Sound:&lt;\/strong&gt; Direct X 9.0 sound device\n &lt;\/ul&gt;\n&lt;\/ul&gt;",
+                        "recommended": null
                     },
                     "mac": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": "&lt;ul&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;OS:&lt;\/strong&gt; OS X version Snow Leopard 10.6.3, or later.\n&lt;li&gt;&lt;strong&gt;Processor:&lt;\/strong&gt; 2.3 GHz Intel or equivalent\n&lt;li&gt;&lt;strong&gt;Memory:&lt;\/strong&gt; 4 GB RAM\n&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;\/strong&gt; 500 MB Space Free\n&lt;li&gt;&lt;strong&gt;Video Card:&lt;\/strong&gt; 512 MB NVidia or ATI graphics card\n&lt;li&gt;&lt;strong&gt;Additional:&lt;\/strong&gt; Not recommended for MAC Minis or early-generation MacBooks\n &lt;\/ul&gt;\n&lt;\/ul&gt;\n",
+                        "recommended": null
                     },
                     "linux": {
-                        "minimum": "MINIM",
-                        "recommended": "REC"
+                        "minimum": null,
+                        "recommended": null
                     }
                 },
                 "genres": [
