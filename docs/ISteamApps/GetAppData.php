@@ -529,7 +529,8 @@
                         </div>
                       </div>
                     </div>
-                    
+            </div>
+            </div>
             <h2>Examples</h2>
             <h3><span class="text-info"><a href="http://steamcommunity.com/app/94590" target="_blank">Puzzle Agent 2</a></span></h3>
             <blockquote>GET https://api.steampowered.com/ISteamApps/GetAppData/v0001/?appids=94590</blockquote>
