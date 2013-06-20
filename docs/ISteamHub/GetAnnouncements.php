@@ -83,48 +83,52 @@
               <dd>App ID of the query returned if <span class="label label-inverse">appid</span> input was defined and successful.</dd>
             </dl>
             
-            <div class="well">
-            
             <dl class="dl-horizontal">
               <dt>announcements<br><?php print SteamDocs::param("array"); ?></dt>
-              <dd></dd>
+              <dd>The following set is for each returned announcement item.</dd>
             </dl>
             
-            <dl class="dl-horizontal">
-              <dt>gid<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Unique ID number of announcement.</dd>
-            </dl>
+            <div class="row-fluid">
+              <div class="span11 offset1">
+                <div class="well well-small">
             
-            <dl class="dl-horizontal">
-              <dt>title<br><?php print SteamDocs::param("string"); ?></dt>
-              <dd>Title (aka Headline) string of announcement item.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>gid<br><?php print SteamDocs::param("int"); ?></dt>
+                    <dd>Unique ID number of announcement.</dd>
+                  </dl>
             
-            <dl class="dl-horizontal">
-              <dt>url<br><?php print SteamDocs::param("string"); ?></dt>
-              <dd>URL of announcement item.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>title<br><?php print SteamDocs::param("string"); ?></dt>
+                    <dd>Title (aka Headline) string of announcement item.</dd>
+                  </dl>
             
-            <dl class="dl-horizontal">
-              <dt>author<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Steam ID number of the creator of the specific announcement.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>url<br><?php print SteamDocs::param("string"); ?></dt>
+                    <dd>URL of announcement item.</dd>
+                  </dl>
             
-            <dl class="dl-horizontal">
-              <dt>contents<br><?php print SteamDocs::param("string"); ?></dt>
-              <dd>HTML string of announcement contents.<br>Returns full contents unless <span class="label label-inverse">maxlength</span> is defined.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>author<br><?php print SteamDocs::param("int"); ?></dt>
+                    <dd>Steam ID number of the creator of the specific announcement.</dd>
+                  </dl>
             
-            <dl class="dl-horizontal">
-              <dt>datetime<br><?php print SteamDocs::param("unix timestamp"); ?></dt>
-              <dd>Unix timestamp of when announcement was posted. Always returns in UTC.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>contents<br><?php print SteamDocs::param("string"); ?></dt>
+                    <dd>HTML string of announcement contents.<br>Returns full contents unless <span class="label label-inverse">maxlength</span> is defined.</dd>
+                  </dl>
             
-            <dl class="dl-horizontal">
-              <dt>comments<br><?php print SteamDocs::param("int"); ?></dt>
-              <dd>Number of comments made for this particular post.</dd>
-            </dl>
+                  <dl class="dl-horizontal">
+                    <dt>datetime<br><?php print SteamDocs::param("unix timestamp"); ?></dt>
+                    <dd>Unix timestamp of when announcement was posted. Always returns in UTC.</dd>
+                  </dl>
             
+                  <dl class="dl-horizontal">
+                    <dt>comments<br><?php print SteamDocs::param("int"); ?></dt>
+                    <dd>Number of comments made for this particular post.</dd>
+                  </dl>
+                  
+                </div>
+              </div>
             </div>
             
             <h3>Examples</h3>

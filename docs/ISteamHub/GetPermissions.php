@@ -45,9 +45,9 @@
                     <dt>inviteOnly<br><?php print SteamDocs::param("int",false); ?></dt>
                     <dd>If value is <span class="badge badge-inverse">1</span>, then the group is invitation only.</dd>
                   </dl>
-            
+                  
                   <?php print SteamDocs::seeRoles(); ?>
-            
+                  
                   <dl class="dl-horizontal">
                     <dt>canEditProps<br><?php print SteamDocs::param("int",false); ?></dt>
                     <dd>
