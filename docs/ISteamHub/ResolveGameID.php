@@ -38,35 +38,40 @@
             <h2>Output</h2>
             <?php print SteamDocs::seeOutputs(); ?>
             
-            <div class="well well-small">
             <dl class="dl-horizontal">
               <dt>hubs<br><span class="text-info">(array)</span></dt>
               <dd>Array of results.</dd>
             </dl>
-            <dl class="dl-horizontal">
-              <dt>guid<br><span class="text-info">(int)</span></dt>
-              <dd>Hub ID number.</dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>abbreviation<br><span class="text-info">(string)</span></dt>
-              <dd>12 character hub abbreviation string.</dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>name<br><span class="text-info">(string)</span></dt>
-              <dd>Title of hub.</dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>url<br><span class="text-info">(string)</span></dt>
-              <dd>URL of the hub.</dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>official<br><span class="text-info">(bool)</span></dt>
-              <dd>If TRUE, hub is the official game hub. FALSE if otherwise.</dd>
-            </dl>
-            <dl class="dl-horizontal">
-              <dt>public<br><span class="text-info">(bool)</span></dt>
-              <dd>If TRUE, hub is public. FALSE if otherwise.</dd>
-            </dl>
+            
+            <div class="row-fluid">
+              <div class="span11 offset1">
+                <div class="well well-small">
+                  <dl class="dl-horizontal">
+                    <dt>guid<br><span class="text-info">(int)</span></dt>
+                    <dd>Hub ID number.</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>abbreviation<br><span class="text-info">(string)</span></dt>
+                    <dd>12 character hub abbreviation string.</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>name<br><span class="text-info">(string)</span></dt>
+                    <dd>Title of hub.</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>url<br><span class="text-info">(string)</span></dt>
+                    <dd>URL of the hub.</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>official<br><span class="text-info">(bool)</span></dt>
+                    <dd>If TRUE, hub is the official game hub. FALSE if otherwise.</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>public<br><span class="text-info">(bool)</span></dt>
+                    <dd>If TRUE, hub is public. FALSE if otherwise.</dd>
+                  </dl>
+                </div>
+              </div>
             </div>
             
             <h2>Examples</h2>
