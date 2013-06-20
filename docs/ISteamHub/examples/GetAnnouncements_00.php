@@ -1,5 +1,5 @@
 <?php
-include_once("../../../template/init.php");
+include_once(dirname(__FILE__)."/../../../template/init.php");
 
 $arr = array(
   
@@ -23,7 +23,7 @@ $arr = array(
         "title" => "Graham Annable Answers Your Questions: Parts 4 & 5",
         "url" => "http://steamcommunity.com/games/PuzzleAgent2/announcements/detail/1406463176487492407",
         "author" => 76561197985607672,
-        "contents" => "As our snowmobiles near Scoggins for the June 30 release of Puzzle Agent 2, I present to you not one but two new entries in the <b>Graham Annable Answers Your Questions</b> video series!<br><br>These new episodes feature questions from Telltale community members <b>eloffler</b>, <b>Lobst</b>, <b>allaboardfilms</b>, and <b>Irishmile</b>! To find out what Graham has to say watch the new videos!<br><br>* <a href=\"http://www.youtube.com/watch?v=59jzTmKlE_c\">Graham Annable Answers Your Questions: Part 4</a><br>* <a href=\"http://www.youtube.com/watch?v=cQpatJGoP8E\">Graham Annable Answers Your Questions: Part 5</a>",
+        "contents" => SteamDocs::htmlText("As our snowmobiles near Scoggins for the June 30 release of Puzzle Agent 2, I present to you not one but two new entries in the <b>Graham Annable Answers Your Questions</b> video series!<br><br>These new episodes feature questions from Telltale community members <b>eloffler</b>, <b>Lobst</b>, <b>allaboardfilms</b>, and <b>Irishmile</b>! To find out what Graham has to say watch the new videos!<br><br>* <a href=\"http://www.youtube.com/watch?v=59jzTmKlE_c\">Graham Annable Answers Your Questions: Part 4</a><br>* <a href=\"http://www.youtube.com/watch?v=cQpatJGoP8E\">Graham Annable Answers Your Questions: Part 5</a>"),
         "datetime" => 1309313280,
         "comments" => 0,
       ],
@@ -34,7 +34,7 @@ $arr = array(
 
 
 $all = SteamDocs::convertToAll($arr);
-$saveAll = SteamDocs::saveAll($all,"GetAnnouncements_00");
+$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."GetAnnouncements_00");
 
 if ( false ) {
   header("Content-type: text/plain;");

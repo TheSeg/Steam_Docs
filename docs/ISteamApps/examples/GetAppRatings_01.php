@@ -1,5 +1,5 @@
 <?php
-include_once("../../../template/init.php");
+include_once(dirname(__FILE__)."/../../../template/init.php");
 
 $arr = array(
   
@@ -74,7 +74,7 @@ $arr = array(
 
 
 $all = SteamDocs::convertToAll($arr);
-$saveAll = SteamDocs::saveAll($all,"GetAppRatings_01");
+$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."GetAppRatings_01");
 
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include_once("../../../template/init.php");
+include_once(dirname(__FILE__)."/../../../template/init.php");
 
 $arr = array(
   
@@ -123,9 +123,8 @@ $arr = array(
   
 );
 
-
 $all = SteamDocs::convertToAll($arr);
-$saveAll = SteamDocs::saveAll($all,"GetAppData_00");
+$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."GetAppData_00");
 
 if ( false ) {
   header("Content-type: text/plain;");

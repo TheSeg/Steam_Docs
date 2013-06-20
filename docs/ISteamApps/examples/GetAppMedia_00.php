@@ -1,5 +1,5 @@
 <?php
-include_once("../../../template/init.php");
+include_once(dirname(__FILE__)."/../../../template/init.php");
 
 $arr = array(
   
@@ -110,7 +110,7 @@ $arr = array(
 
 
 $all = SteamDocs::convertToAll($arr);
-$saveAll = SteamDocs::saveAll($all,"GetAppMedia_00");
+$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."GetAppMedia_00");
 
 
 ?>
