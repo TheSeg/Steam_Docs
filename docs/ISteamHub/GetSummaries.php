@@ -161,6 +161,8 @@
                             URL of the hub's avatar in 32px square.
                           </dd>
                         </dl>
+                        
+                        <?php print SteamDocs::placeholderBlock(32,32); ?>
             
                         <dl class="dl-horizontal">
                           <dt>avatarMedium<br><span class="text-info">(string)</span></dt>
@@ -168,6 +170,8 @@
                             URL of the hub's avatar in 64px square.
                           </dd>
                         </dl>
+                        
+                        <?php print SteamDocs::placeholderBlock(64,64); ?>
             
                         <dl class="dl-horizontal">
                           <dt>avatarFull<br><span class="text-info">(string)</span></dt>
@@ -175,6 +179,8 @@
                             URL of the hub's avatar in 184px square.
                           </dd>
                         </dl>
+                        
+                        <?php print SteamDocs::placeholderBlock(184,184); ?>
             
                         <dl class="dl-horizontal">
                           <dt>gameLogo<br><span class="text-info">(string)</span> <span class="text-warning">[optional]</span></dt>
@@ -184,6 +190,8 @@
                             Note: This is only for official game groups.
                           </dd>
                         </dl>
+                        
+                        <?php print SteamDocs::placeholderBlock(184,69); ?>
             
                         <dl class="dl-horizontal">
                           <dt>gameBanner<br><span class="text-info">(string)</span> <span class="text-warning">[optional]</span></dt>
@@ -193,6 +201,9 @@
                             Note: This is only for official game groups.
                           </dd>
                         </dl>
+                        
+                        <?php print SteamDocs::placeholderBlock(444,208); ?>
+                        
                       </div>
                     </div>
                   </div>
