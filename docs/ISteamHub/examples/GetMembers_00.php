@@ -26,13 +26,4 @@ $arr = array(
 $all = SteamDocs::convertToAll($arr);
 $saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."GetMembers_00");
 
-if ( false ) {
-  header("Content-type: text/plain;");
-  echo( $all['json']);
-} else if ( false ) {
-  header("Content-type: text/plain;");
-  echo( $all['vdf']);
-}
-
-
 ?>
