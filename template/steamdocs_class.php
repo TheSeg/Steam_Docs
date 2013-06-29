@@ -1,6 +1,7 @@
 <?php
 
 include_once("KVReader.php");
+include_once("XMLSerializer.php");
 
 class SteamDocs {
   
@@ -177,6 +178,19 @@ class SteamDocs {
   
   /**
     *
+    * convertToXML
+    * 
+    * @param Std $input
+    *             The input string
+    * @return string
+    *             A formatted XML string based on $input.
+  */
+  public static function convertToXML($input,$prettyPrint=true) {
+    return XMLSerializer::createXML($input,$prettyPrint);
+  }
+  
+  /**
+    *
     * convertToVDF
     * 
     * Converts the input structure to the Valve Definition Format.
@@ -194,15 +208,23 @@ class SteamDocs {
   public static function convertToAll($input) {
     $JSON = self::convertToJSON($input);
     $VDF = self::convertToVDF($input);
+    $XML = self::convertToXML($input);
     
-    return array("json" => $JSON , "vdf" => $VDF );
+    return array("json" => $JSON , "vdf" => $VDF , "xml" => $XML );
     
   }
   
   public static function saveAll($input,$filename) {
+    
+    //print("\n<pre>".htmlentities($input['json'])."</pre>\n");
     file_put_contents($filename.".js", $input['json']);
+    
+    //print("\n<pre>".htmlentities($input['vdf'])."</pre>\n");
     file_put_contents($filename.".vdf", $input['vdf']);
     
+    //print("\n<pre>".htmlentities($input['xml'])."</pre>\n");
+    file_put_contents($filename.".xml", $input['xml']);
+        
     return true;
   }
   
