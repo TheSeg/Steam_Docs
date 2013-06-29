@@ -46,11 +46,19 @@ class SteamDocs {
     $files=array();
     $content=array();
     $html=array();
+    $fileExtention = array(
+      "json" => ".js",
+      "xml" => ".xml",
+      "vdf" => ".vdf",
+    );
+
+    $dirname = dirname($currentFilePath);
+    $interfaceName = substr($dirname,(strrpos($dirname,'/') + 1));
     
     // Check if files exist for that output, then make tab/content.
-    $files['json'] = dirname($currentFilePath)."/examples/".$rootFileName.".js";
-    $files['xml'] = dirname($currentFilePath)."/examples/".$rootFileName.".xml";
-    $files['vdf'] = dirname($currentFilePath)."/examples/".$rootFileName.".vdf";
+    $files['json'] = $dirname."/examples/".$rootFileName.$fileExtention['json'];
+    $files['xml'] = $dirname."/examples/".$rootFileName.$fileExtention['xml'];
+    $files['vdf'] = $dirname."/examples/".$rootFileName.$fileExtention['vdf'];
     
     if ( file_exists($files['json']) ) {
       $content['json'] = file_get_contents($files['json']);
@@ -76,8 +84,8 @@ class SteamDocs {
       }
       $html[] = '<li class="'.$tabClassActive.'"><a href="#'.$rootFileName.'_'.$key.'" data-toggle="tab">'.strtoupper($key).'</a></li>';
     }
-    $firtTab = true;
     $html[] = '</div>';
+
     $html[] = '<div class="tab-content">';
     $firstTab = true;
     foreach ( $content as $key => $value ) {
@@ -94,6 +102,7 @@ class SteamDocs {
       }
       
       $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">
+                  <div class="externalLink"><a href="./docs/'.$interfaceName.'/examples/'.$rootFileName.$fileExtention[$key].'" target="_blank"><i class="icon-external-link icon-2x"></i></a></div>
                   <pre class="prettyprint pre-scrollable">'.$value.'</pre>
                 </div>';
     }
