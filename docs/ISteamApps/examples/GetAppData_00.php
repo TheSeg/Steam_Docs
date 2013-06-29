@@ -36,8 +36,8 @@ $arr = array(
             "capsule_616" => "http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_616x353.jpg"
         ),
         "strings" => array(
-            "short_desc" => "Agent Nelson Tethers just solved the biggest case of his career. So why isn&#039;t he satisfied? There&rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.",
-            "copyright" => "&copy; 2011 Telltale Inc. Telltale and the Telltale Games logo are trademarks of Telltale, Inc. Based on the Grickle series of books written and illustrated by Graham Annable. All rights reserved.",
+            "short_desc" => html_entity_decode("Agent Nelson Tethers just solved the biggest case of his career. So why isn&#039;t he satisfied? There&rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town."),
+            "copyright" => html_entity_decode("&copy; 2011 Telltale Inc. Telltale and the Telltale Games logo are trademarks of Telltale, Inc. Based on the Grickle series of books written and illustrated by Graham Annable. All rights reserved."),
             "about" => "&lt;p&gt;Agent Nelson Tethers just solved the biggest case of his career. So why isn&#039;t he satisfied? There&rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.&lt;\/p&gt;",
             "key_features" => "&lt;ul&gt;&lt;li&gt;Sequel to the award winning Puzzle Agent (PC Gamer&rsquo;s Game of the Year, IGN&rsquo;s Best of E3, etc)&lt;\/li&gt;&lt;li&gt;Creepy puzzle adventure with mystery and dark humor&lt;\/li&gt;&lt;li&gt;Wider variety of intuitive yet challenging puzzles&lt;\/li&gt;&lt;\/ul&gt;\n",
             "reviews" => null
@@ -93,7 +93,7 @@ $arr = array(
           ],
         ),
         'features' => array( 
-          "singleplayer" => false,
+          "singleplayer" => true,
           "coop" => false,
           "coop_local" => false,
           "multiplayer" => false,
