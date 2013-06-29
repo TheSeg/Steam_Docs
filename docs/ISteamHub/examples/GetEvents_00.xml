@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <guid>4178173</guid>
+  <appid>0</appid>
+  <events>
+    <event>
+      <gid>1622697970587791993</gid>
+      <title>Puzzle Agent 2 Test Event</title>
+      <url>http://steamcommunity.com/groups/SegTestGroup/events/1801716056505964159</url>
+      <eventtime>1368230400</eventtime>
+      <eventtype>2</eventtype>
+      <eventappid>94590</eventappid>
+      <eventip>1.1.1.1:10</eventip>
+      <eventpassword>password</eventpassword>
+      <eventurl>steam://connect/1.1.1.1:10</eventurl>
+      <contents><![CDATA[You can now return back to Scoggins with Nelson! The game is now released on Windows and Mac (via SteamPlay).&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://store.steampowered.com/app/94590&quot;&gt;Buy Puzzle Agent 2&lt;/a&gt; and get a free copy of Puzzle Agent 1 to play. Already own it? You can gift it to any one of your Steam friends!&lt;br&gt;&lt;br&gt;Enjoy Puzzle Agent 2 and your trip back to Scoggins!]]></contents>
+      <author>76561197983121111</author>
+      <createdtime>1309562100</createdtime>
+      <comments>0</comments>
+    </event>
+  </events>
+</response>

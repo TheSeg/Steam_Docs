@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <guid>4178173</guid>
+  <appid>0</appid>
+  <permissions>
+    <inviteonly>0</inviteonly>
+    <canEditProps>0</canEditProps>
+    <canMakeOfficer>0</canMakeOfficer>
+    <canSchedule>0</canSchedule>
+    <canAnnounce>0</canAnnounce>
+    <canPoTW>0</canPoTW>
+    <canInvite>0</canInvite>
+    <canKickMembers>0</canKickMembers>
+    <canChatAccess>0</canChatAccess>
+    <canChatKick>0</canChatKick>
+    <canChatBan>0</canChatBan>
+    <canChatInvite>0</canChatInvite>
+    <canPostComments>0</canPostComments>
+    <canDeleteComments>0</canDeleteComments>
+  </permissions>
+</response>

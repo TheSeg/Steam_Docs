@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <language>en</language>
+  <appid>3830</appid>
+  <title>Psychonauts</title>
+  <ratings>
+    <rating name="acb">
+      <class>M</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="bbfc">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="cero">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="csrr">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="dejus">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="esrb">
+      <class>T</class>
+      <desc>
+        <desc_item>Cartoon Violence</desc_item>
+        <desc_item>Crude Humor</desc_item>
+        <desc_item>Language</desc_item>
+      </desc>
+      <desc_string>Cartoon Violence, Crude Humor, Language</desc_string>
+    </rating>
+    <rating name="fpb">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="grb">
+      <class>UNRATED</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+    <rating name="pegi">
+      <class>12</class>
+      <desc>
+        <desc_item>Bad Language</desc_item>
+        <desc_item>Violence</desc_item>
+      </desc>
+      <desc_string>Bad Language, Violence</desc_string>
+    </rating>
+    <rating name="usk">
+      <class>12</class>
+      <desc/>
+      <desc_string></desc_string>
+    </rating>
+  </ratings>
+</response>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <guid>4178173</guid>
+  <appid>0</appid>
+  <members>
+    <member role="4">1622697970587791993</member>
+    <member role="0">1622697970587791993</member>
+  </members>
+</response>

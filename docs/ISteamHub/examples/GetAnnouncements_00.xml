@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <guid>0</guid>
+  <appid>94590</appid>
+  <announcements>
+    <announcement>
+      <gid>1406463823132647708</gid>
+      <title>Puzzle Agent 2 Released!</title>
+      <url>http://steamcommunity.com/games/PuzzleAgent2/announcements/detail/1406463823132647708</url>
+      <author>76561197985607672</author>
+      <contents><![CDATA[You can now return back to Scoggins with Nelson! The game is now released on Windows and Mac (via SteamPlay).&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://store.steampowered.com/app/94590&quot;&gt;Buy Puzzle Agent 2&lt;/a&gt; and get a free copy of Puzzle Agent 1 to play. Already own it? You can gift it to any one of your Steam friends!&lt;br&gt;&lt;br&gt;Enjoy Puzzle Agent 2 and your trip back to Scoggins!]]></contents>
+      <datetime>1309562100</datetime>
+      <comments>0</comments>
+    </announcement>
+    <announcement>
+      <gid>1406463176487492407</gid>
+      <title>Graham Annable Answers Your Questions: Parts 4 &amp; 5</title>
+      <url>http://steamcommunity.com/games/PuzzleAgent2/announcements/detail/1406463176487492407</url>
+      <author>76561197985607672</author>
+      <contents><![CDATA[As our snowmobiles near Scoggins for the June 30 release of Puzzle Agent 2, I present to you not one but two new entries in the &lt;b&gt;Graham Annable Answers Your Questions&lt;/b&gt; video series!&lt;br&gt;&lt;br&gt;These new episodes feature questions from Telltale community members &lt;b&gt;eloffler&lt;/b&gt;, &lt;b&gt;Lobst&lt;/b&gt;, &lt;b&gt;allaboardfilms&lt;/b&gt;, and &lt;b&gt;Irishmile&lt;/b&gt;! To find out what Graham has to say watch the new videos!&lt;br&gt;&lt;br&gt;* &lt;a href=&quot;http://www.youtube.com/watch?v=59jzTmKlE_c&quot;&gt;Graham Annable Answers Your Questions: Part 4&lt;/a&gt;&lt;br&gt;* &lt;a href=&quot;http://www.youtube.com/watch?v=cQpatJGoP8E&quot;&gt;Graham Annable Answers Your Questions: Part 5&lt;/a&gt;]]></contents>
+      <datetime>1309313280</datetime>
+      <comments>0</comments>
+    </announcement>
+  </announcements>
+</response>

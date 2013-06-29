@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <language>en</language>
+  <appids>94590</appids>
+  <apps>
+    <app appid="94590">
+      <title>Puzzle Agent 2</title>
+      <developer_name>Telltale Games</developer_name>
+      <publisher_name>Telltale Games</publisher_name>
+      <platform>
+        <windows/>
+        <mac/>
+        <steamplay/>
+      </platform>
+      <attributes>
+        <gold_appid>94590</gold_appid>
+      </attributes>
+      <images>
+        <header>http://cdn2.steampowered.com/v/gfx/apps/94590/header.jpg</header>
+        <header_292>http://cdn2.steampowered.com/v/gfx/apps/94590/header_292x136.jpg</header_292>
+        <capsule_120>http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_sm_120.jpg</capsule_120>
+        <capsule_184>http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_184x69.jpg</capsule_184>
+        <capsule_467>http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_467x181.jpg</capsule_467>
+        <capsule_616>http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_616x353.jpg</capsule_616>
+      </images>
+      <strings>
+        <short_desc>Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.</short_desc>
+        <copyright>&copy; 2011 Telltale Inc. Telltale and the Telltale Games logo are trademarks of Telltale, Inc. Based on the Grickle series of books written and illustrated by Graham Annable. All rights reserved.</copyright>
+        <about>&amp;lt;p&amp;gt;Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&amp;rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.&amp;lt;\/p&amp;gt;</about>
+        <key_features>&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Sequel to the award winning Puzzle Agent (PC Gamer&amp;rsquo;s Game of the Year, IGN&amp;rsquo;s Best of E3, etc)&amp;lt;\/li&amp;gt;&amp;lt;li&amp;gt;Creepy puzzle adventure with mystery and dark humor&amp;lt;\/li&amp;gt;&amp;lt;li&amp;gt;Wider variety of intuitive yet challenging puzzles&amp;lt;\/li&amp;gt;&amp;lt;\/ul&amp;gt;
+</key_features>
+      </strings>
+      <system_req>
+        <windows>
+          <minimum><![CDATA[&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; XP Service Pack 3 / Vista / Windows 7
+&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; 1.8 GHz Pentium 4 or equivalent (Rec: 2.0GHz Pentium 4 or equivalent)
+&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 2 GB RAM (Rec: 3GB RAM)
+&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;/strong&gt; 500 Mb Space Free
+&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; ATI or NVidia card w/ 256 MB RAM (Rec: ATI or NVidia card w/ 512 MB RAM)
+&lt;li&gt;&lt;strong&gt;DirectX&amp;reg;:&lt;/strong&gt; Direct X 9.0c
+&lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; Direct X 9.0 sound device
+ &lt;/ul&gt;
+&lt;/ul&gt;]]></minimum>
+          <recommended></recommended>
+        </windows>
+        <mac>
+          <minimum><![CDATA[&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; OS X version Snow Leopard 10.6.3, or later.
+&lt;li&gt;&lt;strong&gt;Processor:&lt;/strong&gt; 2.3 GHz Intel or equivalent
+&lt;li&gt;&lt;strong&gt;Memory:&lt;/strong&gt; 4 GB RAM
+&lt;li&gt;&lt;strong&gt;Hard Disk Space:&lt;/strong&gt; 500 MB Space Free
+&lt;li&gt;&lt;strong&gt;Video Card:&lt;/strong&gt; 512 MB NVidia or ATI graphics card
+&lt;li&gt;&lt;strong&gt;Additional:&lt;/strong&gt; Not recommended for MAC Minis or early-generation MacBooks
+ &lt;/ul&gt;
+&lt;/ul&gt;
+]]></minimum>
+          <recommended></recommended>
+        </mac>
+        <linux>
+          <minimum></minimum>
+          <recommended></recommended>
+        </linux>
+      </system_req>
+      <genres>
+        <genre>adventure</genre>
+        <genre>casual</genre>
+      </genres>
+      <release_date>
+        <year>2011</year>
+        <month>6</month>
+        <day>30</day>
+      </release_date>
+      <languages>
+        <language name="english" has_voice="1" has_subtitles="1">en</language>
+      </languages>
+      <feature>
+        <singleplayer/>
+      </feature>
+      <links>
+        <official_website>http://www.telltalegames.com/puzzleagent2</official_website>
+        <update_history>http://store.steampowered.com/news/?feed=steam_updates&amp;appids=94590</update_history>
+        <official_game_hub>http://steamcommunity.com/app/94590</official_game_hub>
+        <store_page>http://store.steampowered.com/app/94590/</store_page>
+        <forums>http://steamcommunity.com/app/94590/discussions/</forums>
+      </links>
+    </app>
+  </apps>
+</response>

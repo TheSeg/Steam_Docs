@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <guid>4178173</guid>
+  <appid>0</appid>
+  <status>
+    <memberCount>0</memberCount>
+    <membersInChat>0</membersInChat>
+    <membersInGame>0</membersInGame>
+    <membersOnline>0</membersOnline>
+    <playerofweek>1</playerofweek>
+  </status>
+</response>
