@@ -72,7 +72,7 @@ class SteamDocs {
     
     // 
     
-    $html[] = '<div class="tabbable"><div class="tabbable"><div class="tabbable"><ul class="nav nav-tabs">';
+    $html[] = '<div class="examplesTabs"><div class="tabbable tabs-left"><ul class="nav nav-tabs">';
     
     $firstTab = true;
     foreach ( $content as $key => $value ) {
@@ -84,7 +84,7 @@ class SteamDocs {
       }
       $html[] = '<li class="'.$tabClassActive.'"><a href="#'.$rootFileName.'_'.$key.'" data-toggle="tab">'.strtoupper($key).'</a></li>';
     }
-    $html[] = '</div>';
+    $html[] = '</ul>';
 
     $html[] = '<div class="tab-content">';
     $firstTab = true;
@@ -101,10 +101,10 @@ class SteamDocs {
         $value = htmlentities( $value , ENT_XML1 );
       }
       
-      $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">
-                  <div class="externalLink"><a href="./docs/'.$interfaceName.'/examples/'.$rootFileName.$fileExtention[$key].'" target="_blank"><i class="icon-external-link icon-2x"></i></a></div>
-                  <pre class="prettyprint pre-scrollable">'.$value.'</pre>
-                </div>';
+      $html[] = '<div class="tab-pane '.$tabClassActive.'" id="'.$rootFileName.'_'.$key.'">';
+      $html[] = '<div class="preArea"><pre class="prettyprint pre-scrollable">'.$value.'</pre></div>';
+      $html[] = '<div class="externalLinks"><a href="./docs/'.$interfaceName.'/examples/'.$rootFileName.$fileExtention[$key].'" target="_blank" data-toggle="tooltip" title="View in separate window." data-placement="bottom"><i class="icon-external-link"></i></a></div>';
+      $html[] = '</div>';
     }
     $html[] = "</div></div>";
     
