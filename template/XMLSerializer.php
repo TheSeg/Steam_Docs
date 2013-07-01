@@ -182,7 +182,7 @@ class XMLSerializer extends DOMImplementation {
         
         if ( ( is_array($fieldvalue) || is_object($fieldvalue) ) && getType($fieldname) != "integer" ) {
           
-          $newOcc = $doc->createElement( $fieldname );
+          $newOcc = self::elementValue($doc, $fieldname );
           $newOcc = $occ->appendChild($newOcc);
           foreach( $fieldvalue as $subFieldName => $subFieldValue ) {
             
@@ -206,16 +206,17 @@ class XMLSerializer extends DOMImplementation {
               
               $newChildElement = self::elementValue($doc, $newSubChildElementType["elementString"] );
               foreach( $subSubFieldValue as $thatA => $thisA ) {
-                //echo("<pre>$subSubFieldName :: ".$thatA." -> $thisA</pre>");
                 if ( $thisA === true ) {
                   $newSubChildElement = self::elementValue($doc, $thatA );
                   $newChildElement->appendChild($newSubChildElement);
+                } else {
+                  // Note: If false, then field shouldn't exist for this type.
                 }
               }
               
             } elseif ( $returnElementStats["type"] === ELEMENT_TYPE_ONEARRAY ) {
               
-              $childElement = $doc->createElement( $returnElementStats["elementString"] );
+              $childElement = self::elementValue($doc, $returnElementStats["elementString"] );
               
               if ( !empty($subFieldName) && !is_numeric($subFieldName) ) {
                 $childAtt = $doc->createAttribute( "name" );
@@ -225,7 +226,7 @@ class XMLSerializer extends DOMImplementation {
               
               foreach( $subFieldValue as $subSubFieldName => $subSubFieldValue ) {
                 if ( gettype($subSubFieldValue) == "array" ) {
-                  $newChildElement = $doc->createElement( $subSubFieldName );
+                  $newChildElement = self::elementValue($doc, $subSubFieldName );
                   foreach( $subSubFieldValue as $thisA => $thatA ) {
                     if ( gettype($thatA) == "array" ) {
                       // It's an array. Pick a main field, then attribute the rest.
@@ -235,7 +236,7 @@ class XMLSerializer extends DOMImplementation {
                       } else {
                         $newSubChildElementValue = null;
                       }
-                      $newSubChildElement = $doc->createElement( $fieldName['elementString'] , $newSubChildElementValue );
+                      $newSubChildElement = self::elementValue($doc, $fieldName['elementString'] , $newSubChildElementValue );
                       foreach( $thatA as $thatB => $thisB ) {
                         if ( strtolower($thatB) != $fieldName['defaultValueName'] ) {
                           $childAtt = $doc->createAttribute( $thatB );
@@ -247,9 +248,9 @@ class XMLSerializer extends DOMImplementation {
                       $subSubFieldName_Return = self::toSingular($subSubFieldName);
                       // One field one value.
                       if ( $subSubFieldName_Return['type'] == ELEMENT_TYPE_CAMMALCASE ) {
-                        $newSubChildElement = $doc->createElement( $thisA , htmlentities($thatA) );
+                        $newSubChildElement = self::elementValue($doc, $thisA , $thatA );
                       } else {
-                        $newSubChildElement = $doc->createElement( $subSubFieldName."_item" , htmlentities($thatA) );
+                        $newSubChildElement = self::elementValue($doc, $subSubFieldName."_item" , $thatA );
                       }
                     }
                     $newChildElement->appendChild($newSubChildElement);
@@ -278,7 +279,7 @@ class XMLSerializer extends DOMImplementation {
                   
                   if ( $newSubChildElementType["type"] == ELEMENT_TYPE_STANDALONE ) {
                     
-                    $newChildElement = $doc->createElement( $newSubChildElementType["elementString"] );
+                    $newChildElement = self::elementValue($doc, $newSubChildElementType["elementString"] );
                     foreach( $subSubFieldValue as $thatA => $thisA ) {
                       if ( $thisA != false ) {
                         if ( is_numeric($thatA) === true ) {
@@ -307,7 +308,7 @@ class XMLSerializer extends DOMImplementation {
                       if ( is_numeric($thatA) ) {
                         $newSubChildElement = self::elementValue($doc, $newSubChildElementType["elementSubString"] , $thisA );
                       } else {
-                        $newSubChildElement = $doc->createElement( $thatA );
+                        $newSubChildElement = self::elementValue($doc, $thatA );
                         foreach( $thisA as $thatB => $thisB ) {
                           $newSubSubChildElement = self::elementValue($doc, $thatB , $thisB );
                           $newSubChildElement->appendChild($newSubSubChildElement);
