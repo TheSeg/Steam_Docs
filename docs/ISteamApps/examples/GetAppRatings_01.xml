@@ -10,27 +10,27 @@
     <rating name="acb">
       <class>M</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="bbfc">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="cero">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="csrr">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="dejus">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="esrb">
       <class>T</class>
@@ -44,12 +44,12 @@
     <rating name="fpb">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="grb">
       <class>UNRATED</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
     <rating name="pegi">
       <class>12</class>
@@ -62,7 +62,7 @@
     <rating name="usk">
       <class>12</class>
       <desc/>
-      <desc_string></desc_string>
+      <desc_string/>
     </rating>
   </ratings>
 </response>

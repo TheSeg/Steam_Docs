@@ -27,11 +27,11 @@
         <capsule_616>http://cdn2.steampowered.com/v/gfx/apps/94590/capsule_616x353.jpg</capsule_616>
       </images>
       <strings>
-        <short_desc>Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.</short_desc>
-        <copyright>&copy; 2011 Telltale Inc. Telltale and the Telltale Games logo are trademarks of Telltale, Inc. Based on the Grickle series of books written and illustrated by Graham Annable. All rights reserved.</copyright>
-        <about>&amp;lt;p&amp;gt;Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&amp;rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.&amp;lt;\/p&amp;gt;</about>
-        <key_features>&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Sequel to the award winning Puzzle Agent (PC Gamer&amp;rsquo;s Game of the Year, IGN&amp;rsquo;s Best of E3, etc)&amp;lt;\/li&amp;gt;&amp;lt;li&amp;gt;Creepy puzzle adventure with mystery and dark humor&amp;lt;\/li&amp;gt;&amp;lt;li&amp;gt;Wider variety of intuitive yet challenging puzzles&amp;lt;\/li&amp;gt;&amp;lt;\/ul&amp;gt;
-</key_features>
+        <short_desc>Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&amp;rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.</short_desc>
+        <copyright>&amp;copy; 2011 Telltale Inc. Telltale and the Telltale Games logo are trademarks of Telltale, Inc. Based on the Grickle series of books written and illustrated by Graham Annable. All rights reserved.</copyright>
+        <about><![CDATA[&lt;p&gt;Agent Nelson Tethers just solved the biggest case of his career. So why isn&amp;#039;t he satisfied? There&amp;rsquo;s still the case of a missing eraser factory foreman, a whispering madness is still creeping from mind to mind, and a troubling recurrence of... creatures... is lurking into the town.&lt;/p&gt;]]></about>
+        <key_features><![CDATA[&lt;ul&gt;&lt;li&gt;Sequel to the award winning Puzzle Agent (PC Gamer&amp;rsquo;s Game of the Year, IGN&amp;rsquo;s Best of E3, etc)&lt;/li&gt;&lt;li&gt;Creepy puzzle adventure with mystery and dark humor&lt;/li&gt;&lt;li&gt;Wider variety of intuitive yet challenging puzzles&lt;/li&gt;&lt;/ul&gt;
+]]></key_features>
       </strings>
       <system_req>
         <windows>
@@ -46,7 +46,7 @@
 &lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; Direct X 9.0 sound device
  &lt;/ul&gt;
 &lt;/ul&gt;]]></minimum>
-          <recommended></recommended>
+          <recommended/>
         </windows>
         <mac>
           <minimum><![CDATA[&lt;ul&gt;
@@ -60,11 +60,11 @@
  &lt;/ul&gt;
 &lt;/ul&gt;
 ]]></minimum>
-          <recommended></recommended>
+          <recommended/>
         </mac>
         <linux>
-          <minimum></minimum>
-          <recommended></recommended>
+          <minimum/>
+          <recommended/>
         </linux>
       </system_req>
       <genres>

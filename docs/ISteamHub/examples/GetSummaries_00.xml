@@ -23,11 +23,11 @@
       <locStateCode></locStateCode>
       <playerofweek>0</playerofweek>
       <avatar>
-        <avatar_item>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg</avatar_item>
-        <avatar_item>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_medium.jpg</avatar_item>
-        <avatar_item>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_full.jpg</avatar_item>
-        <avatar_item></avatar_item>
-        <avatar_item></avatar_item>
+        <avatarIcon>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg</avatarIcon>
+        <avatarMedium>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_medium.jpg</avatarMedium>
+        <avatarFull>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_full.jpg</avatarFull>
+        <gamelogo></gamelogo>
+        <gamebanner></gamebanner>
       </avatar>
       <associatedGames/>
       <websites>
