@@ -12,6 +12,10 @@ function get_include_contents($filename) {
 }
 
 if ( true ) {
+print ("<h2>ResolveGameID_01.php</h2>");
+print get_include_contents("ISteamHub/examples/ResolveGameID_01.php");
+print ("<h2>ResolveGameID_02.php</h2>");
+print get_include_contents("ISteamHub/examples/ResolveGameID_02.php");
 print ("<h2>GetSummaries_00.php</h2>");
 print get_include_contents("ISteamHub/examples/GetSummaries_00.php");
 print ("<h2>GetAppData_00.php</h2>");

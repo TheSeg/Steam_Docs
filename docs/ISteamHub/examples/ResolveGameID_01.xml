@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0"?>
 <!DOCTYPE response>
 <response>
   <success>1</success>
   <message>success</message>
   <appid>94590</appid>
+  <language>en</language>
   <hubs>
     <hub>
       <guid>103582791432166170</guid>
