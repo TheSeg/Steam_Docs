@@ -7,6 +7,7 @@ define("ELEMENT_TYPE_ONEARRAY",2);
 define("ELEMENT_TYPE_BOOL",3);
 define("ELEMENT_TYPE_APPS",4);
 define("ELEMENT_TYPE_LANG",5);
+define("ELEMENT_TYPE_CAMMALCASE",6);
 
 class XMLSerializer extends DOMImplementation {
   
@@ -39,6 +40,7 @@ class XMLSerializer extends DOMImplementation {
       "type" => ELEMENT_TYPE_DEFAULT,
       "elementString" => "",
       "elementSubString" => "",
+      "defaultValueName" => "",
     );
     
     switch( strtolower($input) ) {
@@ -51,6 +53,10 @@ class XMLSerializer extends DOMImplementation {
         break;
       case "events":
         $output["elementString"] = "event";
+        $output["type"] = ELEMENT_TYPE_ONEARRAY;
+        break;
+      case "hubs":
+        $output["elementString"] = "hub";
         $output["type"] = ELEMENT_TYPE_ONEARRAY;
         break;
       case "announcements":
@@ -108,6 +114,12 @@ class XMLSerializer extends DOMImplementation {
         $output["elementSubString"] = "genre";
         $output["type"] = ELEMENT_TYPE_ONEARRAY;
         break;
+      case "websites":
+        $output["elementString"] = "site";
+        $output["elementSubString"] = "";
+        $output["defaultValueName"] = "title";
+        $output["type"] = ELEMENT_TYPE_ONEARRAY;
+        break;
       case "features":
         $output["elementString"] = "feature";
         $output["type"] = ELEMENT_TYPE_BOOL;
@@ -115,6 +127,10 @@ class XMLSerializer extends DOMImplementation {
       case "release_date":
         $output["elementString"] = "release_date";
         $output["type"] = ELEMENT_TYPE_STANDALONE;
+        break;
+      case "avatar":
+        $output["elementString"] = "avatar";
+        $output["type"] = ELEMENT_TYPE_CAMMALCASE;
         break;
       case null:
         $output["type"] = ELEMENT_TYPE_NULL;
@@ -142,7 +158,6 @@ class XMLSerializer extends DOMImplementation {
             $returnElementStats = self::toSingular($fieldname);
             if ( isset($subFieldValue['steamid']) ) {
               $createElementValue = $subFieldValue['steamid'];
-              //print($subFieldName."->".$subFieldValue['steamid']);
             } else {
               $createElementValue = $subFieldName;
             }
@@ -150,6 +165,10 @@ class XMLSerializer extends DOMImplementation {
             if ( $returnElementStats["type"] === ELEMENT_TYPE_STANDALONE ) {
               
               $childElement = $doc->createElement( $subFieldName , htmlentities($subFieldValue) );
+              
+            } elseif ( $returnElementStats["type"] == ELEMENT_TYPE_CAMMALCASE ) {
+              
+              echo("$fieldname: ELEMENT_TYPE_CAMMALCASE\n");
               
             } elseif ( $returnElementStats["type"] == ELEMENT_TYPE_BOOL ) {
               
@@ -180,7 +199,26 @@ class XMLSerializer extends DOMImplementation {
                 } elseif ( gettype($subSubFieldValue) == "array" ) {
                   $newChildElement = $doc->createElement( $subSubFieldName );
                   foreach( $subSubFieldValue as $thatA ) {
-                    $newSubChildElement = $doc->createElement( $subSubFieldName."_item" , htmlentities($thatA) );
+                    if ( gettype($thatA) == "array" ) {
+                      // It's an array. Pick a main field, then attribute the rest.
+                      $fieldName = self::toSingular($subSubFieldName);
+                      if ( isset($fieldName['defaultValueName']) && !empty($fieldName['defaultValueName']) ) {
+                        $newSubChildElementValue = $thatA[$fieldName['defaultValueName']];
+                      } else {
+                        $newSubChildElementValue = null;
+                      }
+                      $newSubChildElement = $doc->createElement( $fieldName['elementString'] , $newSubChildElementValue );
+                      foreach( $thatA as $thatB => $thisB ) {
+                        if ( strtolower($thatB) != $fieldName['defaultValueName'] ) {
+                          $childAtt = $doc->createAttribute( $thatB );
+                          $childAtt->value = $thisB;
+                          $newSubChildElement->appendChild($childAtt);
+                        }
+                      }
+                    } else {
+                      // One field one value.
+                      $newSubChildElement = $doc->createElement( $subSubFieldName."_item" , htmlentities($thatA) );
+                    }
                     $newChildElement->appendChild($newSubChildElement);
                   }
                 } else {
@@ -289,7 +327,6 @@ class XMLSerializer extends DOMImplementation {
               }
               
             } else {
-              
               $childElement = $doc->createElement( $returnElementStats["elementString"] , htmlentities($createElementValue) );
               foreach( $subFieldValue as $subSubFieldName => $subSubFieldValue ) {
                 if ( $subSubFieldName == "steamid" ) {
