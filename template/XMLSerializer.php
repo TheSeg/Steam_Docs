@@ -38,25 +38,27 @@ class XMLSerializer extends DOMImplementation {
     private static function elementValue($doc, $field, $value=null,$options=0) {
         $return = null;
         
-        // Are we doing values?
-        if ( ($value != null && $value != "") || ( is_numeric($value) ) ) {
-            // Treatment to value.
-            $returnValue = $value;
+        if ( ($value != null && $value != "") || ( is_numeric($value) ) || ( is_bool($value) ) ) {
+            if ( is_bool($value) ) {
+              if ( $value === true ) {
+                $returnValue = "true";
+              } else {
+                $returnValue = "false";
+              }
+            } else {
+              $returnValue = $value;
+            }
             
-            // Doing Element WITH value.
             if ( self::doCDATA($returnValue) ) {
-              // Data needs to be CDATA
               $return = $doc->createElement( $field );
               $returnCDATA = $doc->createCDATASection( htmlentities($returnValue) );
               $return->appendChild($returnCDATA);
             } elseif ( is_numeric($returnValue) ) {
               $return = $doc->createElement( $field , $returnValue );
             } else {
-              // Data need just baisc HTMLENTITIES().
               $return = $doc->createElement( $field , htmlentities($returnValue) );
             }
         } else {
-          // Doing Element WITHOUT value.
           $return = $doc->createElement( $field );
         }
         
