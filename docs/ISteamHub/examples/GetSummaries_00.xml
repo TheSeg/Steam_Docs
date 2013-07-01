@@ -11,23 +11,23 @@
       <name>AbleGamers</name>
       <url>http://steamcommunity.com/groups/ablegamers</url>
       <appid>0</appid>
-      <public>1</public>
-      <inviteonly></inviteonly>
+      <public>true</public>
+      <inviteonly>false</inviteonly>
       <datecreated>1335596400</datecreated>
       <dateupdated>1368135598</dateupdated>
-      <headline></headline>
+      <headline/>
       <summary>AbleGamers enables children and adults with disabilities and veterans after war trauma to play video games. There should be no barriers to fun!</summary>
       <memberCount>177</memberCount>
-      <language></language>
+      <language/>
       <locCountryCode>US</locCountryCode>
-      <locStateCode></locStateCode>
+      <locStateCode/>
       <playerofweek>0</playerofweek>
       <avatar>
         <avatarIcon>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762.jpg</avatarIcon>
         <avatarMedium>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_medium.jpg</avatarMedium>
         <avatarFull>http://media.steampowered.com/steamcommunity/public/images/avatars/03/039516212655e228acbf3614740b7898d7930762_full.jpg</avatarFull>
-        <gamelogo></gamelogo>
-        <gamebanner></gamebanner>
+        <gamelogo/>
+        <gamebanner/>
       </avatar>
       <associatedGames/>
       <websites>

@@ -12,6 +12,8 @@ function get_include_contents($filename) {
 }
 
 if ( true ) {
+print ("<h2>GetSummaries_00.php</h2>");
+print get_include_contents("ISteamHub/examples/GetSummaries_00.php");
 print ("<h2>GetAppData_00.php</h2>");
 print get_include_contents("ISteamApps/examples/GetAppData_00.php");
 print ("<h2>GetAppMedia_00.php</h2>");
