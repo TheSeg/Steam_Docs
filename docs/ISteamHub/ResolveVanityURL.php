@@ -25,28 +25,97 @@
             <?php print SteamDocs::seeOutputs(); ?>
             
             <dl class="dl-horizontal">
-              <dt>guid<br><span class="text-info">(int)</span></dt>
-              <dd>Steam Hub ID number of query.</dd>
+              <dt>vanityUrl<br><?php print SteamDocs::param("int"); ?></dt>
+              <dd>Returned <code>vanityUrl</code> of input.</dd>
             </dl>
+            
             <dl class="dl-horizontal">
-              <dt>appID<br><span class="text-info">(int)</span> <span class="text-warning">[optional]</span></dt>
-              <dd>
-                If queried hub is an official game hub, value returns the AppID of the game.
-                <br>
-                If not an official game hub, value returns as 0.
-              </dd>
+              <dt>result<br><?php print SteamDocs::param("array"); ?></dt>
+              <dd></dd>
             </dl>
+            
+            <div class="row-fluid">
+              <div class="span11 offset1 well">
+              
+                <dl class="dl-horizontal">
+                  <dt>appID<br><?php print SteamDocs::param("int"); ?></dt></dt>
+                  <dd>
+                    If queried hub is an official game hub, value returns the AppID of the game.
+                    <br>
+                    If not an official game hub, value returns as 0.
+                  </dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>guid<br><?php print SteamDocs::param("int"); ?></dt>
+                  <dd>Steam Hub ID number of query.</dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>abbreviation<br><?php print SteamDocs::param("string"); ?></dt>
+                  <dd>
+                    Abbreviated name of the Hub.
+                    <br>
+                    Also known as 'short code'.
+                  </dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>name<br><?php print SteamDocs::param("string"); ?></dt>
+                  <dd>Title of the Hub.</dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>url<br><?php print SteamDocs::param("string"); ?></dt>
+                  <dd>
+                    URL of the Hub.<br>
+                    Useful when <code>vanityUrl</code> is an abbreviation or <code>guid</code> value.
+                  </dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>official<br><?php print SteamDocs::param("bool"); ?></dt>
+                  <dd>
+                    <ul>
+                      <li><span class="label">TRUE</span> if group is official game group of listed <code>appid</code>.</li>
+                      <li><span class="label">FALSE</span> if otherwise.</li>
+                    </ul>
+                  </dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>public<br><?php print SteamDocs::param("bool"); ?></dt>
+                  <dd>
+                    <ul>
+                      <li><span class="label">TRUE</span> if group is open to the public for viewing.</li>
+                      <li><span class="label">FALSE</span> if otherwise.</li>
+                    </ul>
+                  </dd>
+                </dl>
+                
+                <dl class="dl-horizontal">
+                  <dt>inviteonly<br><?php print SteamDocs::param("bool"); ?></dt>
+                  <dd>
+                    <ul>
+                      <li><span class="label">TRUE</span> if users can join only if invited.</li>
+                      <li><span class="label">FALSE</span> if otherwise.</li>
+                    </ul>
+                  </dd>
+                </dl>
+                
+              </div>
+            </div>
             
             <h2>Examples:</h2>
             
             <h3>Game Hub: <span class="text-info"><a href="http://steamcommunity.com/app/PuzzleAgent2/" target="_blank">Puzzle Agent 2</a></span></h3>
             <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("http://steamcommunity.com/games/PuzzleAgent2/")?></blockquote>
             
-            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example00" ); ?>
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_00" ); ?>
             
             <h3>Community Hub: <span class="text-info"><a href="http://steamcommunity.com/groups/ablegamers" target="_blank">AbleGamers</a></span></h3>
             <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?vanityurl=<?php print urlencode("ablegamers")?></blockquote>
             
-            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_Example01" ); ?>
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveVanityURL_01" ); ?>
             
           </section>

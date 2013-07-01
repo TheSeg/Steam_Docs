@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE response>
+<response>
+  <success>1</success>
+  <message>success</message>
+  <vanityurl>http://steamcommunity.com/games/PuzzleAgent</vanityurl>
+  <result>
+    <appid>94590</appid>
+    <guid>103582791432166170</guid>
+    <abbreviation>puzzleagent2</abbreviation>
+    <name>Puzzle Agent 2</name>
+    <url>http://steamcommunity.com/games/PuzzleAgent</url>
+    <official>true</official>
+    <public>true</public>
+    <inviteonly>false</inviteonly>
+  </result>
+</response>
