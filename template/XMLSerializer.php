@@ -30,6 +30,39 @@ class XMLSerializer extends DOMImplementation {
     
     return $return;
   }
+  
+  /**
+    *
+    *
+  */
+    private static function elementValue($doc, $field, $value=null,$options=0) {
+        $return = null;
+        
+        // Are we doing values?
+        if ( ($value != null && $value != "") || ( is_numeric($value) ) ) {
+            // Treatment to value.
+            $returnValue = $value;
+            
+            // Doing Element WITH value.
+            if ( self::doCDATA($returnValue) ) {
+              // Data needs to be CDATA
+              $return = $doc->createElement( $field );
+              $returnCDATA = $doc->createCDATASection( htmlentities($returnValue) );
+              $return->appendChild($returnCDATA);
+            } elseif ( is_numeric($returnValue) ) {
+              $return = $doc->createElement( $field , $returnValue );
+            } else {
+              // Data need just baisc HTMLENTITIES().
+              $return = $doc->createElement( $field , htmlentities($returnValue) );
+            }
+        } else {
+          // Doing Element WITHOUT value.
+          $return = $doc->createElement( $field );
+        }
+        
+        return $return;
+    }
+  
   /**
     * 
     * toSingular
@@ -153,7 +186,6 @@ class XMLSerializer extends DOMImplementation {
           $newOcc = $occ->appendChild($newOcc);
           foreach( $fieldvalue as $subFieldName => $subFieldValue ) {
             
-            //var_dump($subFieldValue);
             // get value for element.
             $returnElementStats = self::toSingular($fieldname);
             if ( isset($subFieldValue['steamid']) ) {
@@ -164,7 +196,7 @@ class XMLSerializer extends DOMImplementation {
             
             if ( $returnElementStats["type"] === ELEMENT_TYPE_STANDALONE ) {
               
-              $childElement = $doc->createElement( $subFieldName , htmlentities($subFieldValue) );
+              $childElement = self::elementValue($doc, $subFieldName , $subFieldValue );
               
             } elseif ( $returnElementStats["type"] == ELEMENT_TYPE_CAMMALCASE ) {
               
@@ -172,11 +204,11 @@ class XMLSerializer extends DOMImplementation {
               
             } elseif ( $returnElementStats["type"] == ELEMENT_TYPE_BOOL ) {
               
-              $newChildElement = $doc->createElement( $newSubChildElementType["elementString"] );
+              $newChildElement = self::elementValue($doc, $newSubChildElementType["elementString"] );
               foreach( $subSubFieldValue as $thatA => $thisA ) {
                 //echo("<pre>$subSubFieldName :: ".$thatA." -> $thisA</pre>");
                 if ( $thisA === true ) {
-                  $newSubChildElement = $doc->createElement( $thatA );
+                  $newSubChildElement = self::elementValue($doc, $thatA );
                   $newChildElement->appendChild($newSubChildElement);
                 }
               }
@@ -192,13 +224,9 @@ class XMLSerializer extends DOMImplementation {
               }
               
               foreach( $subFieldValue as $subSubFieldName => $subSubFieldValue ) {
-                if ( self::doCDATA($subSubFieldValue) ) {
+                if ( gettype($subSubFieldValue) == "array" ) {
                   $newChildElement = $doc->createElement( $subSubFieldName );
-                  $newCDATAElement = $doc->createCDATASection( htmlentities($subSubFieldValue) );
-                  $newChildElement->appendChild($newCDATAElement);
-                } elseif ( gettype($subSubFieldValue) == "array" ) {
-                  $newChildElement = $doc->createElement( $subSubFieldName );
-                  foreach( $subSubFieldValue as $thatA ) {
+                  foreach( $subSubFieldValue as $thisA => $thatA ) {
                     if ( gettype($thatA) == "array" ) {
                       // It's an array. Pick a main field, then attribute the rest.
                       $fieldName = self::toSingular($subSubFieldName);
@@ -216,20 +244,25 @@ class XMLSerializer extends DOMImplementation {
                         }
                       }
                     } else {
+                      $subSubFieldName_Return = self::toSingular($subSubFieldName);
                       // One field one value.
-                      $newSubChildElement = $doc->createElement( $subSubFieldName."_item" , htmlentities($thatA) );
+                      if ( $subSubFieldName_Return['type'] == ELEMENT_TYPE_CAMMALCASE ) {
+                        $newSubChildElement = $doc->createElement( $thisA , htmlentities($thatA) );
+                      } else {
+                        $newSubChildElement = $doc->createElement( $subSubFieldName."_item" , htmlentities($thatA) );
+                      }
                     }
                     $newChildElement->appendChild($newSubChildElement);
                   }
                 } else {
-                  $newChildElement = $doc->createElement( $subSubFieldName , htmlentities($subSubFieldValue) );
+                  $newChildElement = self::elementValue($doc, $subSubFieldName, $subSubFieldValue );
                 }
                 $valueChildElement = $childElement->appendChild( $newChildElement );
               }
               
             } elseif ( $returnElementStats["type"] === ELEMENT_TYPE_APPS ) {
               
-              $childElement = $doc->createElement( $returnElementStats["elementString"] );
+              $childElement = self::elementValue($doc, $returnElementStats["elementString"] );
               
               if ( !empty($subFieldName) ) {
                 $childAtt = $doc->createAttribute( "appid" );
@@ -238,13 +271,8 @@ class XMLSerializer extends DOMImplementation {
               }
               
               foreach( $subFieldValue as $subSubFieldName => $subSubFieldValue ) {
-                //echo("<pre>".$returnElementStats["elementString"].": ".gettype($subFieldValue)."</pre>");
                 
-                if ( self::doCDATA($subSubFieldValue) ) {
-                  $newChildElement = $doc->createElement( $subSubFieldName );
-                  $newCDATAElement = $doc->createCDATASection( htmlentities($subSubFieldValue) );
-                  $newChildElement->appendChild($newCDATAElement);
-                } elseif ( gettype($subSubFieldValue) == "array" ) {
+                if ( gettype($subSubFieldValue) == "array" ) {
                   
                   $newSubChildElementType = self::toSingular($subSubFieldName);
                   
@@ -252,12 +280,11 @@ class XMLSerializer extends DOMImplementation {
                     
                     $newChildElement = $doc->createElement( $newSubChildElementType["elementString"] );
                     foreach( $subSubFieldValue as $thatA => $thisA ) {
-                      //echo("<pre>$subSubFieldName :: ".$thatA." -> $thisA</pre>");
                       if ( $thisA != false ) {
                         if ( is_numeric($thatA) === true ) {
-                          $newSubChildElement = $doc->createElement( $newSubChildElementType["elementSubString"] , htmlentities($thisA) );
+                          $newSubChildElement = self::elementValue($doc, $newSubChildElementType["elementSubString"] );
                         } else {
-                          $newSubChildElement = $doc->createElement( $thatA , htmlentities($thisA) );
+                          $newSubChildElement = self::elementValue($doc, $thatA , $thisA );
                         }
                         $newChildElement->appendChild($newSubChildElement);
                       }
@@ -265,47 +292,36 @@ class XMLSerializer extends DOMImplementation {
                     
                   } elseif ( $newSubChildElementType["type"] == ELEMENT_TYPE_BOOL ) {
                     
-                    $newChildElement = $doc->createElement( $newSubChildElementType["elementString"] );
+                    $newChildElement = self::elementValue($doc, $newSubChildElementType["elementString"] );
                     foreach( $subSubFieldValue as $thatA => $thisA ) {
-                      //echo("<pre>$subSubFieldName :: ".$thatA." -> $thisA</pre>");
                       if ( $thisA === true ) {
-                        $newSubChildElement = $doc->createElement( $thatA );
+                        $newSubChildElement = self::elementValue($doc, $thatA );
                         $newChildElement->appendChild($newSubChildElement);
                       }
                     }
                     
                   } elseif ( $newSubChildElementType["type"] == ELEMENT_TYPE_ONEARRAY ) {
                     
-                    //echo("THING: $subSubFieldName :: ".$newSubChildElementType["elementString"]."<br>\n");
-                    
-                    $newChildElement = $doc->createElement( $newSubChildElementType["elementString"] );
+                    $newChildElement = self::elementValue($doc, $newSubChildElementType["elementString"] );
                     foreach( $subSubFieldValue as $thatA => $thisA ) {
                       if ( is_numeric($thatA) ) {
-                        $newSubChildElement = $doc->createElement( $newSubChildElementType["elementSubString"] , htmlentities($thisA) );
+                        $newSubChildElement = self::elementValue($doc, $newSubChildElementType["elementSubString"] , $thisA );
                       } else {
                         $newSubChildElement = $doc->createElement( $thatA );
                         foreach( $thisA as $thatB => $thisB ) {
-                          if ( self::doCDATA($thisB) ) {
-                            $newSubSubChildElement = $doc->createElement( $thatB );
-                            $newCDATAElement = $doc->createCDATASection( htmlentities($thisB) );
-                            $newSubSubChildElement->appendChild($newCDATAElement);
-                            $newSubChildElement->appendChild($newSubSubChildElement);
-                          } else {
-                            $newSubSubChildElement = $doc->createElement( $thatB , htmlentities($thisB) );
-                            $newSubChildElement->appendChild($newSubSubChildElement);
-                          }
+                          $newSubSubChildElement = self::elementValue($doc, $thatB , $thisB );
+                          $newSubChildElement->appendChild($newSubSubChildElement);
                         }
                       }
-                      // Declear it now!
-                      $newChildElement->appendChild( $newSubChildElement );
-                      
+                      $newChildElement->appendChild($newSubChildElement);
                     }
+                    
                   } elseif ( $newSubChildElementType["type"] == ELEMENT_TYPE_LANG ) {
                     
-                    $newChildElement = $doc->createElement( $subSubFieldName );
+                    $newChildElement = self::elementValue($doc, $subSubFieldName );
                     
                     foreach($subSubFieldValue as $fieldKey ) {
-                      $newChildChildEelement = $doc->createElement( $newSubChildElementType["elementString"], $fieldKey['iso']);
+                      $newChildChildEelement = self::elementValue($doc, $newSubChildElementType["elementString"], $fieldKey['iso'] );
                       foreach($fieldKey as $thatC => $thisC ) {
                         if ( strtolower($thatC) != "iso" ) {
                           $childAtt = $doc->createAttribute( $thatC );
@@ -320,14 +336,15 @@ class XMLSerializer extends DOMImplementation {
                     echo("<pre>NO TYPE: $subSubFieldName</pre>");
                   }
                 } else {
-                  $newChildElement = $doc->createElement( $subSubFieldName , $subSubFieldValue );
+                  $newChildElement = self::elementValue($doc, $subSubFieldName, $subSubFieldValue );
                 }
                 $valueChildElement = $childElement->appendChild( $newChildElement );
                 
               }
               
             } else {
-              $childElement = $doc->createElement( $returnElementStats["elementString"] , htmlentities($createElementValue) );
+              
+              $childElement = self::elementValue($doc, $returnElementStats["elementString"] , $createElementValue );
               foreach( $subFieldValue as $subSubFieldName => $subSubFieldValue ) {
                 if ( $subSubFieldName == "steamid" ) {
                   $childElement->value = $subSubFieldValue;
@@ -346,7 +363,7 @@ class XMLSerializer extends DOMImplementation {
             }
           }
         } else {
-          $child = $doc->createElement($fieldname);
+          $child = self::elementValue($doc, $fieldname);
           if ( $occ != null ) {
             $child = $occ->appendChild($child);            
           } else {
@@ -361,8 +378,7 @@ class XMLSerializer extends DOMImplementation {
   public static function createXML($input,$prettyPrint=true) {
     $docImp = new DOMImplementation();
     $doctype = $docImp->createDocumentType("response"); 
-    $doc = $docImp->createDocument(null, null, $doctype); 
-    //$doc = new DomDocument('1.0',"UTF-8");
+    $doc = $docImp->createDocument(null, null, $doctype);
     $root = $doc->createElement('response');
     $root = $doc->appendChild($root);
     $signed_values = $input;
