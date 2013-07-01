@@ -79,6 +79,9 @@ class XMLSerializer extends DOMImplementation {
     );
     
     switch( strtolower($input) ) {
+      case "result":
+        $output["type"] = ELEMENT_TYPE_STANDALONE;
+        break;
       case "members":
         $output["elementString"] = "member";
         break;
