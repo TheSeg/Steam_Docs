@@ -33,5 +33,41 @@ include_once("./template/html_start.php");
   
   </div>
   
+  <div id="" class="row-fluid">
+    
+    <div class="span5 offset1">
+      <h3><i class="icon-comments"></i> Feedback</h3>
+      <p>This proposal is just the start! If you have any comments or feedback, leave an Issue on the GitHub project page.</p>
+      <p><a class="btn" href="https://github.com/TheSeg/Steam_Docs/issues"><i class="icon-github icon-large"></i> Feedback @ GitHub</a></p>
+    </div>
+    
+    <div id="shareArea" class="span5 offset1">
+      <h3><i class="icon-share-alt"></i> Share</h3>
+      
+      <div class="socialElement">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="TheSeg" data-lang="en" data-related="Steam_Games:Steam, The Ultimate Online Game Platform." data-hashtags="SteamWebAPI" data-text="A proposal to extend the @Steam_Games WebAPI.">Tweet</a>
+      </div>
+      
+      <div class="socialElement">
+        <div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300" data-href="<?php print SteamDocs::full_url(); ?>"></div>
+      </div>
+      
+      <div class="socialElement">
+        <div class="fb-like"
+          data-href="<?php print SteamDocs::full_url(); ?>"
+          data-send="true"
+          data-layout="button_count"
+          data-width="450"
+          data-show-faces="true"
+          data-font="lucida grande"
+          data-colorscheme="dark"
+          data-action="recommend">
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
 </div>
 <?php include_once("./template/html_end.php"); ?>
