@@ -45,7 +45,15 @@ include_once("./template/html_start.php");
       <h3><i class="icon-share-alt"></i> Share</h3>
       
       <div class="socialElement">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="TheSeg" data-lang="en" data-related="Steam_Games:Steam, The Ultimate Online Game Platform." data-hashtags="SteamWebAPI" data-text="A proposal to extend the @Steam_Games WebAPI.">Tweet</a>
+        <a
+          href="https://twitter.com/share"
+          class="twitter-share-button"
+          data-via="TheSeg"
+          data-lang="en"
+          data-related="Steam_Games:The Ultimate Online Game Platform"
+          data-hashtags="SteamWebAPI"
+          data-text="A proposal to extend the @Steam_Games WebAPI."
+          >Tweet</a>
       </div>
       
       <div class="socialElement">
