@@ -5,6 +5,16 @@ include_once("XMLSerializer.php");
 
 class SteamDocs {
   
+  
+  public static function full_url()
+  {
+    $s = empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on") ? "s" : "";
+    $sp = strtolower($_SERVER["SERVER_PROTOCOL"]);
+    $protocol = substr($sp, 0, strpos($sp, "/")) . $s;
+    $port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
+    return $protocol . "://" . $_SERVER['SERVER_NAME'] . $port . $_SERVER['REQUEST_URI'];
+  }
+  
   /**
     * GetHeadData
     *
@@ -25,6 +35,7 @@ class SteamDocs {
       $html[] = '<meta name="description" content="'.$pd['desc'].'">';
       $html[] = '<meta property="og:description" content="'.$pd['desc'].'">';
     }
+    $html[] = '<meta property="og:url" content="'.self::full_url().'">';
     
     $html[] = '<meta property="fb:app_id" content="250811168365558">';
     $html[] = '<meta property="og:type" content="website">';
