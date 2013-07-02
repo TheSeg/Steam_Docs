@@ -19,14 +19,14 @@ class SteamDocs {
     
     if ( !empty($pd['title']) ) {
       $html[] = '<title>'.$pd['title'].'</title>';
-      $html[] = '<meta name="og:title" content="'.$pd['title'].'">';
+      $html[] = '<meta property="og:title" content="'.$pd['title'].'">';
     }
     if ( !empty($pd['desc']) ) {
       $html[] = '<meta name="description" content="'.$pd['desc'].'">';
-      $html[] = '<meta name="og:description" content="'.$pd['desc'].'">';
+      $html[] = '<meta property="og:description" content="'.$pd['desc'].'">';
     }
     
-    $html[] = '<meta name="fb:app_id" content="250811168365558">';
+    $html[] = '<meta property="fb:app_id" content="250811168365558">';
     $html[] = '<meta property="og:type" content="website">';
     $html[] = '<meta property="og:site_name" content="Steam WebAPI Proposal by Seg">';
     $html[] = '<meta name="twitter:creator" content="@TheSeg">';
