@@ -24,6 +24,7 @@ include_once("./template/html_start.php");
       <p>This proposal demonstrates my technical writing skills. While I work primarily in interactive narrative, I'm still very interested in making data and technology accessible as possible. I wanted a public way to demonstrate that skill set, and so here we are!</p>
       <h2>Feedback</h2>
       <p>Want to contribute to perfecting these proposals? <a href="https://github.com/TheSeg/Steam_Docs/issues">Make an issue on <i class="icon-github"></i> GitHub and start the discussion!</a></p>
+      <p><a class="btn" href="https://github.com/TheSeg/Steam_Docs/issues"><i class="icon-github icon-large"></i> Feedback @ GitHub</a></p>
     </div>
     
   </div>
