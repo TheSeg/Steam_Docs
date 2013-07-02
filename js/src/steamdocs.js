@@ -12,11 +12,10 @@ $(document).ready(function(){
     $('a[data-toggle|="tooltip"]').tooltip();
     $('.nav-pills a, .toTop, .enableScroll').click(function(){
         var scrollTo = 0;
-        var topThing = $( $.attr(this, 'href') ).offset().top;
         if ( $.attr(this, 'href') === "#top") {
             scrollTo = 0;
         } else {
-            scrollTo = (($( $.attr(this, 'href') ).offset().top)-(mastheadHeight+navHeight));
+            scrollTo = (($( $.attr(this, 'href') ).offset().top)-(mastheadHeight+navHeight-40));
         }
         $('html, body').animate({
             scrollTop: scrollTo
