@@ -1,6 +1,6 @@
 
       <footer class="footer">
-        Proposals developed by <a href="http://theseg.github.io/">Seg</a>.
+        Proposals developed by <a href="http://theseg.github.io/">John "Seg" Seggerson</a>.
         <br>
         Steam, Steam WebAPI, Steamworks, and all things related are owned by <a href="http://www.valvesoftware.com/" target="_blank">Valve Software</a>.<hr>
         Code licensed under their respective licenses as stated in their respective source files.<br>
