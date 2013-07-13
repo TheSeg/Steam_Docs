@@ -5,7 +5,7 @@
             
             <h2>Method Description</h2>
             <p>Provides a hub’s ID number based on a search query.</p>
-            <p>This function is similar to the <code>ISteamUser::GetPlayerSummary</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamHub</code> interface.</p>
+            <p>This function is similar to the <code>ISteamUser::ResolveVanityURL</code> method for player profiles. The difference is returns are for guid integers, used for all other methods in the <code>ISteamHub</code> interface.</p>
             
             <h2>Input</h2>
             <?php print SteamDocs::seeInputs(); ?>
