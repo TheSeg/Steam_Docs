@@ -17,11 +17,19 @@ $arr = array(
         "official" => true,
         "public" => true,
       ),
+      array(
+        "guid" => 103582791431201661,
+        "abbreviation" => "thepuzzleagents",
+        "name" => "The Puzzle Agents",
+        "url" => "http://steamcommunity.com/groups/thepuzzleagents",
+        "official" => false,
+        "public" => true,
+      ),
     )
   )
 );
 
 $all = SteamDocs::convertToAll($arr);
-$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."ResolveGameID_02");
+$saveAll = SteamDocs::saveAll($all,dirname(__FILE__)."/"."ResolveAppID_01");
 
 ?>

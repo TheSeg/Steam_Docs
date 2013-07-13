@@ -20,7 +20,7 @@ include_once("./template/html_start.php");
       <li><a href="#top"><i class="icon-collapse-top"></i></a></li>
       <li><a href="#General">Notes</a></li>
       <li><a href="#ResolveVanityURL">::ResolveVanityURL</a></li>
-      <li><a href="#ResolveGameID">::ResolveGameID</a></li>
+      <li><a href="#ResolveAppID">::ResolveAppID</a></li>
       <li><a href="#GetSummaries">::GetSummaries</a></li>
       <li><a href="#GetAnnouncements">::GetAnnouncements</a></li>
       <li><a href="#GetEvents">::GetEvents</a></li>
@@ -35,7 +35,7 @@ include_once("./template/html_start.php");
   
     include("./docs/ISteamHub/General.php");
     include("./docs/ISteamHub/ResolveVanityURL.php");
-    include("./docs/ISteamHub/ResolveGameID.php");
+    include("./docs/ISteamHub/ResolveAppID.php");
     include("./docs/ISteamHub/GetSummaries.php");
     include("./docs/ISteamHub/GetAnnouncements.php");
     include("./docs/ISteamHub/GetEvents.php");

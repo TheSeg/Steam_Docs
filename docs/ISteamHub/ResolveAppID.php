@@ -1,6 +1,6 @@
-          <section id="ResolveGameID">
+          <section id="ResolveAppID">
             <div class="page-header">
-              <h1>::ResolveGameID</h1>
+              <h1>::ResolveAppID</h1>
             </div>
             
             <h2>Method Description</h2>
@@ -77,13 +77,13 @@
             <h2>Examples</h2>
             
             <h3>AppID Search</h3>
-            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveGameID/v0001/?appid=94590</blockquote>
+            <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveAppID/v0001/?appid=94590</blockquote>
             
-            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveGameID_01" ); ?>
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveAppID_01" ); ?>
             
             <h3>Official Game Hub Only</h3>
             <blockquote>GET https://api.steampowered.com/ISteamHub/ResolveVanityURL/v0001/?appid=94590&amp;official_only=1</blockquote>
             
-            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveGameID_02" ); ?>
+            <?php print SteamDocs::CreateDocExampleFormats( __FILE__, "ResolveAppID_02" ); ?>
             
           </section>
