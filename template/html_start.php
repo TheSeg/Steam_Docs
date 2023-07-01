@@ -26,16 +26,17 @@
     <script src="./js/holder.min.js"></script>
     <script src="./js/steamdocs.min.js"></script>
     <?php if ( strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.com" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.org" || strtolower($_SERVER["HTTP_HOST"]) == "steam.segonmedia.net" ) { ?>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-6339343-3', 'segonmedia.com');
-      ga('send', 'pageview');
-    </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B9FWKJLFN"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7B9FWKJLFN');
+      </script>
     <?php } else { ?>
-    <!-- Google Analytics Disabled -->
+      <!-- Google Analytics Disabled -->
     <?php } ?>
 </head>
 
